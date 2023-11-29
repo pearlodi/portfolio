@@ -1,0 +1,17 @@
+:root {
+    --el-dialog-bg-color: red !important;
+    --el-dialog-bg-color: blue !important;
+}
+
+.el-dialog {}
+
+.el-dialog {
+    border-radius: 24px !important;
+    border: 3px solid rgba(62, 62, 62, 0.086);
+    background: linear-gradient(65deg, #181818 4.18% #181818 116.91%);
+    background-color: #181818e4 !important;
+    padding: 20px;
+
+
+
+}

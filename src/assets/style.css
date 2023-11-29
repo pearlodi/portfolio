@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    cursor: url('@/assets/img/record.png'), auto;
+}
+
+:root {
+    --el-dialog-bg-color: red !important;
+}
