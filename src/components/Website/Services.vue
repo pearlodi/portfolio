@@ -1,44 +1,47 @@
 <template>
-    <div class="mx-5 lg:mx-20">
-        <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] mt-4 flex items-center pb-4">
-            <!-- <div class="line h-32 w-1">
+    <div class="project-background py-10">
+        <Navbar />
+        <div class="mx-5 lg:mx-20">
+            <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] mt-4 flex items-center pb-4">
+                <!-- <div class="line h-32 w-1">
 
             </div> -->
-            <div class=" mt-4">
-                <p class="text-3xl text-white font-[800]">SERVICES</p>
-                <div class="line h-1 w-[200px] mt-5">
-                </div>
-
-            </div>
-        </div>
-        <div class="md:flex justify-center">
-
-            <div class="stack hidden md:flex flex-col justify-around  w-full max-w-full md:w-[1200px] cursor-pointer ">
-                <div v-for="stack in   stacks  " :key="stack.id" class="">
-                    <!-- <img :src="stack.url" class="rounded-2xl" /> -->
-                    <h1 class="text-grad text-white text-[20px] text-center font-extrabold ">{{ stack.year }}</h1>
-
-
-
-
+                <div class=" mt-20">
+                    <p class="text-3xl text-white font-[800]">SERVICES</p>
+                    <div class="line h-1 w-[200px] mt-5">
+                    </div>
 
                 </div>
             </div>
-            <div class="tech-list stack-tech-li md:ml-8">
-                <ul class="stack-tech-ul stack-tech-li">
-                    <li v-for="stack in   stacks  " :key="stack.id" class="stack-tech-li  stackssa">
+            <div class="md:flex justify-center">
+
+                <div class="stack hidden md:flex flex-col justify-around  w-full max-w-full md:w-[1200px] cursor-pointer ">
+                    <div v-for="stack in   stacks  " :key="stack.id" class="">
                         <!-- <img :src="stack.url" class="rounded-2xl" /> -->
-                        <p class="text-grad text-white text-[40px] font-extrabold">{{ stack.year }}</p>
-                        <p class="serve-text">{{ stack.serve }}</p>
+                        <h1 class="text-grad text-white text-[20px] text-center font-extrabold ">{{ stack.year }}</h1>
 
 
 
 
 
-                    </li>
-                </ul>
+                    </div>
+                </div>
+                <div class="tech-list stack-tech-li md:ml-8">
+                    <ul class="stack-tech-ul stack-tech-li">
+                        <li v-for="stack in   stacks  " :key="stack.id" class="stack-tech-li  stackssa">
+                            <!-- <img :src="stack.url" class="rounded-2xl" /> -->
+                            <p class="text-grad text-white text-[40px] font-extrabold">{{ stack.year }}</p>
+                            <p class="serve-text">{{ stack.serve }}</p>
+
+
+
+
+
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-
         </div>
     </div>
 </template>
@@ -49,9 +52,13 @@ import hmgls from '@/assets/img/hmgls.png'
 import abitto from '@/assets/img/abitto.png'
 import bhit from '@/assets/img/bhit.png'
 import tfs from '@/assets/img/tfs.png'
+import Navbar from '../Navbar.vue'
 
 
 export default {
+    components: {
+        Navbar
+    },
     data() {
         return {
             stacks: [

@@ -1,5 +1,6 @@
 <template>
-    <div class="port flex flex-col  md:h-[100%] items-center p-8 ">
+    <div class="project-background flex flex-col  md:h-[100%] items-center p-8 "
+        :class="{ ' ': isDarkMode ? ' project-background' : !isDarkMode }">
         <div class="flex flex-col  md:h-[100%] items-center w-[90%]">
             <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-12 flex items-center pb-4">
                 <div class="line h-40 md:h-52 w-1">
@@ -21,45 +22,52 @@
              </div> -->
             <div class="card-details bg-opacity-90 max-w-full w-full pb-1 mt-12">
                 <!-- Glass-like Content -->
-
-                <div @click="setContent('About')"
-                    class="portt flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                    <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
-                    <p>
-                        ABOUT ME
-                    </p>
-                </div>
-                <div @click="setContent('experience')"
-                    class="portt flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                    <img src="@/assets/img/quality.png" class="w-10 h-10" alt="" />
-                    <p>
-                        EXPERIENCE
-                    </p>
-                </div>
-                <div @click="setContent('projects')"
-                    class="portt flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                    <img src="@/assets/img/project-management.png" class="w-10 h-10" alt="" />
-                    <p>
-                        PROJECTS
-                    </p>
-                </div>
+                <router-link to="/about">
+                    <div
+                        class="portt flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
+                        <p>
+                            ABOUT ME
+                        </p>
+                    </div>
+                </router-link>
+                <router-link to="/experience">
+                    <div
+                        class="portt flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
+                        <p>
+                            EXPERIENCE
+                        </p>
+                    </div>
+                </router-link>
+                <router-link to="/projects">
+                    <div
+                        class="portt flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
+                        <p>
+                            PROJECTS
+                        </p>
+                    </div>
+                </router-link>
                 <!-- Glass-like Content -->
 
-                <div @click="setContent('services')"
-                    class="portt flex h-[132px] md:h-48 card   rounded-lg  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                    <img src="@/assets/img/technical-support.png" class="w-10 h-10" alt="" />
-                    <p>
-                        SERVICES
-                    </p>
-                </div>
-                <div @click="setContent('contact')"
+                <router-link to="/services">
+                    <div
+                        class="portt flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
+                        <p>
+                            SERVICES
+                        </p>
+                    </div>
+                </router-link>
+                <div
                     class="portt flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
                     <img src="@/assets/img/customer-service.png" class="w-10 h-10" alt="" />
                     <p>
                         CONTACT ME
                     </p>
                 </div>
-                <div @click="setContent('Home')"
+                <div
                     class="flex h-[132px] md:h-48 card   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
                     <img src="@/assets/img/homes.png" class="w-10 h-10" alt="" />
                     <p>
@@ -159,24 +167,14 @@
 
 <script>
 import Typewriter from "@/components/Typewriter.vue"; // Adjust the path as needed
-import About from "@/components/About.vue"; // Adjust the path as needed
-import Experience from "@/components/Experience.vue"; // Adjust the path as needed
-import Projects from "@/components/Projects.vue"; // Adjust the path as needed
-import Services from "@/components/Services.vue"; // Adjust the path as needed
-import Contact from "@/components/Contact.vue"; // Adjust the path as needed
-import Home from "@/components/Home.vue"; // Adjust the path as needed
 import ProjectModal from "../components/Modal/ProjectModal.vue";
 
 export default {
     components: {
-        About,
         Typewriter,
-        Experience,
-        Projects,
-        Services,
-        Contact,
-        Home,
         ProjectModal
+    }, props: {
+        isDarkMode: Boolean // Receive isDarkMode as a prop
     },
 
     data() {
