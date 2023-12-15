@@ -22,7 +22,9 @@
                         <div class="mt-8">
                             <div class="flex items-center">
                                 <div class="stack p-40">
-                                    <img src="@/assets/img/technical-support.png" class="p-3" alt="contact" />
+                                    <div class=" w-[50px] h-[50px] flex justify-center items-center">
+                                        <img src="@/assets/img/gmail.png" class="p-3 w-full h-full" alt="contact" />
+                                    </div>
                                 </div>
                                 <div class="ml-8">
                                     <h1 class="text-grad font-bold" :class="{ 'contacts': isDarkMode }">E-Mail</h1>
@@ -32,7 +34,9 @@
 
                             <div class="flex items-center mt-8">
                                 <div class="stack p-40">
-                                    <img src="@/assets/img/technical-support.png" class="p-3" alt="contact" />
+                                    <div class=" w-[50px] h-[50px] flex justify-center items-center">
+                                        <img src="@/assets/img/phone.png" class="p-3 w-full h-full" alt="contact" />
+                                    </div>
                                 </div>
                                 <div class="ml-8">
                                     <h1 class="text-grad font-bold" :class="{ 'contacts': isDarkMode }">Contact</h1>
@@ -42,7 +46,9 @@
 
                             <div class="flex items-center mt-8">
                                 <div class="stack p-40">
-                                    <img src="@/assets/img/technical-support.png" class="p-3" alt="contact" />
+                                    <div class=" w-[50px] h-[50px] flex justify-center items-center">
+                                        <img src="@/assets/img/location.png" class="p-3 w-full h-full" alt="contact" />
+                                    </div>
                                 </div>
                                 <div class="ml-8">
                                     <h1 class="text-grad font-bold" :class="{ 'contacts': isDarkMode }">Location</h1>
@@ -55,14 +61,20 @@
                             <h1 class="contact-text text-2xl font-bold" :class="{ 'contacts': isDarkMode }">Social info</h1>
                             <div class="flex mt-8">
                                 <div class="stack p-40">
-                                    <img src="@/assets/img/technical-support.png" class="p-3" alt="contact" />
+                                    <div class=" w-[50px] h-[50px] flex justify-center items-center">
+                                        <img src="@/assets/img/github.png" class="p-3 w-full h-full" alt="contact" />
+                                    </div>
                                 </div>
-                                <div class="stack p-40 ml-8">
-                                    <img src="@/assets/img/technical-support.png" class="p-3" alt="contact" />
+                                <div class="stack p- ml-8">
+                                    <div class=" w-[50px] h-[50px] flex justify-center items-center">
+                                        <img src="@/assets/img/linkedin.png" class="p-3 w-full h-full" alt="contact" />
+                                    </div>
                                 </div>
-                                <div class="stack p-40 ml-8">
-                                    <img src="@/assets/img/technical-support.png" class="p-3" alt="contact" />
-                                </div>
+                                <!-- <div class="stack p-40 ml-8">
+                                    <div class=" w-[50px] h-[50px] flex justify-center items-center">
+                                        <img src="@/assets/img/gmail.png" class="p-3 w-full h-full" alt="contact" />
+                                    </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

@@ -33,6 +33,7 @@
     padding: 20px !important;
     height: 80% !important;
     width: 60% !important;
+    overflow: scroll !important;
 }
 
 .carousel__icon {

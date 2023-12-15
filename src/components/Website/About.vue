@@ -38,14 +38,20 @@
                 <div>
                     <p class="text-gradient font-bold text-sm md:text-[18px] leading-8 mt-12 w-full max-w-full md:w-[1000px]"
                         :class="{ '': !isDarkMode, 'dark-mode': isDarkMode }">
-                        I am an enthusiastic, self-motivated, reliable, responsible and hardworking individual. With
-                        over 5 years in the technology industry and having mastered various skills ranging from
-                        Graphic design with applications like CorelDraw and PhotoShop to proficiency in Microsoft
-                        applications like Microsoft word, Microsoft Excel, Microsoft PowerPoint, microsoft publisher
-                        then to Backend and Front end Software Engineering using PHP, SQL and AJAX with a little
-                        knowledge on Laravel for backend functionalities and HTML, CSS, javaScript and VUE.js for
-                        frontend functionalities while using frameworks, API’s. I am a natural team worker and
-                        adaptable to all challenging situations.
+                        I am a dynamic and self-motivated individual with a strong passion for software engineering.
+                        Possessing over 5 years of experience in the technology industry, I have cultivated a diverse skill
+                        set that encompasses graphic design using applications such as CorelDraw and Photoshop.
+                        Additionally, I have demonstrated proficiency in essential Microsoft applications, including Word,
+                        Excel, PowerPoint, and Publisher.
+                        <br>
+                        My technical expertise of about two years extends to HTML, CSS, JavaScript, React.js, and Vue.js,
+                        where I have
+                        successfully implemented front-end functionalities leveraging frameworks and APIs. As an individual
+                        committed to excellence, I have a proven track record of being a reliable and responsible team
+                        player, thriving in diverse and challenging situations.
+                        <br>
+                        Eager to contribute and grow within the software engineering domain, I am excited about the
+                        opportunity to leverage my skills and knowledge in a collaborative and innovative environment.
 
                     </p>
                 </div>
@@ -247,7 +253,7 @@
 
 
 .stack {
-    background: linear-gradient(111deg, #ffffff1a 1.21%, white 100%);
+    background: linear-gradient(111deg, #ffffff1a 1.21%, transparent 100%);
 
 }
 

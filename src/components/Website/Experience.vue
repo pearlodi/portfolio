@@ -40,29 +40,24 @@
                         <p class=" mb-8" :class="{ 'dark-mode': isDarkMode ? ' text-gradient' : !isDarkMode }">{{
                             stack.jobDescription }}</p>
 
-                        <div v-for="( jobs, index ) in  stack.jobs " :key="index" class="">
-                            <div class="flex ">
-                                <div v-if="!isDarkMode">
-                                    <div class="flex flex-col items-center ">
-                                        <img src="@/assets/img/black-circle.png" class="md:w-[10px] md:h-[10px]"
-                                            alt="circle" />
+                        <div v-for="(job, index) in stack.jobs" :key="index" class="">
+                            <div class="flex items-center">
+                                <div>
+                                    <div class="flex flex-col items-center w-[12px]">
+                                        <img src="@/assets/img/black-circle.png" class="w-full md:h-[10px]" alt="circle" />
                                         <div class="h-[30px] bg-[#ffffff1a] w-[0.5px]"></div>
                                     </div>
                                 </div>
-                                <div v-else>
-                                    <div class="flex flex-col items-center ">
-                                        <div class="md:w-[10px] md:h-[10px] bg-black rounded-full"></div>
-                                        <div class="h-[30px] bg-[#000] w-[0.5px]"></div>
-                                    </div>
-                                </div>
                                 <div>
-                                    <p class="text-white  ml-4"
-                                        :class="{ 'dark-mode': isDarkMode ? ' text-grads' : !isDarkMode }"> {{
-                                            stack.jobWork
-                                        }}</p>
+                                    <p class="text-gradient ml-4 leading-[30px] font-medium"
+                                        :class="{ 'text-gradient': isDarkMode }">
+                                        {{
+                                            job
+                                        }} </p>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -85,18 +80,100 @@ export default {
     data() {
         return {
             stacks: [
-                { id: 1, name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences', category: 'Software Engineering', year: '2020', company: 'Abitto Global', jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating of the files that are needed', jobs: ['Create files for individuals thhat needs creating of the files that are needed', 'Create files for individuals thhat needs creating of the files that are needed', 'Create files for individuals thhat needs creating of the files that are needed of the files needed'] },
-                { id: 1, name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering', category: 'Software Engineering', year: '2020', company: 'Abitto Global', jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating of the files needed', jobs: ['Create files for individuals thhat needs creating of the files needed', 'Create files for individuals thhat needs creating of the files needed', 'Create files for individuals thhat needs creating of the files needed'] },
-                { id: 1, name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering', category: 'Software Engineering', year: '2020', company: 'Abitto Global', jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating of the files needed', jobs: ['Create files for individuals thhat needs creating of the files needed', 'Create files for individuals thhat needs creating of the files needed', 'Create files for individuals thhat needs creating of the files needed'] },
-                { id: 1, name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering', category: 'Software Engineering', year: '2020', company: 'Abitto Global', jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating of the files needed', jobs: ['Create files for individuals thhat needs creating of the files needed', 'Create files for individuals thhat needs creating of the files needed', 'Create files for individuals thhat needs creating of the files needed'] },
+
+                // {
+                //     id: 1,
+                //     name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering',
+                //     category: 'Software Engineering',
+                //     year: '2023',
+                //     company: 'Ownage Fidletech',
+                //     jobDescription: 'Web developer (Intern)', jobWork: ' files for individuals thhat needs creating of the files needed',
+                //     jobs: [
+                //         'Spearheaded the design and implementation of user-centric web interfaces leveraging HTML, CSS, and JavaScript.', 'Contributed to the creation of intuitive and visually appealing user interfaces, ensuring seamless user experiences across platforms', 'Executed responsive web design techniques, ensuring compatibility across various devices and browsers for optimal user accessibility'
+                //     ]
+                // },
+                {
+                    id: 2,
+                    name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering',
+                    category: 'Software Engineering',
+                    year: '2023',
+                    company: 'Ownage Fidletech',
+                    jobDescription: 'Web developer (Intern)', jobWork: 'Create files for individuals thhat needs creating of the files needed',
+                    jobs: [
+                        'Collaborated with professionals to the design and implementation of user-centric web interfaces leveraging HTML, CSS, and JavaScript, Vue and React.', 'Executed responsive web design techniques, ensuring compatibility across various devices and browsers for optimal user accessibility', ' Demonstrated adeptness in front-end frameworks such as React.js and Vue.js, applying these technologies to enhance user interactions and functionality'
+                    ]
+                },
+                {
+                    id: 2,
+                    name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering',
+                    category: 'Software Engineering',
+                    year: '2023',
+                    company: 'WeTech Mentorship',
+                    jobDescription: 'Web developer (Contract)', jobWork: 'Create files for individuals thhat needs creating of the files needed',
+                    jobs: [
+                        'Actively collaborated with  teams members to deliver solutions, integrating designs into responsive and optimized web applications.', 'Contributed to the creation of intuitive and visually appealing user interfaces, ensuring seamless user experiences across platforms', 'Actively pursued ongoing learning opportunities to stay updated with emerging front-end technologies and industry best practices.'
+                    ]
+                },
+                {
+                    id: 3,
+                    name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering',
+                    category: 'Software Engineering',
+                    year: '2022',
+                    company: 'Sirinu Token',
+                    jobDescription: 'Web developer (Contract)',
+                    jobWork: 'Create files for individuals thhat needs creating of the files needed',
+                    jobs: ['Played a part in developing and refining front-end architecture, optimizing performance and scalability of web applications.', 'Participated in performance optimization efforts, analyzing and refining code for faster load times and improved user interactivity.', ' Developed responsive and mobile-first web applications, ensuring adaptability to various screen sizes']
+                },
+                {
+                    id: 4,
+                    name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering',
+                    category: 'Software Engineering',
+                    year: '2023',
+                    company: 'Personal Projects',
+                    jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating of the files needed',
+                    jobs: ['Led the conceptualization, design, and implementation of a personal portfolio website using HTML, CSS, and JavaScript', 'Designed and developed a responsive web application leveraging React.js, focusing on intuitive user interfaces and seamless navigation.', 'Solely engineered a project UI utilizing Vue.js, ensuring optimal front-end functionality and performance']
+                },
 
 
 
 
-                { id: 1, name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences', category: 'Other Professional Experiences', year: '2000', company: 'Royale Concept', jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating', jobs: ['Create files for individuals thhat needs creating', 'Create files for individuals thhat needs creating', 'Create files for individuals thhat needs creating'] },
-                { id: 1, name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences', category: 'Other Professional Experiences', year: '2000', company: 'Royale Concept', jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating', jobs: ['Create files for individuals thhat needs creating', 'Create files for individuals thhat needs creating', 'Create files for individuals thhat needs creating'] },
-                { id: 1, name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences', category: 'Other Professional Experiences', year: '2000', company: 'Royale Concept', jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating', jobs: ['Create files for individuals thhat needs creating', 'Create files for individuals thhat needs creating', 'Create files for individuals thhat needs creating'] },
-                { id: 1, name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences', category: 'Other Professional Experiences', year: '2000', company: 'Royale Concept', jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating', jobs: ['Create files for individuals thhat needs creating', 'Create files for individuals thhat needs creating', 'Create files for individuals thhat needs creating'] },
+                {
+                    id: 5,
+                    name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences',
+                    category: 'Other Professional Experiences',
+                    year: '2022',
+                    company: 'Dumo Skills Acquisition',
+                    jobDescription: 'Computer Instructor',
+                    jobWork: 'Create files for individuals thhat needs creating', jobs: ['Taught courses on microsoft word, microsoft excel, microsoft powerpoint, microsoft publisher, corel draw and photoshop', 'Listened and observed students to pick up signs that students may be failing to grasp', 'Answered questions from students and provided support to help them understand completely']
+                },
+                {
+                    id: 6,
+                    category: 'Other Professional Experiences',
+                    year: '2022',
+                    company: 'Abitto Global Services',
+                    jobDescription: 'Accountant & Website Administrator',
+                    jobWork: 'Create files for individuals thhat needs creating',
+                    jobs: ['Oversaw the maintenance and updates of the companys website, ensuring accurate and uptodate information.', 'Integrated financial data onto the website, providing insights and analysis for stakeholders.', 'Managed and coordinated content updates, ensuring consistency and relevance across all web pages.']
+                },
+                {
+                    id: 7,
+                    name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences',
+                    category: 'Other Professional Experiences',
+                    year: '2020',
+                    company: 'Royale Concept',
+                    jobDescription: 'Web developer',
+                    jobWork: 'Create files for individuals thhat needs creating',
+                    jobs: ['Transferred data from paper formats into computer files or database systems and Updated existing databases.', 'Created, Compiled, verified, and sorted information into spreadsheets with large number of figures.', 'Designed various graphics such as fliers, banners, brochure, event booklets etc. Using design tools like Corel draw, Photoshop etc']
+                },
+                {
+                    id: 8,
+                    name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences',
+                    category: 'Other Professional Experiences',
+                    year: '2021',
+                    company: 'Dumo Skills Acquisition',
+                    jobDescription: 'Computer Instructor',
+                    jobWork: 'Create files for individuals thhat needs creating', jobs: ['Established key objectives for classes and Created curriculum to accomplish set objectives', 'Organized lectures for both practical classes and oral classes and also gave assesments to test the students', 'Taught courses on microsoft word, microsoft excel, microsoft powerpoint, microsoft publisher, corel draw and photoshop']
+                },
             ],
             selectedCategory: 'Software Engineering',
             categories: ['Software Engineering', 'Other Professional Experiences'],
@@ -104,11 +181,9 @@ export default {
     },
     computed: {
         filteredStack() {
-            if (this.selectedCategory === 'all') {
-                return this.stacks;
-            } else {
-                return this.stacks.filter(stack => stack.category === this.selectedCategory);
-            }
+
+            return this.stacks.filter(stack => stack.category === this.selectedCategory);
+
         },
     },
     methods: {
@@ -200,6 +275,8 @@ export default {
     background: linear-gradient(65deg, #181818 4.18% #181818 116.91%);
     /* background-color: #18181881; */
     padding: 20px;
+    height: 380px;
+    max-height: 100%;
 
 
 }

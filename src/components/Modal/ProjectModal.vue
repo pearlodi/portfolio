@@ -5,9 +5,11 @@
 
     <el-dialog v-model="centerDialogVisible" :open-delay="9" width="30%" align-center class="pb-10">
         <div>
-            <h1 class="text-2xl text-[black] font-bold">{{ itemProps }}</h1>
+            <a :href="itemLinks" target="_blank" class="proj-link">
+                <h1 class="text-2xl text-[black] font-bold">{{ itemProps }}</h1>
+            </a>
             <p class="w-full  text-base text-[black] mt-4">{{ itemDescription }}</p>
-            <div class="flex ">
+            <div class="md:flex ">
                 <div>
                     <h1 class="text-[black] text-base font-bold mt-4">Technologies</h1>
                     <ul>
@@ -15,7 +17,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="ml-16">
+                <div class="md:ml-16">
                     <h1 class="text-[black] text-base font-bold mt-4">Libraries</h1>
                     <ul>
                         <li v-for="(libraries, index) in itemLibraries" :key="String(index)">
@@ -84,7 +86,11 @@ export default defineComponent({
             required: true
         },
         itemImages: {
-            type: Array,
+            type: String,
+            required: true
+        },
+        itemLinks: {
+            type: String,
             required: true
         }
     }
@@ -112,5 +118,13 @@ export default defineComponent({
 
 .carousel__track {
     gap: 10px !important;
+}
+
+.el-dialog__title:hover {
+    color: red !important;
+}
+
+.el-dialog {
+    width: 90% !important;
 }
 </style>
