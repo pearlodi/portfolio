@@ -1,0 +1,232 @@
+/* 
+.project-background {
+    background-size: cover;
+    min-height: 100vh;
+
+} */
+:root {
+    --el-dialog-bg-color: red !important;
+    --el-dialog-bg-color: blue !important;
+    --el-dialog-width: 60% !important;
+    --el-fill-color-light: transparent !important;
+}
+
+.el-dialog__headerbtn {
+    background-color: black !important;
+    border-radius: 100% !important;
+    color: white !important;
+}
+
+.el-icon svg {
+    color: white;
+}
+
+
+/* .text-gradient {
+    color: red !important;
+} */
+
+.el-dialog {
+    border-radius: 24px !important;
+    border: 3px solid rgba(214, 251, 252, 0.08) !important;
+    background: #fffffff4 !important;
+    padding: 20px !important;
+    height: 80% !important;
+    width: 60% !important;
+    overflow: scroll !important;
+}
+
+.carousel__icon {
+    background-color: #ffffff4f;
+    border-radius: 10% !important;
+}
+
+.carousel__icon:hover {
+    background-color: #fff;
+    color: black !important;
+}
+
+.carousel__track {
+    gap: 10px !important;
+}
+
+.el-overlay-dialog {
+    background: rgba(0, 0, 0, 0.709) !important;
+}
+
+.project-background {
+    background: url(/src/assets/img/background.png);
+    background-size: cover;
+    min-height: 100vh;
+
+}
+
+.light-project-background {
+    background: url(/src/assets/img/abitto.png);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* .stack {
+    background: linear-gradient(111deg, red 1.21%, rgba(19, 0, 0, 0.02) 100%);
+    backdrop-filter: blur(15px);
+    border: 0.8px solid rgba(214, 251, 252, 0.06);
+}
+
+.stack-dark {
+    background: linear-gradient(111deg, green 1.21%, rgba(19, 0, 0, 0.02) 100%);
+    backdrop-filter: blur(15px);
+    border: 0.8px solid rgba(214, 251, 252, 0.06);
+} */
+
+
+.dark-mode p,
+h1,
+ul,
+li,
+
+input::placeholder {
+    background: linear-gradient(169deg, black 8.16%, black 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: black;
+}
+
+
+
+
+
+.dark-mode {
+    background: linear-gradient(169deg, black 8.16%, black 150.61%);
+
+}
+
+.lights-mode {
+    color: white !important;
+}
+
+.darks-mode {
+    color: black !important;
+}
+
+.about-dark-mode {
+    color: white !important;
+}
+
+.about-light-mode {
+    color: black !important;
+}
+
+.dark-mode {
+    background: linear-gradient(169deg, #505356 8.16%, white 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: red;
+}
+
+.dark-mode li {
+    background: linear-gradient(169deg, black 8.16%, black 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: red;
+}
+
+.dark-mode ::placeholder {
+    color: black;
+}
+
+.dark-mode .active-link {
+
+    border-bottom: 1px solid black
+}
+
+.light-mode {
+    background: linear-gradient(169deg, #505356 8.16%, white 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+
+.text-gradient {
+    background: linear-gradient(169deg, #505356 8.16%, #fff 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark-mode-gradient {
+    background: linear-gradient(169deg, red 8.16%, #fff 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title-gradient {
+    background: linear-gradient(169deg, #FFF 8.16%, #505356 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.line {
+    border-radius: 16px;
+    background: linear-gradient(111deg, rgba(255, 255, 255, 0.14) 1.21%, rgba(196, 196, 196, 0.02) 100%);
+    backdrop-filter: blur(15px);
+    border: 0.8px solid rgba(214, 251, 252, 0.06);
+}
+
+
+
+.animate-left {
+    width: 0;
+    height: 100vh;
+
+    animation: animateLeft 5s;
+    top: 0;
+}
+
+@keyframes animateLeft {
+    from {
+        width: 50%;
+
+    }
+
+    to {
+        width: 0;
+
+    }
+}
+
+.animate-right {
+    width: 0;
+    height: 100vh;
+
+    animation: animateright 5s;
+    top: 0;
+}
+
+@keyframes animateright {
+    from {
+        width: 100%;
+
+    }
+
+    to {
+        width: 0px;
+
+    }
+}
+
+
+.animateText {
+    height: 100vh;
+    animation: animateText 5s;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    text-align: center;
+}
