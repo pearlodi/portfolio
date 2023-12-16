@@ -5,12 +5,15 @@ const routes = [
     name: 'home',
     component: () => import('@/views/index.vue'),
     meta: { darkMode: false }
-  },  {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('@/components/website/Contact.vue'),
-    meta: { darkMode: false }
-  },  {
+
+  },
+  // },  {
+  //   path: '/contact',
+  //   name: 'contact',
+  //   component: () => import('@/components/website/Contact.vue'),
+  //   meta: { darkMode: false }
+  // },  
+  {
     path: '/about',
     name: 'about',
     component: () => import('@/components/website/About.vue'),
