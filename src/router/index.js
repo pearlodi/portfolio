@@ -5,42 +5,39 @@ const routes = [
     name: 'home',
     component: () => import('@/views/index.vue'),
     meta: { darkMode: false }
-
-  },
-  // },  {
-  //   path: '/contact',
-  //   name: 'contact',
-  //   component: () => import('@/components/website/Contact.vue'),
-  //   meta: { darkMode: false }
-  // },  
-  {
+  },  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('@/components/Website/Contact.vue'),
+    meta: { darkMode: false }
+  },  {
     path: '/about',
     name: 'about',
-    component: () => import('@/components/website/About.vue'),
+    component: () => import('@/components/Website/About.vue'),
     meta: { darkMode: false }
 
   },{
     path: '/projects',
     name: 'projects',
-    component: () => import('@/components/website/Projects.vue')
+    component: () => import('@/components/Website/Projects.vue')
   },{
     path: '/experience',
     name: 'experience',
-    component: () => import('@/components/website/Experience.vue'),
+    component: () => import('@/components/Website/Experience.vue'),
     meta: { darkMode: false }
 
   },{
     path: '/services',
     name: 'services',
-    component: () => import('@/components/website/Services.vue')
+    component: () => import('@/components/Website/Services.vue')
   },{
     path: '/contact',
     name: 'contact',
-    component: () => import('@/components/website/Contact.vue')
+    component: () => import('@/components/Website/Contact.vue')
   },{
     path: '/resume',
     name: 'resume',
-    component: () => import('@/components/website/Home.vue')
+    component: () => import('@/components/Website/Home.vue')
   }
   
 
