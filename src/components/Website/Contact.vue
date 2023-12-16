@@ -2,8 +2,8 @@
     <div class=" py-10 project-background">
         <Navbar />
 
-        <div class="lg:flex flex-col justify-center items-center px-12 lg:px-12 ">
-            <div class=" mx-5 lg:mx-20 lg:w-[1200px] w-full max-w-full">
+        <div class="lg:flex flex-col justify-center items-center px-4 md:px-12 lg:px-12 ">
+            <div class=" md:mx-5 lg:mx-20 lg:w-[1200px] w-full max-w-full">
                 <div class="text-[40px] text-white  flex items-center pb-4">
                     <div class=" mt-16">
                         <p class="text-3xl text-white font-[800]">CONTACT</p>
@@ -15,7 +15,7 @@
                     </div>
                 </div>
 
-                <div class="lg:flex lg:justify-center ">
+                <div class="flex  flex-col-reverse md:flex-row lg:justify-center ">
                     <div class="mt-8">
                         <h1 class="contact-text text-white text-2xl font-bold" :class="{ 'contacts': isDarkMode }">Contact
                             info</h1>

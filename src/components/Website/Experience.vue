@@ -15,7 +15,7 @@
                 <div class="experience-bg flex justify-between w-full max-w-full  md:w-[700px] cursor-pointer mt-4">
                     <div v-for="category in  categories " :key="category" @click="filterStack(category)"
                         :class="{ active: selectedCategory === category }"
-                        class="experience cursor-pointer flex py-3 text-[white] text-base md:text-[18px] w-[50%] text-center px-4 justify-center ">
+                        class="experience cursor-pointer flex py-3 text-[white] text-[10px] md:text-[18px] w-[50%] text-center px-2 md:px-4 justify-center ">
                         {{ category }}
                     </div>
                 </div>
@@ -33,8 +33,9 @@
                 <div class="stack-tech-ul stack-tech-li">
                     <div v-for=" stack  in  filteredStack " :key="stack.id" class="stack-tech-li  stackssa">
 
-                        <h5 class="font-bold text-[40px] text-black texting-black" :class="{ 'texting': !isDarkMode }">{{
-                            stack.year }}</h5>
+                        <h5 class="font-bold text-2xl md:text-[40px] mb-6 text-black texting-black"
+                            :class="{ 'texting': !isDarkMode }">{{
+                                stack.year }}</h5>
                         <p class=" text-white font-extrabold"
                             :class="{ 'dark-mode': isDarkMode ? ' text-grad' : !isDarkMode }">{{ stack.company }}</p>
                         <p class=" mb-8" :class="{ 'dark-mode': isDarkMode ? ' text-gradient' : !isDarkMode }">{{
@@ -49,7 +50,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <p class="text-gradient ml-4 leading-[30px] font-medium"
+                                    <p class="text-gradient ml-4 leading-[30px] font-medium text-[12px] md:text-[16px]"
                                         :class="{ 'text-gradient': isDarkMode }">
                                         {{
                                             job
@@ -275,7 +276,6 @@ export default {
     background: linear-gradient(65deg, #181818 4.18% #181818 116.91%);
     /* background-color: #18181881; */
     padding: 20px;
-    height: 380px;
     max-height: 100%;
 
 
@@ -315,5 +315,8 @@ export default {
         gap: 30px;
     }
 
+    .active {
+        font-size: 10px;
+    }
 }
 </style>

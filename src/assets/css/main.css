@@ -230,3 +230,8 @@ input::placeholder {
     top: 0;
     text-align: center;
 }
+
+.el-button {
+    height: 0px !important;
+    padding: 0px !important;
+}

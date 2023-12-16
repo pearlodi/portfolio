@@ -18,7 +18,7 @@
                 <div class="experience-bg flex justify-between w-full max-w-full  md:w-[700px] cursor-pointer mt-4">
                     <div v-for="category in  categories " :key="category" @click="filterStack(category)"
                         :class="{ active: selectedCategory === category }"
-                        class="experience cursor-pointer flex py-3 text-[white] text-base md:text-[18px] w-[50%] text-center px-4 justify-center ">
+                        class="experience cursor-pointer flex py-3 text-[white] text-[12px] md:text-[18px] w-[50%] text-center px-4 justify-center ">
                         {{ category }}
                     </div>
                 </div>
@@ -27,7 +27,7 @@
                 <div class="experience-bg-black flex justify-between w-full max-w-full  md:w-[700px] cursor-pointer mt-4">
                     <div v-for="category in  categories " :key="category" @click="filterStack(category)"
                         :class="{ activeDark: selectedCategory === category }"
-                        class="experience-dark text-[black] cursor-pointer flex py-3 text-base md:text-[18px] w-[50%] text-center px-4 justify-center">
+                        class="experience-dark text-[black] cursor-pointer flex py-3 text-sm md:text-[18px] w-[50%] text-center px-4 justify-center">
                         {{ category }}
                     </div>
                 </div>
@@ -35,12 +35,13 @@
             <div class="tech-list mt-8 stack-tech-li">
                 <div class="stack-tech-ul stack-tech-li">
                     <div v-for="stack in filteredStack" :key="stack.id" class="stack-tech-li  stackssa">
-                        <h5 class="font-bold text-[40px] text-black texting-black" :class="{ 'texting': !isDarkMode }">{{
-                            stack.year }}</h5>
+                        <h5 class="font-bold text-xl md:text-[40px] text-black texting-black"
+                            :class="{ 'texting': !isDarkMode }">{{
+                                stack.year }}</h5>
                         <img :src="stack.url" alt="image" class="h-full  md:h-[270px] max-h-full w-full rounded-xl" />
-                        <div class="pt-4 flex justify-between">
+                        <div class="pt-4 flex justify-between items-center">
                             <a :href="stack.link" target="_blank">
-                                <p class="text-[white] font-bold">Visit {{ stack.company }}</p>
+                                <p class="text-[white] font-bold text-[12px] md:text-lg">Visit {{ stack.company }}</p>
 
                             </a>
                             <p class="about-text mb-2 cursor-pointer">
@@ -395,6 +396,7 @@ export default {
     padding: 6px;
     font-weight: 600;
 
+
 }
 
 .dark-mode .activeDark {
@@ -530,6 +532,10 @@ export default {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+    }
+
+    .active {
+        font-size: 12px;
     }
 
 }
