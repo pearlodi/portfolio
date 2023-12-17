@@ -1,50 +1,64 @@
 <template>
     <div>
-        <ul class="flex justify-end pr-20">
+        <div class="flex md:hidden justify-end">
+            <div class="w-5 h-5 mr-4 mt-4" @click="toggleGreeting" v-if="!displayHello">
+                <img src="../assets/img/app.png" alt="menu" class="w-full h-full" />
+            </div>
+            <div v-else>
+
+            </div>
+        </div>
+        <ul class="md:flex justify-end pr-6 md:pr-20 nav"
+            :class="{ 'hidden': !displayHello, 'flex flex-col fixed   w-[60%] text-[white] py-6 pl-8 ': displayHello }">
+            <div v-if="!displayHello" class="hidden ">
+
+            </div>
+            <div class="w-4 h-4 self-end" @click="toggleGreeting" v-else>
+                <img src="../assets/img/closed.png" alt="menu" class="w-full h-full self-end" />
+            </div>
+
+
             <router-link to="/" class="cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-sm font-bold cursor-pointer">
+                <li class="text-gradient text-sm font-bold cursor-pointer mt-6 md:mt-0">
                     Home
                 </li>
             </router-link>
-            <router-link to="/about" class="ml-8 cursor-pointer" active-class="active-link">
+            <router-link to="/about" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
                 <li class="text-gradient text-sm font-bold  cursor-pointer">
                     About
                 </li>
             </router-link>
-            <router-link to="/experience" class="ml-8 cursor-pointer" active-class="active-link">
+            <router-link to="/experience" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
                 <li class="text-gradient text-sm font-bold  cursor-pointer">
                     Experience
                 </li>
             </router-link>
-            <router-link to="/projects" class="ml-8 cursor-pointer " active-class="active-link">
+            <router-link to="/projects" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
                 <li class=" text-sm text-gradient font-bold  cursor-pointer">
                     Projects
                 </li>
             </router-link>
-            <router-link to="/contact" class="ml-8 cursor-pointer" active-class="active-link">
+            <router-link to="/contact" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
                 <li class="text-gradient text-sm font-bold  cursor-pointer">
                     Contact
                 </li>
             </router-link>
-            <router-link to="/resume" class="ml-8 cursor-pointer" active-class="active-link">
+            <router-link to="/resume" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
                 <li class="text-gradient text-sm font-bold  cursor-pointer">
                     Resume
                 </li>
             </router-link>
-            <p @click="toggleDarkMode" class="cursor-pointer">Toggle</p>
 
 
         </ul>
     </div>
 </template>
 
-
 <style scoped>
 .active-link {
 
     border-bottom: 4px solid #fff;
     padding-bottom: 4px;
-    background: linear-gradient(169deg, #fff 8.16%, #fff 150.61%);
     color: white;
     background: transparent !important;
     background-clip: text;
@@ -53,7 +67,6 @@
 }
 
 .active-link .text-gradient {
-    background: linear-gradient(169deg, #fff 8.16%, #fff 150.61%) !important;
     color: white !important;
     background: transparent !important;
     background-clip: text;
@@ -62,40 +75,52 @@
 
 }
 
-.dark-mode.active-link .text-gradient {
-    background: linear-gradient(169deg, #000 8.16%, #000 150.61%) !important;
-    color: black !important;
-    background: transparent !important;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: black;
+@media (max-width: 600px) {
+    .nav {
+        height: 100vh;
+        justify-content: flex-start;
+        z-index: 50;
+        border: 1px solid #FFFFFF60;
+        background: linear-gradient(111deg, rgba(255, 255, 255, .14) 1.21%, rgba(196, 196, 196, .02) 100%);
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+        animation: openNav 0.5s;
+    }
 
-}
+    .text-gradient {
+        color: black !important;
+        background: transparent !important;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: white;
+    }
 
-.dark-mode .active-link {
-    border-bottom: 4px solid black
+    .active-link {
+        border-bottom: none;
+    }
+
+    @keyframes openNav {
+        0% {
+            transform: translate(-100%);
+        }
+
+        100% {
+            transform: translate(0);
+        }
+    }
 }
 </style>
   
 <script>
-import App from '../App.vue';
 export default {
-
     data() {
         return {
-            isDarkMode: false // Initially, dark mode is off
+            displayHello: false
         };
     },
-    created() {
-        const storedPreference = localStorage.getItem('isDarkMode');
-        if (storedPreference) {
-            this.isDarkMode = JSON.parse(storedPreference);
-        }
-    },
     methods: {
-        toggleDarkMode() {
-            this.isDarkMode = !this.isDarkMode;
-            localStorage.setItem('isDarkMode', JSON.stringify(this.isDarkMode)); // Save preference
+        toggleGreeting() {
+            this.displayHello = !this.displayHello;
         }
     }
 };

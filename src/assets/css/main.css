@@ -1,30 +1,13 @@
-/* 
-.project-background {
-    background-size: cover;
-    min-height: 100vh;
-
-} */
 :root {
-    --el-dialog-bg-color: red !important;
-    --el-dialog-bg-color: blue !important;
+
     --el-dialog-width: 60% !important;
     --el-fill-color-light: transparent !important;
 }
 
-.el-dialog__headerbtn {
-    background-color: black !important;
-    border-radius: 100% !important;
-    color: white !important;
-}
 
 .el-icon svg {
-    color: white;
+    color: black !important;
 }
-
-
-/* .text-gradient {
-    color: red !important;
-} */
 
 .el-dialog {
     border-radius: 24px !important;
@@ -61,96 +44,6 @@
 
 }
 
-.light-project-background {
-    background: url(/src/assets/img/abitto.png);
-    background-size: cover;
-    min-height: 100vh;
-}
-
-/* .stack {
-    background: linear-gradient(111deg, red 1.21%, rgba(19, 0, 0, 0.02) 100%);
-    backdrop-filter: blur(15px);
-    border: 0.8px solid rgba(214, 251, 252, 0.06);
-}
-
-.stack-dark {
-    background: linear-gradient(111deg, green 1.21%, rgba(19, 0, 0, 0.02) 100%);
-    backdrop-filter: blur(15px);
-    border: 0.8px solid rgba(214, 251, 252, 0.06);
-} */
-
-
-.dark-mode p,
-h1,
-ul,
-li,
-
-input::placeholder {
-    background: linear-gradient(169deg, black 8.16%, black 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: black;
-}
-
-
-
-
-
-.dark-mode {
-    background: linear-gradient(169deg, black 8.16%, black 150.61%);
-
-}
-
-.lights-mode {
-    color: white !important;
-}
-
-.darks-mode {
-    color: black !important;
-}
-
-.about-dark-mode {
-    color: white !important;
-}
-
-.about-light-mode {
-    color: black !important;
-}
-
-.dark-mode {
-    background: linear-gradient(169deg, #505356 8.16%, white 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: red;
-}
-
-.dark-mode li {
-    background: linear-gradient(169deg, black 8.16%, black 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: red;
-}
-
-.dark-mode ::placeholder {
-    color: black;
-}
-
-.dark-mode .active-link {
-
-    border-bottom: 1px solid black
-}
-
-.light-mode {
-    background: linear-gradient(169deg, #505356 8.16%, white 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: black;
-}
-
-
 .text-gradient {
     background: linear-gradient(169deg, #505356 8.16%, #fff 150.61%);
     background-clip: text;
@@ -158,12 +51,7 @@ input::placeholder {
     -webkit-text-fill-color: transparent;
 }
 
-.dark-mode-gradient {
-    background: linear-gradient(169deg, red 8.16%, #fff 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .title-gradient {
     background: linear-gradient(169deg, #FFF 8.16%, #505356 150.61%);
@@ -178,8 +66,6 @@ input::placeholder {
     backdrop-filter: blur(15px);
     border: 0.8px solid rgba(214, 251, 252, 0.06);
 }
-
-
 
 .animate-left {
     width: 0;
@@ -234,4 +120,13 @@ input::placeholder {
 .el-button {
     height: 0px !important;
     padding: 0px !important;
+}
+
+
+@media (max-width: 600px) {
+
+    .el-dialog {
+        width: 95% !important;
+        padding: 0px !important;
+    }
 }

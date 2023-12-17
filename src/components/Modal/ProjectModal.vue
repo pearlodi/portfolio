@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="mt-8">
-                <Carousel :items-to-show="3" :wrap-around="true">
+                <Carousel :itemsToShow="isMobile ? 0.7 : 3" :wrap-around="true">
                     <Slide v-for="(slide, index) in itemImages" :key="String(index)">
                         <div class="carousel__item"><img :src="slide" alt="" /></div>
                     </Slide>
@@ -93,9 +93,17 @@ export default defineComponent({
             type: String,
             required: true
         }
+    },
+    computed: {
+        isMobile() {
+            return window.innerWidth < 768; // Adjust the breakpoint as needed
+        }
     }
 
+
 });
+
+
 
 </script>
 <style scoped>
@@ -106,6 +114,8 @@ export default defineComponent({
 .el-dialog {
     background-color: red !important;
     --el-dialog-title-font-size: 50px !important;
+    width: 90% !important;
+
 }
 
 .el-dialog__title {
@@ -120,11 +130,8 @@ export default defineComponent({
     gap: 10px !important;
 }
 
-.el-dialog__title:hover {
-    color: red !important;
-}
 
-.el-dialog {
-    width: 90% !important;
+image {
+    width: 60% !important;
 }
 </style>
