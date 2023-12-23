@@ -3,40 +3,24 @@
         <Navbar />
         <div class="mx-5 lg:mx-20">
             <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] mt-4 flex items-center pb-4">
-                <!-- <div class="line h-32 w-1">
-
-            </div> -->
-                <div class=" mt-20">
+                <div class=" mt-16">
                     <p class="text-3xl text-white font-[800]">SERVICES</p>
                     <div class="line h-1 w-[200px] mt-5">
                     </div>
-
                 </div>
             </div>
-            <div class="md:flex justify-center">
-
-                <div class="stack hidden md:flex flex-col justify-around  w-full max-w-full md:w-[1200px] cursor-pointer ">
+            <div class="md:flex  justify-center mt-8">
+                <div
+                    class="project-card hidden md:flex flex-col justify-around  w-full max-w-full md:w-[1200px] cursor-pointer ">
                     <div v-for="stack in   stacks  " :key="stack.id" class="">
-                        <!-- <img :src="stack.url" class="rounded-2xl" /> -->
-                        <h1 class="text-grad text-white text-[20px] text-center font-extrabold ">{{ stack.year }}</h1>
-
-
-
-
-
+                        <h1 class="text-grad text-white text-3xl text-center font-extrabold ">{{ stack.year }}</h1>
                     </div>
                 </div>
-                <div class="tech-list stack-tech-li md:ml-8">
+                <div class="tech-list stack-tech-li md:ml-8 mt-5">
                     <ul class="stack-tech-ul stack-tech-li">
-                        <li v-for="stack in   stacks  " :key="stack.id" class="stack-tech-li  stackssa">
-                            <!-- <img :src="stack.url" class="rounded-2xl" /> -->
+                        <li v-for="stack in   stacks  " :key="stack.id" class="stack-tech-li  project-card">
                             <p class="text-grad text-white text-[40px] font-extrabold">{{ stack.year }}</p>
-                            <p class="serve-text">{{ stack.serve }}</p>
-
-
-
-
-
+                            <p class="text-[#cfcfcf]">{{ stack.serve }}</p>
                         </li>
                     </ul>
                 </div>
@@ -47,11 +31,6 @@
 </template>
   
 <script>
-import ownage from '@/assets/img/ownage.png'
-import hmgls from '@/assets/img/hmgls.png'
-import abitto from '@/assets/img/abitto.png'
-import bhit from '@/assets/img/bhit.png'
-import tfs from '@/assets/img/tfs.png'
 import Navbar from '../Navbar.vue'
 
 
@@ -62,34 +41,15 @@ export default {
     data() {
         return {
             stacks: [
-                { id: 1, year: 'Web Design', serve: 'Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.' },
-
-                { id: 1, year: 'Transcription', serve: 'Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.' },
-                { id: 1, year: 'Content Creation', serve: 'Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.' },
-                { id: 1, year: 'Graphic Design', serve: 'Sit amet luctussd fav venenatis, lectus magna fringilla inis urna, porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim porttitor asna rhoncus dolor purus non enim aberitin praesent in elementum sahas facilisis leo, vel fringilla est etisam dignissim.' },
-
-
-
-
+                { id: 1, year: 'Web Design', serve: 'As an aspiring front-end web developer, I bring a strong foundation in React, Vue, and JavaScript, HTML and CSS to create engaging user interfaces. With a focus on responsive design principles, I craft intuitive and visually appealing websites that prioritize user experience. Proficient in front-end development, I am dedicated to honing my skills and contributing fresh perspectives to deliver dynamic and accessible web applications.' },
+                { id: 1, year: 'Transcription', serve: 'Offering precise transcription services, I transform audio and video content into accurate, readable text. With a keen ear for detail and advanced transcription tools, I ensure high-quality transcripts for interviews, meetings, podcasts, and various media formats. My commitment to confidentiality and quick turnaround times guarantees efficient delivery, tailored to meet your specific transcription needs.' },
+                { id: 1, year: 'Editing', serve: 'Proficient in editing and optimizing documents and spreadsheets using tools like Microsoft Word and Excel, I offer meticulous attention to detail to elevate the quality of your content. From formatting and proofreading to data organization and presentation design, I ensure documents and spreadsheets are polished, error-free, and structured for clarity and effectiveness. Let me enhance your materials to achieve professional and impactful results.' },
+                { id: 1, year: 'Design', serve: 'Specializing in graphic design with expertise in CorelDRAW, Photoshop, and other design tools, I bring creativity and precision to visual storytelling. From logo creation to marketing materials, I craft captivating designs tailored to your brands identity and vision. Whether it is digital illustrations, photo editing, or print design, I ensure each element is thoughtfully curated to leave a lasting impression and resonate with your audience.' },
             ],
             selectedCategories: 'Personl projects',
             categories: ['Colab', 'Personl projects'],
         };
     },
-    // computed: {
-    //     filteredStack() {
-    //         if (this.selectedCategory === 'all') {
-    //             return this.stacks;
-    //         } else {
-    //             return this.stacks.filter(stack => stack.category === this.selectedCategory);
-    //         }
-    //     },
-    // },
-    // methods: {
-    //     filterStack(category) {
-    //         this.selectedCategory = category;
-    //     },
-    // },
 };
 </script>
   
@@ -101,72 +61,16 @@ export default {
     -webkit-text-fill-color: transparent;
 }
 
-.active {
-    color: black;
-    border-radius: 16px;
-    text-align: center;
-    padding: 4px;
-    font-weight: 600;
-
-}
-
-
-.stack-tech-li {
-    align-items: center;
-
-}
-
-.stack {
-    border-radius: 16px;
-    background: linear-gradient(111deg, #ffffff00 1.21%, rgba(19, 0, 0, 0.02) 100%);
-    backdrop-filter: blur(15px);
-    border: 0.8px solid rgba(214, 251, 252, 0.06);
-    padding: 4px;
-
-
-}
-
 .stack-tech-ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
 
-.stackssa {
-    border-radius: 16px;
-    border: 3px solid rgba(62, 62, 62, 0.086);
-    background: linear-gradient(65deg, #181818 4.18% #181818 116.91%);
-    background-color: #18181881;
+.project-card {
     padding: 40px;
-
-
 }
 
-.text-grad {
-    background: linear-gradient(169deg, #505356 8.16%, #fff 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.text-grads {
-    background: linear-gradient(169deg, #FFF 8.16%, #505356 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Add AOS animation styles */
-[data-aos] {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-[data-aos].aos-animate {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 @media (max-width: 700px) {
     .stack-tech-ul {

@@ -52,20 +52,24 @@
                         </p>
                     </div>
                 </router-link>
-                <div
-                    class="cards-background flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                    <img src="@/assets/img/customer-service.png" class="w-10 h-10" alt="" />
-                    <p>
-                        CONTACT ME
-                    </p>
-                </div>
-                <div
-                    class="flex h-[132px] md:h-48 card   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                    <img src="@/assets/img/homes.png" class="w-10 h-10" alt="" />
-                    <p>
-                        MY RESUME
-                    </p>
-                </div>
+                <router-link to="/contact">
+                    <div
+                        class="cards-background flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        <img src="@/assets/img/customer-service.png" class="w-10 h-10" alt="" />
+                        <p>
+                            CONTACT ME
+                        </p>
+                    </div>
+                </router-link>
+                <router-link to="/resume">
+                    <div
+                        class="flex h-[132px] md:h-48 card   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        <img src="@/assets/img/homes.png" class="w-10 h-10" alt="" />
+                        <p>
+                            MY RESUME
+                        </p>
+                    </div>
+                </router-link>
             </div>
 
         </div>

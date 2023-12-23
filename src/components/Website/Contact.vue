@@ -12,7 +12,7 @@
                     </div>
                 </div>
 
-                <div class="flex  flex-col-reverse md:flex-row lg:justify-center ">
+                <div class="flex items-center flex-col-reverse md:flex-row lg:justify-center ">
                     <div class="mt-8">
                         <h1 class="contact-text text-white text-2xl font-bold">Contact
                             info</h1>
@@ -71,19 +71,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:ml-32 mt-10 stack w-full max-w-full lg:w-[800px]">
-                        <form name="contact" method="POST" data-netlify="true"
+                    <div class="lg:ml-32 mt-10 project-card w-full max-w-full lg:w-[800px]">
+                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
                             class="flex flex-col bg-transparent p-4 lg:p-10">
-                            <input type="text" name="name" placeholder="Your Name" required class="portt p-2 text-white ">
+                            <!-- Hidden field for Netlify -->
+                            <input type="hidden" name="form-name" value="contact" />
+                            <input type="text" name="name" placeholder="Your Name" required class="portt p-2 text-white">
                             <input type="email" name="email" placeholder="Your Email" required
-                                class="portt p-2  mt-6 text-white">
+                                class="portt p-2 mt-6 text-white">
                             <input type="text" name="subject" placeholder="Your Subject" required
-                                class="portt p-2  mt-6 text-white">
+                                class="portt p-2 mt-6 text-white">
                             <textarea name="message" placeholder="Your Message" required
-                                class="portt p-2  mt-6 text-white h-[120px]"></textarea>
+                                class="portt p-2 mt-6 text-white h-[120px]"></textarea>
                             <div>
                                 <button type="submit"
-                                    class="mt-4 portt p-2 w-[200px] h-full text-white contact-button">Send</button>
+                                    class="mt-4 stack p-2 w-[200px] h-full text-white contact-button">Send</button>
                             </div>
                         </form>
 
@@ -117,9 +119,7 @@ export default {
     border-radius: 16px;
     backdrop-filter: blur(15px);
     border: 0.8px solid rgba(214, 251, 252, 0.06);
-    background: linear-gradient(169deg, black 8.16%, black 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
+    background: transparent;
 }
 
 .text-grad {

@@ -38,6 +38,11 @@
                     Projects
                 </li>
             </router-link>
+            <router-link to="/services" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
+                <li class=" text-sm text-gradient font-bold  cursor-pointer">
+                    Services
+                </li>
+            </router-link>
             <router-link to="/contact" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
                 <li class="text-gradient text-sm font-bold  cursor-pointer">
                     Contact

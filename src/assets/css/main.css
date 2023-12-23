@@ -122,6 +122,27 @@
     padding: 0px !important;
 }
 
+.project-card {
+    border-radius: 16px;
+    border: 0.8px solid rgba(255, 255, 255, 0.089);
+    background: linear-gradient(65deg, #181818 4.18% #181818 116.91%);
+    padding: 20px 20px;
+}
+
+.text-grad {
+    background: linear-gradient(169deg, #505356 8.16%, #fff 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-grads {
+    background: linear-gradient(169deg, #FFF 8.16%, #505356 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 @media (max-width: 600px) {
 

@@ -98,8 +98,8 @@ export default {
                     id: 4,
                     name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering',
                     category: 'Software Engineering',
-                    year: '2023',
-                    company: 'Personal Projects',
+                    year: '2022',
+                    company: 'IJI Technologies',
                     jobDescription: 'Web developer', jobWork: 'Create files for individuals thhat needs creating of the files needed',
                     jobs: ['Led the conceptualization, design, and implementation of a personal portfolio website using HTML, CSS, and JavaScript', 'Designed and developed a responsive web application leveraging React.js, focusing on intuitive user interfaces and seamless navigation.', 'Solely engineered a project UI utilizing Vue.js, ensuring optimal front-end functionality and performance']
                 },

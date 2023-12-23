@@ -22,11 +22,11 @@
                     </div>
                 </div>
             </div>
-            <div class="tech-list mt-8 stack-tech-li">
-                <div class="stack-tech-ul stack-tech-li">
-                    <div v-for="stack in filteredStack" :key="stack.id" class="stack-tech-li  stackssa">
-                        <h5 class="font-bold text-xl md:text-[40px] text-white">{{
-                            stack.year }}</h5>
+            <div class="tech-list mt-8 stack-tech-li ">
+                <div class="stack-tech-ul stack-tech-li ">
+                    <div v-for="stack in filteredStack" :key="stack.id" class="stack-tech-li  project-card p-10">
+                        <!-- <h5 class="font-bold text-xl md:text-[40px] text-white">{{
+                            stack.year }}</h5> -->
                         <img :src="stack.url" alt="image" class="h-full  md:h-[270px] max-h-full w-full rounded-xl mt-5" />
                         <div class="pt-4 flex justify-between items-center">
                             <a :href="stack.link" target="_blank">
@@ -392,19 +392,6 @@ export default {
     gap: 50px;
 }
 
-.stackssa {
-    border-radius: 16px;
-    border: 3px solid rgba(62, 62, 62, 0.086);
-    background: linear-gradient(65deg, #181818 4.18% #181818 116.91%);
-    padding: 10px 20px;
-}
-
-.text-grad {
-    background: linear-gradient(169deg, #505356 8.16%, #fff 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 @media (max-width: 600px) {
     .stack-tech-ul {
