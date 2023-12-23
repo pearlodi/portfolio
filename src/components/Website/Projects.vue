@@ -30,7 +30,8 @@
                         <img :src="stack.url" alt="image" class="h-full  md:h-[270px] max-h-full w-full rounded-xl mt-5" />
                         <div class="pt-4 flex justify-between items-center">
                             <a :href="stack.link" target="_blank">
-                                <p class="text-[white] font-bold text-[12px] md:text-lg">Visit {{ stack.company }}</p>
+                                <p class="text-[white] font-bold text-[12px] md:text-lg cursor-pointer">Visit {{
+                                    stack.company }}</p>
 
                             </a>
                             <p class="about-text mb-2 cursor-pointer">
@@ -241,6 +242,7 @@ export default {
                     company: 'Pearl',
                     jobDescription: 'Ecomm Project',
                     url: ecomm,
+                    link: 'https://pearlline.netlify.app/',
                     description: 'Developed a comprehensive e-commerce clothing application featuring a user-friendly interface and seamless browsing experience. Implemented essential functionalities such as product browsing, selection, and shopping cart management. Employed  technologies to ensure optimal performance and scalability."',
                     technologies:
                         [
@@ -268,6 +270,7 @@ export default {
                     year: '2023',
                     company: 'Movie App',
                     jobDescription: 'Movie App',
+                    link: 'https://moviefusion.netlify.app/',
                     url: movie, description: 'Engineered a comprehensive movie details application providing users with access to a vast database of films. Implemented functionalities for users to browse, search, and explore detailed information about movies, including cast, crew, synopses, and reviews. Utilized intuitive design principles to enhance user experience and integrated APIs to fetch real-time data. Ensured seamless navigation and efficient data presentation to deliver an engaging movie exploration platform.',
                     technologies:
                         [
@@ -297,6 +300,7 @@ export default {
                     company: 'Portfolio',
                     jobDescription: 'Web developer',
                     url: home,
+                    link: 'https://pearlportfolio.netlify.app/',
                     description: 'This is where design meets functionality. Welcome to my portfolio—a showcase of carefully crafted web designs aimed at enhancing user experiences. Each project represents a blend of creativity and practicality, meticulously designed to engage and delight visitors. Explore a collection of projects that prioritize intuitive interfaces and seamless navigation. From concept to execution, my focus remains on delivering web experiences that are not just visually appealing but also user-friendly.',
                     technologies:
                         [
@@ -321,6 +325,7 @@ export default {
                     company: 'Pod Arts',
                     jobDescription: 'Web developer',
                     url: pods,
+                    link: 'https://podarts.netlify.app/',
                     description: 'Crafted a compelling landing page tailored for podcast transcribers, providing a streamlined gateway to transcription services. Designed an impactful and concise interface that immediately communicates the benefits and services offered to potential users. Implemented a user-centric design, focusing on clear call-to-action elements to encourage engagement and conversion.',
                     technologies:
                         [

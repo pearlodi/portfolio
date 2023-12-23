@@ -17,7 +17,7 @@
             <div class="card-details bg-opacity-90 max-w-full w-full pb-1 mt-12">
                 <router-link to="/about">
                     <div
-                        class="cards-background flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
                         <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
                         <p>
                             ABOUT ME
@@ -26,7 +26,7 @@
                 </router-link>
                 <router-link to="/experience">
                     <div
-                        class="cards-background flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
                         <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
                         <p>
                             EXPERIENCE
@@ -35,7 +35,7 @@
                 </router-link>
                 <router-link to="/projects">
                     <div
-                        class="cards-background flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
                         <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
                         <p>
                             PROJECTS
@@ -45,7 +45,7 @@
 
                 <router-link to="/services">
                     <div
-                        class="cards-background flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
                         <img src="@/assets/img/about.png" class="w-10 h-10" alt="" />
                         <p>
                             SERVICES
@@ -54,7 +54,7 @@
                 </router-link>
                 <router-link to="/contact">
                     <div
-                        class="cards-background flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
                         <img src="@/assets/img/customer-service.png" class="w-10 h-10" alt="" />
                         <p>
                             CONTACT ME
@@ -63,7 +63,7 @@
                 </router-link>
                 <router-link to="/resume">
                     <div
-                        class="flex h-[132px] md:h-48 card   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="flex cursor-pointer h-[132px] md:h-48 card   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
                         <img src="@/assets/img/homes.png" class="w-10 h-10" alt="" />
                         <p>
                             MY RESUME
