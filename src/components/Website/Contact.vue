@@ -72,10 +72,7 @@
                         </div>
                     </div>
                     <div class="lg:ml-32 mt-10 project-card w-full max-w-full lg:w-[800px]">
-                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-                            class="flex flex-col bg-transparent p-4 lg:p-10">
-                            <!-- Hidden field for Netlify -->
-                            <input type="hidden" name="form-name" value="contact" />
+                        <form name="contact" netlify class="flex flex-col bg-transparent p-4 lg:p-10">
                             <input type="text" name="name" placeholder="Your Name" required class="portt p-2 text-white">
                             <input type="email" name="email" placeholder="Your Email" required
                                 class="portt p-2 mt-6 text-white">

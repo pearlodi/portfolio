@@ -239,7 +239,7 @@ export default {
                     id: 6,
                     name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences', category: 'Personal Projects',
                     year: '2023',
-                    company: 'Pearl',
+                    company: 'Pearlline',
                     jobDescription: 'Ecomm Project',
                     url: ecomm,
                     link: 'https://pearlline.netlify.app/',
