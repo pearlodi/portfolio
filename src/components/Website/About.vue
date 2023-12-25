@@ -207,11 +207,12 @@
 
 <script>
 import { Vue3Marquee } from 'vue3-marquee'
-import companies3 from "@/assets/img/react.svg"
 import companies4 from "@/assets/img/figma.svg"
-import companies5 from "@/assets/img/figma.svg"
-import companies1 from "@/assets/img/java.svg"
-import companies2 from "@/assets/img/docker.svg"
+import companies1 from "@/assets/img/react.svg"
+import companies2 from "@/assets/img/vue.svg"
+import companies6 from "@/assets/img/java.svg"
+import companies3 from "@/assets/img/git.svg"
+import companies7 from "@/assets/img/docker.svg"
 import Navbar from '../Navbar.vue'
 
 export default {
@@ -225,23 +226,29 @@ export default {
             cards: [
                 {
                     url: companies1,
-                    stack: "react",
+                    stack: "React",
                 },
                 {
                     url: companies2,
-                    stack: "figma",
-                },
-                {
-                    url: companies3,
-                    stack: "react",
+                    stack: "Vue",
                 },
                 {
                     url: companies4,
+                    stack: "Figma",
+                },
+                {
+                    url: companies6,
                     stack: "java",
                 },
                 {
-                    url: companies5,
-                    stack: "docker",
+                    url: companies7,
+                    stack: "Docker",
+                }, {
+                    url: companies6,
+                    stack: "JavaScript",
+                }, {
+                    url: companies3,
+                    stack: "Github",
                 },
 
             ],

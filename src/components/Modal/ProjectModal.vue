@@ -1,5 +1,5 @@
 <template>
-    <el-button text @click="centerDialogVisible = true">
+    <el-button text @click="centerDialogVisible = true" class="cursor-pointer">
         Project Details
     </el-button>
 
