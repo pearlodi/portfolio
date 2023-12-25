@@ -236,10 +236,7 @@ export default {
                     url: companies4,
                     stack: "Figma",
                 },
-                {
-                    url: companies6,
-                    stack: "java",
-                },
+
                 {
                     url: companies7,
                     stack: "Docker",
