@@ -58,16 +58,19 @@
                             <h1 class="contact-text text-2xl font-bold text-white">Social info</h1>
                             <div class="flex mt-8">
                                 <div class="stack p-40">
-                                    <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                                        <img src="@/assets/img/github.png" class="p-3 w-full h-full" alt="contact" />
-                                    </div>
+                                    <a href="https://www.linkedin.com/in/odipearl/">
+                                        <div class=" w-[50px] h-[50px] flex justify-center items-center">
+                                            <img src="@/assets/img/github.png" class="p-3 w-full h-full" alt="contact" />
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="stack p- ml-8">
-                                    <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                                        <img src="@/assets/img/linkedin.png" class="p-3 w-full h-full" alt="contact" />
+                                <a href="https://github.com/pearlodi">
+                                    <div class="stack p- ml-8">
+                                        <div class=" w-[50px] h-[50px] flex justify-center items-center">
+                                            <img src="@/assets/img/linkedin.png" class="p-3 w-full h-full" alt="contact" />
+                                        </div>
                                     </div>
-                                </div>
-
+                                </a>
                             </div>
                         </div>
                     </div>
