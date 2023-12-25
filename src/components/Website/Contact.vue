@@ -60,7 +60,7 @@
                                 <div class="stack p-40 cursor-pointer">
                                     <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
                                         <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                                            <img src="@/assets/img/github.png" class="p-3 w-full h-full cursor-pointer"
+                                            <img src="@/assets/img/linkedin.png" class="p-3 w-full h-full cursor-pointer"
                                                 alt="contact" />
                                         </div>
                                     </a>
@@ -68,7 +68,7 @@
                                 <a href="https://github.com/pearlodi" target="_blank">
                                     <div class="stack p- ml-8 cursor-pointer">
                                         <div class=" w-[50px] h-[50px] flex justify-center items-center ">
-                                            <img src="@/assets/img/linkedin.png" class="p-3 w-full h-full cursor-pointer"
+                                            <img src="@/assets/img/github.png" class="p-3 w-full h-full cursor-pointer"
                                                 alt="contact" />
                                         </div>
                                     </div>
