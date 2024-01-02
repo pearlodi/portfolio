@@ -131,19 +131,19 @@ export default {
                     category: 'Other Experiences',
                     year: '2020',
                     company: 'Royale Concept',
-                    jobDescription: 'Web developer',
+                    jobDescription: 'Computer Operatot',
                     jobWork: 'Create files for individuals thhat needs creating',
                     jobs: ['Transferred data from paper formats into computer files or database systems and Updated existing databases.', 'Created, Compiled, verified, and sorted information into spreadsheets with large number of figures.', 'Designed various graphics such as fliers, banners, brochure, event booklets etc. Using design tools like Corel draw, Photoshop etc']
                 },
-                {
-                    id: 8,
-                    name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences',
-                    category: 'Other Experiences',
-                    year: '2021',
-                    company: 'Dumo Skills Acquisition',
-                    jobDescription: 'Computer Instructor',
-                    jobWork: 'Create files for individuals thhat needs creating', jobs: ['Established key objectives for classes and Created curriculum to accomplish set objectives', 'Organized lectures for both practical classes and oral classes and also gave assesments to test the students', 'Taught courses on microsoft word, microsoft excel, microsoft powerpoint, microsoft publisher, corel draw and photoshop']
-                },
+                // {
+                //     id: 8,
+                //     name: 'I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences',
+                //     category: 'Other Experiences',
+                //     year: '2021',
+                //     company: 'Dumo Skills Acquisition',
+                //     jobDescription: 'Computer Instructor',
+                //     jobWork: 'Create files for individuals thhat needs creating', jobs: ['Established key objectives for classes and Created curriculum to accomplish set objectives', 'Organized lectures for both practical classes and oral classes and also gave assesments to test the students', 'Taught courses on microsoft word, microsoft excel, microsoft powerpoint, microsoft publisher, corel draw and photoshop']
+                // },
             ],
             selectedCategory: 'Software Engineering',
             categories: ['Software Engineering', 'Other Experiences'],
