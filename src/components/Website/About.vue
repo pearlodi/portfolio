@@ -153,7 +153,7 @@
                                     <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
                                     </div>
                                 </div>
-                                <p class="text-gradient  ml-4">Web Development</p>
+                                <p class="text-gradient  ml-4">Front-end Web Development</p>
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
@@ -174,15 +174,9 @@
                                     <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
                                     </div>
                                 </div>
-                                <p class="text-gradient  ml-4"> Content Writing</p>
+                                <p class="text-gradient  ml-4"> Technical Writing</p>
                             </div>
-                            <div class="mt-4 flex items-center">
-                                <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
-                                    </div>
-                                </div>
-                                <p class="text-gradient  ml-4"> Wordpress Developer</p>
-                            </div>
+                          
 
                         </div>
                     </div>
