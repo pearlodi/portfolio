@@ -38,9 +38,9 @@
                     Projects
                 </li>
             </router-link>
-            <router-link to="/services" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
+            <router-link to="/articles" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
                 <li class=" text-sm text-gradient font-bold  cursor-pointer">
-                    Services
+                    Articles
                 </li>
             </router-link>
             <router-link to="/contact" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">

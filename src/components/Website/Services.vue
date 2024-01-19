@@ -1,87 +1,129 @@
 <template>
-    <div class="project-background py-10">
-        <Navbar />
-        <div class="mx-5 lg:mx-20">
-            <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] mt-4 flex items-center pb-4">
-                <div class=" mt-16">
-                    <p class="text-3xl text-white font-[800]">SERVICES</p>
-                    <div class="line h-1 w-[200px] mt-5">
-                    </div>
-                </div>
-            </div>
-            <div class="md:flex  justify-center mt-8">
-                <div
-                    class="project-card hidden md:flex flex-col justify-around  w-full max-w-full md:w-[1200px] cursor-pointer ">
-                    <div v-for="stack in   stacks  " :key="stack.id" class="">
-                        <h1 class="text-grad text-white text-3xl text-center font-extrabold ">{{ stack.year }}</h1>
-                    </div>
-                </div>
-                <div class="tech-list stack-tech-li md:ml-8 mt-5">
-                    <ul class="stack-tech-ul stack-tech-li">
-                        <li v-for="stack in   stacks  " :key="stack.id" class="stack-tech-li  project-card">
-                            <p class="text-grad text-white text-[40px] font-extrabold">{{ stack.year }}</p>
-                            <p class="text-[#cfcfcf]">{{ stack.serve }}</p>
-                        </li>
-                    </ul>
-                </div>
+    <div class="project-background md:py-10 pb-10">
+        <div class="">
+            <Navbar />
 
+        </div>
+        <div class=" mx-5 md:mx-20">
+            <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4">
+                <div class=" mt-12">
+                    <p class="text-2xl md:text-3xl text-white font-[800]">ARTICLES</p>
+                    <div class="line h-1 w-[200px] mt-3 md:mt-5">
+                    </div>
+
+                </div>
             </div>
+
+
+            <div class="tech-list mt-8 stack-tech-li w-full">
+                <div class="stack-tech-ul stack-tech-li ">
+                    <div v-for="stack in stacks" :key="stack.id" class="stack-tech-li  project-card p-10">
+                        <p class="text-[white] font-bold text-sm md:text-lg  text-grad">{{
+                            stack.article }}</p>
+                        <div class="w-full h-fit">
+                            <img :src="stack.url" alt="image" class="h-full   max-h-full w-full rounded-xl mt-5" />
+                        </div>
+                        <div class="pt-4 flex justify-between items-center">
+                            <a :href="stack.link" target="_blank">
+                                <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article</p>
+
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </div>
 </template>
+
   
 <script>
-import Navbar from '../Navbar.vue'
+import Navbar from '../Navbar.vue';
+import hooks from '@/assets/img/articles/react-hooks.png'
+import com from '@/assets/img/articles/com.png'
+import jsx from '@/assets/img/articles/jsx.jpg'
+
+
+
 
 
 export default {
     components: {
         Navbar
     },
+
     data() {
         return {
             stacks: [
-                { id: 1, year: 'Web Design', serve: 'As an aspiring front-end web developer, I bring a strong foundation in React, Vue, and JavaScript, HTML and CSS to create engaging user interfaces. With a focus on responsive design principles, I craft intuitive and visually appealing websites that prioritize user experience. Proficient in front-end development, I am dedicated to honing my skills and contributing fresh perspectives to deliver dynamic and accessible web applications.' },
-                { id: 1, year: 'Transcription', serve: 'Offering precise transcription services, I transform audio and video content into accurate, readable text. With a keen ear for detail and advanced transcription tools, I ensure high-quality transcripts for interviews, meetings, podcasts, and various media formats. My commitment to confidentiality and quick turnaround times guarantees efficient delivery, tailored to meet your specific transcription needs.' },
-                { id: 1, year: 'Editing', serve: 'Proficient in editing and optimizing documents and spreadsheets using tools like Microsoft Word and Excel, I offer meticulous attention to detail to elevate the quality of your content. From formatting and proofreading to data organization and presentation design, I ensure documents and spreadsheets are polished, error-free, and structured for clarity and effectiveness. Let me enhance your materials to achieve professional and impactful results.' },
-                { id: 1, year: 'Design', serve: 'Specializing in graphic design with expertise in CorelDRAW, Photoshop, and other design tools, I bring creativity and precision to visual storytelling. From logo creation to marketing materials, I craft captivating designs tailored to your brands identity and vision. Whether it is digital illustrations, photo editing, or print design, I ensure each element is thoughtfully curated to leave a lasting impression and resonate with your audience.' },
+                {
+                    id: 1,
+                    url: jsx,
+                    link: 'https://dev.to/pearlodi/the-html-jsx-fusion-1dmc',
+                    article: 'The HTML - JSX Fusion',
+                },
+                {
+                    id: 2,
+                    url: hooks,
+                    link: 'https://dev.to/pearlodi/react-hooks-hal/edit',
+                    article: 'React Hooks',
+                }, {
+                    id: 3,
+                    url: com,
+                    link: 'https://dev.to/pearlodi/react-components-3oa2',
+                    article: 'React Components',
+                },
+
             ],
-            selectedCategories: 'Personl projects',
-            categories: ['Colab', 'Personl projects'],
+
         };
     },
+
 };
 </script>
   
 <style scoped>
-.serve-text {
-    background: linear-gradient(180deg, #FFF 0%, #505356 298.75%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.active {
+    background: linear-gradient(122deg, #FFF 30.71%, #505356 153.64%);
+    color: black;
+    border-radius: 16px;
+    text-align: center;
+    padding: 6px;
+    font-weight: 600;
+}
+
+.stack-tech-li {
+    align-items: center;
+
+}
+
+.experience-bg {
+    border-radius: 16px;
+    background: linear-gradient(111deg, #ffffff00 1.21%, rgba(19, 0, 0, 0.02) 100%);
+    backdrop-filter: blur(15px);
+    border: 0.8px solid rgba(214, 251, 252, 0.06);
+    padding: 0 12px;
+    align-items: center;
 }
 
 .stack-tech-ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-.project-card {
-    padding: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     .stack-tech-ul {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
     }
 
-    .stackssa {
-        padding: 12px;
+    .active {
+        font-size: 12px;
     }
-
 }
 </style>

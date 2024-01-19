@@ -29,10 +29,10 @@ const routes = [
             meta: { title: "Pearl - Experience" },
 
   },{
-    path: '/services',
-    name: 'services',
+    path: '/articles',
+    name: 'articles',
     component: () => import('@/components/Website/Services.vue'),
-        meta: { title: "Pearl - Services" },
+        meta: { title: "Pearl - Articles" },
 
   },{
     path: '/contact',

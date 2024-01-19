@@ -11,7 +11,7 @@
             </div>
 
             <div class="mt-4 md:w-[800px] w-full max-w-full">
-                <iframe src="/pearl.pdf" class="max-w-full w-full h-full iframe-container" title=""></iframe>
+                <iframe src="/resume.pdf" class="max-w-full w-full h-full iframe-container" title=""></iframe>
             </div>
         </div>
     </div>
