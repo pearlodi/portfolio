@@ -4,10 +4,10 @@
             <Navbar />
 
         </div>
-        <div class=" mx-5 md:mx-20">
-            <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4">
-                <div class=" mt-12">
-                    <p class="text-2xl md:text-3xl text-white font-[800]">ARTICLES</p>
+        <div class=" mx-5 md:mx-20 ">
+            <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4 ">
+                <div class=" mt-12 ">
+                    <p class="text-2xl md:text-3xl text-white font-[800] ">ARTICLES</p>
                     <div class="line h-1 w-[200px] mt-3 md:mt-5">
                     </div>
 
@@ -15,9 +15,9 @@
             </div>
 
 
-            <div class="tech-list mt-8 stack-tech-li w-full">
+            <div class="tech-list mt-8 stack-tech-li w-full ">
                 <div class="stack-tech-ul stack-tech-li ">
-                    <div v-for="stack in stacks" :key="stack.id" class="stack-tech-li  project-card p-10">
+                    <div v-for="stack in stacks" :key="stack.id" class="stack-tech-li  project-card p-10 ">
                         <p class="text-[white] font-bold text-sm md:text-lg  text-grad">{{
                             stack.article }}</p>
                         <div class="w-full h-fit">
@@ -45,6 +45,7 @@ import Navbar from '../Navbar.vue';
 import hooks from '@/assets/img/articles/react-hooks.png'
 import com from '@/assets/img/articles/com.png'
 import jsx from '@/assets/img/articles/jsx.jpg'
+import dom from '@/assets/img/articles/dom.png'
 
 
 
@@ -60,17 +61,22 @@ export default {
             stacks: [
                 {
                     id: 1,
+                    url: dom,
+                    link: '/dom.pdf',
+                    article: 'Dom Demystified',
+                }, {
+                    id: 2,
                     url: jsx,
                     link: 'https://dev.to/pearlodi/the-html-jsx-fusion-1dmc',
                     article: 'The HTML - JSX Fusion',
                 },
                 {
-                    id: 2,
+                    id: 3,
                     url: hooks,
                     link: 'https://dev.to/pearlodi/react-hooks-hal/edit',
                     article: 'React Hooks',
                 }, {
-                    id: 3,
+                    id: 4,
                     url: com,
                     link: 'https://dev.to/pearlodi/react-components-3oa2',
                     article: 'React Components',
@@ -92,7 +98,12 @@ export default {
     text-align: center;
     padding: 6px;
     font-weight: 600;
+
 }
+
+
+
+
 
 .stack-tech-li {
     align-items: center;
