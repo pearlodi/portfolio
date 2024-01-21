@@ -43,7 +43,7 @@
 <script>
 import Navbar from '../Navbar.vue';
 import hooks from '@/assets/img/articles/react-hooks.png'
-import com from '@/assets/img/articles/com.png'
+import com from '@/assets/img/articles/coms.png'
 import jsx from '@/assets/img/articles/jsx.jpg'
 import dom from '@/assets/img/articles/dom.png'
 
