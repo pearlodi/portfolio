@@ -20,7 +20,9 @@
                             <div class="flex items-center">
                                 <div class="stack p-40">
                                     <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                                        <img src="@/assets/img/gmail.png" class="p-3 w-full h-full" alt="contact" />
+                                        <img src="@/assets/img/gmail.png"
+                                            class="p-3 w-full h-full"
+                                            alt="contact" />
                                     </div>
                                 </div>
                                 <div class="ml-8">
@@ -32,7 +34,9 @@
                             <div class="flex items-center mt-8">
                                 <div class="stack p-40">
                                     <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                                        <img src="@/assets/img/phone.png" class="p-3 w-full h-full" alt="contact" />
+                                        <img src="@/assets/img/phone.png"
+                                            class="p-3 w-full h-full"
+                                            alt="contact" />
                                     </div>
                                 </div>
                                 <div class="ml-8">
@@ -44,7 +48,9 @@
                             <div class="flex items-center mt-8">
                                 <div class="stack p-40">
                                     <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                                        <img src="@/assets/img/location.png" class="p-3 w-full h-full" alt="contact" />
+                                        <img src="@/assets/img/location.png"
+                                            class="p-3 w-full h-full"
+                                            alt="contact" />
                                     </div>
                                 </div>
                                 <div class="ml-8">
@@ -58,17 +64,21 @@
                             <h1 class="contact-text text-2xl font-bold text-white">Social info</h1>
                             <div class="flex mt-8">
                                 <div class="stack p-40 cursor-pointer">
-                                    <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
+                                    <a href="https://www.linkedin.com/in/odipearl/"
+                                        target="_blank">
                                         <div class=" w-[50px] h-[50px] flex justify-center items-center">
-                                            <img src="@/assets/img/linkedin.png" class="p-3 w-full h-full cursor-pointer"
+                                            <img src="@/assets/img/linkedin.png"
+                                                class="p-3 w-full h-full cursor-pointer"
                                                 alt="contact" />
                                         </div>
                                     </a>
                                 </div>
-                                <a href="https://github.com/pearlodi" target="_blank">
+                                <a href="https://github.com/pearlodi"
+                                    target="_blank">
                                     <div class="stack p- ml-8 cursor-pointer">
                                         <div class=" w-[50px] h-[50px] flex justify-center items-center ">
-                                            <img src="@/assets/img/github.png" class="p-3 w-full h-full cursor-pointer"
+                                            <img src="@/assets/img/github.png"
+                                                class="p-3 w-full h-full cursor-pointer"
                                                 alt="contact" />
                                         </div>
                                     </div>
@@ -77,20 +87,33 @@
                         </div>
                     </div>
                     <div class="lg:ml-32 mt-10 project-card w-full max-w-full lg:w-[800px]">
-                        <form name="contact" netlify class="flex flex-col bg-transparent p-4 lg:p-10">
-                            <input type="text" name="name" placeholder="Your Name" required class="portt p-2 text-white">
-                            <input type="email" name="email" placeholder="Your Email" required
+                        <form name="contact"
+                            netlify
+                            class="flex flex-col bg-transparent p-4 lg:p-10">
+                            <input type="text"
+                                name="name"
+                                placeholder="Your Name"
+                                required
+                                class="portt p-2 text-white">
+                            <input type="email"
+                                name="email"
+                                placeholder="Your Email"
+                                required
                                 class="portt p-2 mt-6 text-white">
-                            <input type="text" name="subject" placeholder="Your Subject" required
+                            <input type="text"
+                                name="subject"
+                                placeholder="Your Subject"
+                                required
                                 class="portt p-2 mt-6 text-white">
-                            <textarea name="message" placeholder="Your Message" required
+                            <textarea name="message"
+                                placeholder="Your Message"
+                                required
                                 class="portt p-2 mt-6 text-white h-[120px]"></textarea>
                             <div>
                                 <button type="submit"
                                     class="mt-4 stack p-2 w-[200px] h-full text-white contact-button">Send</button>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>
@@ -98,7 +121,7 @@
     </div>
 </template>
 <script>
-import Navbar from '../Navbar.vue';
+import Navbar from '@/components/Navbar.vue';
 
 export default {
     components: {
@@ -136,5 +159,4 @@ export default {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: white;
-}
-</style>
+}</style>

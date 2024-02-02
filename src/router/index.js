@@ -8,42 +8,42 @@ const routes = [
   },  {
     path: '/contact',
     name: 'contact',
-    component: () => import('@/components/Website/Contact.vue'),
+    component: () => import('@/views/Contact.vue'),
             meta: { title: "Pearl - Contact" },
   },  {
     path: '/about',
     name: 'about',
-    component: () => import('@/components/Website/About.vue'),
+    component: () => import('@/views/About.vue'),
             meta: { title: "Pearl - About" },
 
   },{
     path: '/projects',
     name: 'projects',
-    component: () => import('@/components/Website/Projects.vue'),
+    component: () => import('@/views/Projects.vue'),
         meta: { title: "Pearl - Projects" },
 
   },{
     path: '/experience',
     name: 'experience',
-    component: () => import('@/components/Website/Experience.vue'),
+    component: () => import('@/views/Experience.vue'),
             meta: { title: "Pearl - Experience" },
 
   },{
     path: '/articles',
     name: 'articles',
-    component: () => import('@/components/Website/Services.vue'),
+    component: () => import('@/views/Services.vue'),
         meta: { title: "Pearl - Articles" },
 
   },{
     path: '/contact',
     name: 'contact',
-    component: () => import('@/components/Website/Contact.vue'),
+    component: () => import('@/views/Contact.vue'),
         meta: { title: "Pearl - Contact" },
 
   },{
     path: '/resume',
     name: 'resume',
-    component: () => import('@/components/Website/Home.vue'),
+    component: () => import('@/views/Home.vue'),
         meta: { title: "Pearl - Resume" },
 
   },

@@ -11,9 +11,11 @@
                         <p class="text-3xl text-white font-[800]">ABOUT ME</p>
                         <div>
                             <div>
-                                <div v-if="!isDarkMode" class="line h-1 w-full max-w-full md:w-[200px] mt-5">
+                                <div v-if="!isDarkMode"
+                                    class="line h-1 w-full max-w-full md:w-[200px] mt-5">
                                 </div>
-                                <div v-else class="bg-[black] h-1 w-full max-w-full md:w-[200px] mt-5">
+                                <div v-else
+                                    class="bg-[black] h-1 w-full max-w-full md:w-[200px] mt-5">
 
                                 </div>
                             </div>
@@ -22,11 +24,16 @@
                     </div>
                 </div>
 
-                <div class="md:w-[1000px] w-full max-w-full mt-4 stack rounded-xl" :class="{ 'stack-dark': isDarkMode }">
+                <div class="md:w-[1000px] w-full max-w-full mt-4 stack rounded-xl"
+                    :class="{ 'stack-dark': isDarkMode }">
                     <Vue3Marquee :pause-on-hover="true">
-                        <div class="index-a-trusted-companies-img gap-10 py-4 " v-for="avatar in cards" :key="avatar">
+                        <div class="index-a-trusted-companies-img gap-10 py-4 "
+                            v-for="avatar in cards"
+                            :key="avatar">
                             <div class="img-a flex items-center gap-4">
-                                <img :src="avatar.url" alt="stack Image" class="comp-img w-8 h-8 gap-18" />
+                                <img :src="avatar.url"
+                                    alt="stack Image"
+                                    class="comp-img w-8 h-8 gap-18" />
                                 <h4 class="text-gradient">{{ avatar.stack }}</h4>
                             </div>
                         </div>
@@ -107,35 +114,45 @@
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4"> Microsoft Word</p>
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4"> Microsoft Excel</p>
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4"> Microsoft PowerPoint</p>
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4"> Corel Draw</p>
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4">Microsoft Publisher</p>
@@ -150,33 +167,41 @@
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4">Front-end Web Development</p>
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4">Graphic Design</p>
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4">Transcription</p>
                             </div>
                             <div class="mt-4 flex items-center">
                                 <div>
-                                    <div><img src="@/assets/img/black-circle.png" class="w-2 h-2" alt="icons" />
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
                                     </div>
                                 </div>
                                 <p class="text-gradient  ml-4"> Technical Writing</p>
                             </div>
-                          
+
 
                         </div>
                     </div>
@@ -207,7 +232,7 @@ import companies2 from "@/assets/img/vue.svg"
 import companies6 from "@/assets/img/java.svg"
 import companies3 from "@/assets/img/git.svg"
 import companies7 from "@/assets/img/docker.svg"
-import Navbar from '../Navbar.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
     components: {

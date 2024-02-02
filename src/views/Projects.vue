@@ -15,7 +15,9 @@
             </div>
             <div>
                 <div class="experience-bg flex justify-between w-full max-w-full  md:w-[700px] cursor-pointer mt-4">
-                    <div v-for="category in  categories " :key="category" @click="filterStack(category)"
+                    <div v-for="category in  categories "
+                        :key="category"
+                        @click="filterStack(category)"
                         :class="{ active: selectedCategory === category }"
                         class="experience cursor-pointer flex py-3 text-[white] text-[12px] md:text-[18px] w-[50%] text-center px-4 justify-center ">
                         {{ category }}
@@ -24,20 +26,28 @@
             </div>
             <div class="tech-list mt-8 stack-tech-li ">
                 <div class="stack-tech-ul stack-tech-li ">
-                    <div v-for="stack in filteredStack" :key="stack.id" class="stack-tech-li  project-card p-10">
+                    <div v-for="stack in filteredStack"
+                        :key="stack.id"
+                        class="stack-tech-li  project-card p-10">
                         <!-- <h5 class="font-bold text-xl md:text-[40px] text-white">{{
                             stack.year }}</h5> -->
-                        <img :src="stack.url" alt="image" class="h-full  md:h-[270px] max-h-full w-full rounded-xl mt-5" />
+                        <img :src="stack.url"
+                            alt="image"
+                            class="h-full  md:h-[270px] max-h-full w-full rounded-xl mt-5" />
                         <div class="pt-4 flex justify-between items-center">
-                            <a :href="stack.link" target="_blank">
+                            <a :href="stack.link"
+                                target="_blank">
                                 <p class="text-[white] font-bold text-[12px] md:text-lg cursor-pointer">Visit {{
                                     stack.company }}</p>
 
                             </a>
                             <p class="about-text mb-2 cursor-pointer">
-                                <ProjectModal :itemProps="stack.company" :itemDescription="stack.description"
-                                    :itemTechnologies="stack.technologies" :itemLibraries="stack.libraries"
-                                    :itemImages="stack.images" :itemLinks="stack.link" />
+                                <ProjectModal :itemProps="stack.company"
+                                    :itemDescription="stack.description"
+                                    :itemTechnologies="stack.technologies"
+                                    :itemLibraries="stack.libraries"
+                                    :itemImages="stack.images"
+                                    :itemLinks="stack.link" />
                             </p>
                         </div>
 
@@ -60,49 +70,49 @@ import movie from '@/assets/img/movie.png'
 import ecomm from '@/assets/img/ecomm.png'
 import pods from '@/assets/img/pods1.png'
 import tfs from '@/assets/img/tfs.png'
-import ProjectModal from '../Modal/ProjectModal.vue'
-import Navbar from '../Navbar.vue'
-import home from '../../assets/img/port/home.png'
-import contact from '../../assets/img/port/contact.png'
-import about from '../../assets/img/port/about.png'
-import experience from '../../assets/img/port/experience.png'
-import resume from '../../assets/img/port/resume.png'
-import ssv1 from '../../assets/img/ssv/ssv1.png'
-import ssv2 from '../../assets/img/ssv/ssv2.png'
-import ssv3 from '../../assets/img/ssv/ssv3.png'
-import ssv4 from '../../assets/img/ssv/ssv4.png'
-import ssv5 from '../../assets/img/ssv/ssv5.png'
-import ownage1 from '../../assets/img/ownage/ownage1.png'
-import ownage2 from '../../assets/img/ownage/ownage2.png'
-import ownage3 from '../../assets/img/ownage/ownage3.png'
-import ownage4 from '../../assets/img/ownage/ownage4.png'
-import ownage5 from '../../assets/img/ownage/ownage5.png'
-import tfs1 from '../../assets/img/tfs/tfs1.png'
-import tfs2 from '../../assets/img/tfs/tfs2.png'
-import tfs3 from '../../assets/img/tfs/tfs3.png'
-import tfs4 from '../../assets/img/tfs/tfs4.png'
-import tfs5 from '../../assets/img/tfs/tfs5.png'
-import hmgl1 from '../../assets/img/hmgl/hmgl1.png'
-import hmgl2 from '../../assets/img/hmgl/hmgl2.png'
-import hmgl3 from '../../assets/img/hmgl/hmgl3.png'
-import hmgl4 from '../../assets/img/hmgl/hmgl4.png'
-import hmgl5 from '../../assets/img/hmgl/hmgl5.png'
-import ecomm1 from '../../assets/img/ecomm/ecomm1.png'
-import ecomm2 from '../../assets/img/ecomm/ecomm2.png'
-import ecomm3 from '../../assets/img/ecomm/ecomm3.png'
-import ecomm4 from '../../assets/img/ecomm/ecomm4.png'
-import ecomm5 from '../../assets/img/ecomm/ecomm5.png'
-import ecomm6 from '../../assets/img/ecomm/ecomm6.png'
-import movie1 from '../../assets/img/movie/movie1.png'
-import movie2 from '../../assets/img/movie/movie2.png'
-import movie3 from '../../assets/img/movie/movie3.png'
-import movie4 from '../../assets/img/movie/movie4.png'
-import movie5 from '../../assets/img/movie/movie5.png'
-import pods1 from '../../assets/img/pods/pods1.png'
-import pods2 from '../../assets/img/pods/pods2.png'
-import pods3 from '../../assets/img/pods/pods3.png'
-import pods4 from '../../assets/img/pods/pods4.png'
-import pods5 from '../../assets/img/pods/pods5.png'
+import ProjectModal from '@/components/Modal/ProjectModal.vue'
+import Navbar from '@/components/Navbar.vue'
+import home from '@/assets/img/port/home.png'
+import contact from '@/assets/img/port/contact.png'
+import about from '@/assets/img/port/about.png'
+import experience from '@/assets/img/port/experience.png'
+import resume from '@/assets/img/port/resume.png'
+import ssv1 from '@/assets/img/ssv/ssv1.png'
+import ssv2 from '@/assets/img/ssv/ssv2.png'
+import ssv3 from '@/assets/img/ssv/ssv3.png'
+import ssv4 from '@/assets/img/ssv/ssv4.png'
+import ssv5 from '@/assets/img/ssv/ssv5.png'
+import ownage1 from '@/assets/img/ownage/ownage1.png'
+import ownage2 from '@/assets/img/ownage/ownage2.png'
+import ownage3 from '@/assets/img/ownage/ownage3.png'
+import ownage4 from '@/assets/img/ownage/ownage4.png'
+import ownage5 from '@/assets/img/ownage/ownage5.png'
+import tfs1 from '@/assets/img/tfs/tfs1.png'
+import tfs2 from '@/assets/img/tfs/tfs2.png'
+import tfs3 from '@/assets/img/tfs/tfs3.png'
+import tfs4 from '@/assets/img/tfs/tfs4.png'
+import tfs5 from '@/assets/img/tfs/tfs5.png'
+import hmgl1 from '@/assets/img/hmgl/hmgl1.png'
+import hmgl2 from '@/assets/img/hmgl/hmgl2.png'
+import hmgl3 from '@/assets/img/hmgl/hmgl3.png'
+import hmgl4 from '@/assets/img/hmgl/hmgl4.png'
+import hmgl5 from '@/assets/img/hmgl/hmgl5.png'
+import ecomm1 from '@/assets/img/ecomm/ecomm1.png'
+import ecomm2 from '@/assets/img/ecomm/ecomm2.png'
+import ecomm3 from '@/assets/img/ecomm/ecomm3.png'
+import ecomm4 from '@/assets/img/ecomm/ecomm4.png'
+import ecomm5 from '@/assets/img/ecomm/ecomm5.png'
+import ecomm6 from '@/assets/img/ecomm/ecomm6.png'
+import movie1 from '@/assets/img/movie/movie1.png'
+import movie2 from '@/assets/img/movie/movie2.png'
+import movie3 from '@/assets/img/movie/movie3.png'
+import movie4 from '@/assets/img/movie/movie4.png'
+import movie5 from '@/assets/img/movie/movie5.png'
+import pods1 from '@/assets/img/pods/pods1.png'
+import pods2 from '@/assets/img/pods/pods2.png'
+import pods3 from '@/assets/img/pods/pods3.png'
+import pods4 from '@/assets/img/pods/pods4.png'
+import pods5 from '@/assets/img/pods/pods5.png'
 
 
 

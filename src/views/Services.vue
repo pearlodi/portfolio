@@ -17,14 +17,19 @@
 
             <div class="tech-list mt-8 stack-tech-li w-full ">
                 <div class="stack-tech-ul stack-tech-li ">
-                    <div v-for="stack in stacks" :key="stack.id" class="stack-tech-li  project-card p-10 ">
+                    <div v-for="stack in stacks"
+                        :key="stack.id"
+                        class="stack-tech-li  project-card p-10 ">
                         <p class="text-[white] font-bold text-sm md:text-lg  text-grad">{{
                             stack.article }}</p>
                         <div class="w-full h-fit">
-                            <img :src="stack.url" alt="image" class="h-full   max-h-full w-full rounded-xl mt-5" />
+                            <img :src="stack.url"
+                                alt="image"
+                                class="h-full   max-h-full w-full rounded-xl mt-5" />
                         </div>
                         <div class="pt-4 flex justify-between items-center">
-                            <a :href="stack.link" target="_blank">
+                            <a :href="stack.link"
+                                target="_blank">
                                 <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article</p>
 
                             </a>
@@ -41,7 +46,7 @@
 
   
 <script>
-import Navbar from '../Navbar.vue';
+import Navbar from '@/components/Navbar.vue';
 import hooks from '@/assets/img/articles/react-hooks.png'
 import com from '@/assets/img/articles/coms.png'
 import jsx from '@/assets/img/articles/jsx.jpg'
@@ -136,5 +141,4 @@ export default {
     .active {
         font-size: 12px;
     }
-}
-</style>
+}</style>

@@ -18,7 +18,9 @@
                 <router-link to="/about">
                     <div
                         class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                        <img src="@/assets/img/about-img.png" class="w-10 h-10" alt="" />
+                        <img src="@/assets/img/about-img.png"
+                            class="w-10 h-10"
+                            alt="" />
                         <p>
                             ABOUT ME
                         </p>
@@ -27,7 +29,9 @@
                 <router-link to="/experience">
                     <div
                         class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                        <img src="@/assets/img/experience-img.png" class="w-10 h-10" alt="" />
+                        <img src="@/assets/img/experience-img.png"
+                            class="w-10 h-10"
+                            alt="" />
                         <p>
                             EXPERIENCE
                         </p>
@@ -36,7 +40,9 @@
                 <router-link to="/projects">
                     <div
                         class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                        <img src="@/assets/img/idea.png" class="w-10 h-10" alt="" />
+                        <img src="@/assets/img/idea.png"
+                            class="w-10 h-10"
+                            alt="" />
                         <p>
                             PROJECTS
                         </p>
@@ -46,7 +52,9 @@
                 <router-link to="/articles">
                     <div
                         class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                        <img src="@/assets/img/articles-img.png" class="w-10 h-10" alt="" />
+                        <img src="@/assets/img/articles-img.png"
+                            class="w-10 h-10"
+                            alt="" />
                         <p>
                             ARTICLES
                         </p>
@@ -55,7 +63,9 @@
                 <router-link to="/contact">
                     <div
                         class="cards-background cursor-pointer flex h-[132px] md:h-48 card   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                        <img src="@/assets/img/contacts-img.png" class="w-10 h-10" alt="" />
+                        <img src="@/assets/img/contacts-img.png"
+                            class="w-10 h-10"
+                            alt="" />
                         <p>
                             CONTACT ME
                         </p>
@@ -64,7 +74,9 @@
                 <router-link to="/resume">
                     <div
                         class="flex cursor-pointer h-[132px] md:h-48 card   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
-                        <img src="@/assets/img/resume-img.png" class="w-10 h-10" alt="" />
+                        <img src="@/assets/img/resume-img.png"
+                            class="w-10 h-10"
+                            alt="" />
                         <p>
                             MY RESUME
                         </p>
@@ -75,6 +87,19 @@
         </div>
     </div>
 </template>
+
+
+<script>
+import Typewriter from "@/components/Typewriter.vue";
+import ProjectModal from "@/components/Modal/ProjectModal.vue";
+
+export default {
+    components: {
+        Typewriter,
+        ProjectModal
+    },
+};
+</script>
 
 <style>
 .card-details {
@@ -131,17 +156,4 @@
         box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.449);
     }
 
-}
-</style>
-
-<script>
-import Typewriter from "@/components/Typewriter.vue";
-import ProjectModal from "../components/Modal/ProjectModal.vue";
-
-export default {
-    components: {
-        Typewriter,
-        ProjectModal
-    },
-};
-</script>
+}</style>
