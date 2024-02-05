@@ -1,7 +1,7 @@
 <template>
     <div class="project-background flex flex-col  md:h-full items-center">
         <div class="flex flex-col  md:h-[100%] items-center w-[90%]">
-            <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-12 flex items-center pb-4">
+            <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-8 flex items-center pb-4">
                 <div class="line h-40 md:h-52 w-1">
                 </div>
                 <div class="ml-4 mt-4">
