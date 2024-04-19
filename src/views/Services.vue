@@ -20,12 +20,12 @@
                     <div v-for="stack in stacks"
                         :key="stack.id"
                         class="stack-tech-li  project-card p-10 ">
-                        <p class="text-[white] font-bold text-sm md:text-lg  text-grad">{{
+                        <p class="text-[white] font-[900] text-sm md:text-xl  text-grad">{{
                             stack.article }}</p>
                         <div class="w-full h-fit">
                             <img :src="stack.url"
                                 alt="image"
-                                class="h-full   max-h-full w-full rounded-xl mt-5" />
+                                class="h-full w-full   max-h-full  rounded-xl mt-5" />
                         </div>
                         <div class="pt-4 flex justify-between items-center">
                             <a :href="stack.link"
@@ -49,6 +49,8 @@
 import Navbar from '@/components/Navbar.vue';
 import hooks from '@/assets/img/articles/react-hooks.png'
 import com from '@/assets/img/articles/coms.png'
+import fingerprint from '@/assets/img/articles/fingerprint.jpg'
+import aos from '@/assets/img/articles/AOS.PNG'
 import jsx from '@/assets/img/articles/jsx.jpg'
 import dom from '@/assets/img/articles/dom.png'
 
@@ -86,7 +88,17 @@ export default {
                     link: 'https://dev.to/pearlodi/react-components-3oa2',
                     article: 'React Components',
                 },
-
+                {
+                    id: 5,
+                    url: fingerprint,
+                    link: 'https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/S1f1pjChp',
+                    article: 'Browser Fingerprinting',
+                },{
+                    id: 6,
+                    url: aos,
+                    link: 'https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp',
+                    article: 'Animate on scoll',
+                },
             ],
 
         };
@@ -105,9 +117,6 @@ export default {
     font-weight: 600;
 
 }
-
-
-
 
 
 .stack-tech-li {

@@ -19,37 +19,37 @@
 
 
             <router-link to="/" class="cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-sm font-bold cursor-pointer mt-6 md:mt-0">
+                <li class="text-gradient text-md font-bold cursor-pointer mt-6 md:mt-0">
                     Home
                 </li>
             </router-link>
             <router-link to="/about" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-sm font-bold  cursor-pointer">
+                <li class="text-gradient text-md font-bold  cursor-pointer">
                     About
                 </li>
             </router-link>
             <router-link to="/experience" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-sm font-bold  cursor-pointer">
+                <li class="text-gradient text-md font-bold  cursor-pointer">
                     Experience
                 </li>
             </router-link>
             <router-link to="/projects" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
-                <li class=" text-sm text-gradient font-bold  cursor-pointer">
+                <li class=" text-md text-gradient font-bold  cursor-pointer">
                     Projects
                 </li>
             </router-link>
             <router-link to="/articles" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
-                <li class=" text-sm text-gradient font-bold  cursor-pointer">
+                <li class=" text-md text-gradient font-bold  cursor-pointer">
                     Articles
                 </li>
             </router-link>
             <router-link to="/contact" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-sm font-bold  cursor-pointer">
+                <li class="text-gradient text-md font-bold  cursor-pointer">
                     Contact
                 </li>
             </router-link>
             <router-link to="/resume" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-sm font-bold  cursor-pointer">
+                <li class="text-gradient text-md font-bold  cursor-pointer">
                     Resume
                 </li>
             </router-link>
