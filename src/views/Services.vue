@@ -50,7 +50,7 @@ import Navbar from '@/components/Navbar.vue';
 import hooks from '@/assets/img/articles/react-hooks.png'
 import com from '@/assets/img/articles/coms.png'
 import fingerprint from '@/assets/img/articles/fingerprint.jpg'
-import aos from '@/assets/img/articles/AOS.PNG'
+import aos from '@/assets/img/articles/aos.PNG'
 import jsx from '@/assets/img/articles/jsx.jpg'
 import dom from '@/assets/img/articles/dom.png'
 
