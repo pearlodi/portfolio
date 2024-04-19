@@ -30,7 +30,7 @@
                         <div class="pt-4 flex justify-between items-center">
                             <a :href="stack.link"
                                 target="_blank">
-                                <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read {{ stack.article }}</p>
+                                <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article</p>
 
                             </a>
                         </div>
@@ -50,7 +50,7 @@ import Navbar from '@/components/Navbar.vue';
 import hooks from '@/assets/img/articles/react-hooks.png'
 import com from '@/assets/img/articles/coms.png'
 import fingerprint from '@/assets/img/articles/fingerprint.jpg'
-import aos from '@/assets/img/articles/aos.PNG'
+import aos from '@/assets/img/articles/aos.png'
 import jsx from '@/assets/img/articles/jsx.jpg'
 import dom from '@/assets/img/articles/dom.png'
 
