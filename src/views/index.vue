@@ -1,7 +1,7 @@
 <template>
     <div class="project-background flex flex-col  md:h-full items-center">
         <div class="flex flex-col  md:h-[100%] items-center w-[90%]">
-            <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-12 flex items-center pb-4">
+            <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-12 flex items-center">
                 <div class="line h-40 md:h-52 w-1">
                 </div>
                 <div class="ml-4 mt-4">
@@ -17,7 +17,9 @@
             <div class="card-details bg-opacity-90 max-w-full w-full pb-1 mt-12">
                 <router-link to="/about">
                     <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card  items-center rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card  items-center rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                        data-aos="zoom-out"
+                        >
                         <div class="w-10 md:w-14">
                             <img src="@/assets/img/about-img.png"
                             class="w-full h-full"
@@ -31,7 +33,8 @@
                 </router-link>
                 <router-link to="/experience">
                     <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                        data-aos="zoom-out">
                         <div class="w-10 md:w-14">
                             <img src="@/assets/img/experience-img.png"
                             class="w-full h-full"
@@ -44,7 +47,8 @@
                 </router-link>
                 <router-link to="/projects">
                     <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                        data-aos="zoom-out">
                        <div class="w-10 md:w-14">
                         <img src="@/assets/img/idea.png"
                             class="w-full h-full"
@@ -58,7 +62,8 @@
 
                 <router-link to="/articles">
                     <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                        data-aos="zoom-out">
                        <div  class="w-10 md:w-14 ">
                         <img src="@/assets/img/articles-img.png"
                             class="w-full h-full"
@@ -71,7 +76,8 @@
                 </router-link>
                 <router-link to="/contact">
                     <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                        data-aos="zoom-out">
                         <div  class="w-10 md:w-14 " >
                             <img src="@/assets/img/contacts-img.png"
                             class="w-full h-full"
@@ -84,7 +90,9 @@
                 </router-link>
                 <router-link to="/resume">
                     <div
-                        class="flex cursor-pointer h-[132px] md:h-44 card items-center   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4">
+                        class="flex cursor-pointer h-[132px] md:h-44 card items-center   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                        data-aos="zoom-out"
+                        >
                        <div  class="w-10 md:w-14 ">
                         <img src="@/assets/img/resume-img.png"
                             class="w-full h-full"
