@@ -1,7 +1,7 @@
 <template>
     <div class="project-background flex flex-col  md:h-full items-center">
         <div class="flex flex-col  md:h-[100%] items-center w-[90%]">
-            <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-12 flex items-center">
+            <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-10 md:mt-12 flex items-center">
                 <div class="line h-40 md:h-52 w-1">
                 </div>
                 <div class="ml-4 mt-4">
@@ -14,7 +14,7 @@
             </div>
 
 
-            <div class="card-details bg-opacity-90 max-w-full w-full pb-1 mt-12">
+            <div class="card-details bg-opacity-90 max-w-full w-full pb-1 mt-6 md:mt-12">
                 <router-link to="/about">
                     <div
                         class="cards-background cursor-pointer flex h-[132px] md:h-44 card  items-center rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
