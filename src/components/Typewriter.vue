@@ -10,7 +10,7 @@
 export default {
   data() {
     return {
-      texts: ["Web Developer", "Technical Writer"],
+      texts: ["Frontend Developer", "Technical Writer"],
       currentText: "",
     };
   },
