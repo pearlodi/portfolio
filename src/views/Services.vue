@@ -30,7 +30,7 @@
                         <div class="pt-4 flex justify-between items-center">
                             <a :href="stack.link"
                                 target="_blank">
-                                <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article</p>
+                                <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read {{ stack.article }}</p>
 
                             </a>
                         </div>
