@@ -89,7 +89,7 @@
                         data-aos-duration="2500"
                         >
                         <div  class="w-10 md:w-14 " >
-                            <img src="@/assets/img/contacts-img.png"
+                            <img src="@/assets/img/contacts.png"
                             class="w-full h-full"
                             alt="" />
                         </div>

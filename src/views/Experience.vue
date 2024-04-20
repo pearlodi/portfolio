@@ -21,6 +21,12 @@
             <div class="tech-list mt-8 experience-li">
                 <div class="experience-ul experience-li">
                     <div v-for=" stack  in  filteredStack " :key="stack.id" class="experience-li  experiences">
+                        <el-skeleton v-if="isLoading" style="width: 100%" animated>
+              <template #template>
+                <el-skeleton :rows="5" />
+              </template>
+            </el-skeleton>
+                      <div v-else>
                         <h5 class="font-bold text-2xl md:text-[40px] mb-4 text-white">{{
                             stack.year }}</h5>
                         <p class=" text-white font-extrabold">{{ stack.company }}</p>
@@ -42,6 +48,7 @@
                                 </div>
                             </div>
                         </div>
+                      </div>
 
                     </div>
                 </div>
@@ -59,8 +66,18 @@ export default {
     components: {
         Navbar
     },
+    mounted() {
+    setTimeout(() => {
+      this.filteredStack = [
+      ];
+      this.isLoading = false;
+    }, 2000);
+  },
+
     data() {
         return {
+            isLoading: true,
+      filteredStack: [],
             stacks: [
                 {
                     id: 2,

@@ -20,7 +20,29 @@
                     <div v-for="stack in stacks"
                         :key="stack.id"
                         class="stack-tech-li  project-card p-10 ">
-                        <p class="text-[white] font-[900] text-sm md:text-xl  text-grad">{{
+                        <el-skeleton v-if="isLoading" style="width: 100%" animated>
+              <template #template>
+                <el-skeleton-item variant="text" style="width: 30%" />
+                <el-skeleton-item
+                  variant="image"
+                  style="width: 100%; height: 250px; margin-top: 8px"
+                />
+                <div style="margin-top: 14px">
+                  <!-- <el-skeleton-item variant="p" style="width: 50%" /> -->
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                    "
+                  >
+                    <el-skeleton-item variant="text" style="width: 30%" />
+                  </div>
+                </div>
+              </template>
+            </el-skeleton>
+                        <div v-else>
+                            <p class="text-[white] font-[900] text-sm md:text-xl  text-grad">{{
                             stack.article }}</p>
                         <div class="w-full h-fit">
                             <img :src="stack.url"
@@ -33,6 +55,7 @@
                                 <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article</p>
 
                             </a>
+                        </div>
                         </div>
 
                     </div>
@@ -63,9 +86,18 @@ export default {
     components: {
         Navbar
     },
+    mounted() {
+    setTimeout(() => {
+      this.filteredStack = [
+      ];
+      this.isLoading = false;
+    }, 4000);
+  },
 
     data() {
         return {
+            isLoading: true,
+      filteredStack: [],
             stacks: [
                 {
                     id: 1,

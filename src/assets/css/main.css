@@ -4,6 +4,10 @@
     --el-fill-color-light: transparent !important;
 }
 
+.el-skeleton {
+    --el-skeleton-color: #494b4e !important;
+    --el-skeleton-to-color: #706e6e !important;
+}
 
 .el-icon svg {
     color: black !important;
