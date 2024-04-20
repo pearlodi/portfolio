@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 * {
-    cursor: url('@/assets/img/cursor.png'), auto !important;
+    cursor: pointer;
 }

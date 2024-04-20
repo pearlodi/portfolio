@@ -351,7 +351,7 @@ export default {
       this.filteredStack = [
       ];
       this.isLoading = false;
-    }, 3000);
+    }, 5000);
   },
 };
 </script>
