@@ -53,6 +53,7 @@ import fingerprint from '@/assets/img/articles/fingerprint.jpg'
 import aos from '@/assets/img/articles/aos.png'
 import jsx from '@/assets/img/articles/jsx.jpg'
 import dom from '@/assets/img/articles/dom.png'
+import table from '@/assets/img/articles/table.png'
 
 
 
@@ -95,6 +96,11 @@ export default {
                     article: 'Browser Fingerprinting',
                 },{
                     id: 6,
+                    url: table,
+                    link: 'https://pearlblogs.hashnode.dev/preview/65d47339394d92f7e4b39b51',
+                    article: 'Crafting dynamic tables',
+                },{
+                    id: 7,
                     url: aos,
                     link: 'https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp',
                     article: 'Animate on scoll',
