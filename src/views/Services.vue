@@ -25,7 +25,7 @@
                 <el-skeleton-item variant="text" style="width: 30%" />
                 <el-skeleton-item
                   variant="image"
-                  style="width: 100%; height: 250px; margin-top: 8px"
+                  style="width: 100%; height: 250px; margin-top: 8px; border-radius: 12px;"
                 />
                 <div style="margin-top: 14px">
                   <!-- <el-skeleton-item variant="p" style="width: 50%" /> -->
