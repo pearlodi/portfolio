@@ -50,7 +50,7 @@
                                     class="h-full w-full   max-h-full  rounded-xl mt-5" />
                             </div>
                                               <p class="text-[white] font-normal text-sm md:text-[15px] text-grad">
-  {{ stack.summary && stack.summary.length > 20 ? stack.summary.slice(0, 20) + '...' : stack.summary }}
+  {{ stack.summary && stack.summary.length > 100 ? stack.summary.slice(0, 100) + '...' : stack.summary }}
 </p>
 
                             <div class="pt-4 flex justify-between items-center">
