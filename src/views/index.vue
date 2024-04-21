@@ -69,7 +69,7 @@
                                 alt="" />
                         </div>
                         <p>
-                            ARTICLES
+                            BLOG
                         </p>
                     </div>
                 </router-link>
