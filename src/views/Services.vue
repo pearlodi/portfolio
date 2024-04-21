@@ -51,7 +51,10 @@
                             </div>
                             <div class="pt-4 flex justify-between items-center">
                                 <p class="text-[white] font-normal text-sm md:text-[14px] text-grad mt-4">
-                                  {{ stack.summary.length > 100 ? stack.summary.slice(0, 100) + '...' : stack.summary }}
+                                <p class="text-[white] font-[900] text-sm md:text-xl text-grad">
+  {{ stack.summary && stack.summary.length > 20 ? stack.summary.slice(0, 20) + '...' : stack.summary }}
+</p>
+
                                     </p>
 
                                 <a :href="stack.link"
