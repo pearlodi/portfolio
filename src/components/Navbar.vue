@@ -40,7 +40,7 @@
             </router-link>
             <router-link to="/articles" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
                 <li class=" text-md text-gradient font-bold  cursor-pointer">
-                    Articles
+                    Blog
                 </li>
             </router-link>
             <router-link to="/contact" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
