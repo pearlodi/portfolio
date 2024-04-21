@@ -49,14 +49,13 @@
                                     alt="image"
                                     class="h-full w-full   max-h-full  rounded-xl mt-5" />
                             </div>
-                            <div class="pt-4 flex justify-between items-center">
-                                <p class="text-[white] font-normal text-sm md:text-[14px] text-grad mt-4">
-                                <p class="text-[white] font-[900] text-sm md:text-xl text-grad">
+                                              <p class="text-[white] font-normal text-sm md:text-[15px] text-grad">
   {{ stack.summary && stack.summary.length > 20 ? stack.summary.slice(0, 20) + '...' : stack.summary }}
 </p>
 
-                                    </p>
-
+                            <div class="pt-4 flex justify-between items-center">
+                              
+                                
                                 <a :href="stack.link"
                                     target="_blank">
                                     <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article
