@@ -111,7 +111,7 @@ export default {
                     url: dom,
                     link: '/dom.pdf',
                     article: 'Dom Demystified',
-                    Summary: 'In this grand expedition, we will unravel the enigmatic world of Document Object Model (DOM)...',
+                    summary: 'In this grand expedition, we will unravel the enigmatic world of Document Object Model (DOM)...',
                 },
                   {
                     id: 2,
