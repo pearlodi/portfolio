@@ -130,7 +130,7 @@ export default {
                     url: com,
                     link: 'https://dev.to/pearlodi/react-components-3oa2',
                     article: 'React Components',
-                    summary: 'In React, components are like building blocks of a webpage. They are small, reusable pieces of code that handle specific tasks.,
+                    summary: 'In React, components are like building blocks of a webpage. They are small, reusable pieces of code that handle specific tasks.',
                 },
                 {
                     id: 5,
