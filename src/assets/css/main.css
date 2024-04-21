@@ -2,6 +2,57 @@
 
     --el-dialog-width: 60% !important;
     --el-fill-color-light: transparent !important;
+    --el-color-primary: white !important;
+}
+.el-tabs__active-bar 
+    {
+    background: linear-gradient(122deg, #FFF 30.71%, #505356 153.64%) !important;
+    border-radius: 16px !important;
+    text-align: center !important;
+    /* padding: 6px 6px !important; */
+    font-weight: 900 !important;
+    height: 100% !important;
+    z-index:0 !important;
+    width: 50% !important;
+    font-size: 40px !important;
+    
+}
+*::-webkit-scrollbar {
+    display: none; /* For Webkit browsers */
+}
+
+* {
+    scrollbar-width: none; /* For Firefox */
+    scroll-padding: 0 20px;
+}
+.el-tabs__item.is-active{
+    color: black !important;
+    text-align: center !important;
+
+}
+.el-tabs__header {
+    width: 100% !important;
+}
+.el-tabs__nav {
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+.el-tabs__item {
+    width: 50%;
+color: white !important;
+padding: 0px !important;
+font-size: 18px !important;
+height: 36px !important;
+}
+.el-tabs__header{
+    margin: 0 !important;
+}
+.el-tabs__nav-wrap::after{
+    background-color: transparent !important;
+}
+.el-tabs{
+    margin-bottom: 0px !important;
+    background-color: transparent !important;
 }
 
 .el-skeleton {
@@ -49,7 +100,7 @@
 }
 
 .text-gradient {
-    background: linear-gradient(169deg, #505356 8.16%, #fff 150.61%);
+    background: linear-gradient(169deg, #d3d4d5 8.16%, #fff 150.61%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,5 +204,12 @@
     .el-dialog {
         width: 95% !important;
         padding: 0px !important;
+    }
+    .el-tabs__item {
+        width: 50%;
+    color: white !important;
+    padding: 0px !important;
+height: 24px !important;
+font-size: 12px !important;
     }
 }

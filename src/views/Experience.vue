@@ -1,64 +1,53 @@
 <template>
-    <div class="md:py-10 pb-10 project-background">
+   <div class="md:py-10 pb-10 project-background">
         <Navbar />
         <div class=" mx-5 md:mx-20">
             <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4">
                 <div class="mt-8 md:mt-16">
                     <p class="text-2xl md:text-3xl text-white font-[800]">EXPERIENCE</p>
-                    <div class="line h-1 w-[200px] mt-3 md:mt-5">
-                    </div>
+                    <div class="line h-1 w-[200px] mt-3 md:mt-5"></div>
                 </div>
             </div>
             <div>
-                <div class="experience-bg flex justify-between w-full max-w-full  md:w-[700px] cursor-pointer mt-4">
-                    <div v-for="category in  categories " :key="category" @click="filterStack(category)"
-                        :class="{ active: selectedCategory === category }"
-                        class="experience cursor-pointer flex py-3 text-[white] text-[12px] md:text-[18px] w-[50%] text-center px-2 md:px-4 justify-center ">
-                        {{ category }}
-                    </div>
-                </div>
+                <el-tabs v-model="selectedCategory" id="tabs" class="experience-bg flex justify-between w-full max-w-full  md:w-[700px] cursor-pointer mt-4">
+                    <el-tab-pane v-for="category in categories" :key="category" :label="category" :name="category" class="experience cursor-pointer flex py-3  text-[12px] md:text-[18px] w-[50%] text-center  justify-center ">
+                    </el-tab-pane>
+                </el-tabs>
             </div>
             <div class="tech-list mt-8 experience-li">
-                <div class="experience-ul experience-li">
-                    <div v-for=" stack  in  filteredStack " :key="stack.id" class="experience-li  experiences">
+                <div class="experience-ul experience-li ">
+                    <div v-for="stack in filteredStack" :key="stack.id" class="experience-li  experiences h-full overflow-scroll ">
                         <el-skeleton v-if="isLoading" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton :rows="5" />
-              </template>
-            </el-skeleton>
-                      <div v-else>
-                        <h5 class="font-bold text-2xl md:text-[40px] mb-4 text-white">{{
-                            stack.year }}</h5>
-                        <p class=" text-white font-extrabold">{{ stack.company }}</p>
-                        <p class=" mb-6 text-gradient">{{
-                            stack.jobDescription }}</p>
-                        <div v-for="(job, index) in stack.jobs" :key="index" class="">
-                            <div class="flex items-center">
-                                <div>
-                                    <div class="flex flex-col items-center w-[12px]">
-                                        <img src="@/assets/img/black-circle.png" class="w-full md:h-[10px]" alt="circle" />
-                                        <div class="h-[30px] bg-[#ffffff1a] w-[0.5px]"></div>
+                            <template #template>
+                                <el-skeleton :rows="5" />
+                            </template>
+                        </el-skeleton>
+                        <div v-else >
+                            <h5 class="font-extrabold text-2xl md:text-[25px] mb-3 text-white">{{ stack.company }}</h5>
+                            <p class=" text-[#dededec9] font-extrabold">{{ stack.year }}</p>
+                            <p class=" mb-6 text-[#dededec9] font-medium">{{ stack.jobDescription }}</p>
+                            <div v-for="(job, index) in stack.jobs" :key="index">
+                                <div class="flex items-center">
+                                    <div>
+                                        <div class="flex flex-col items-center w-[12px]">
+                                            <img src="@/assets/img/black-circle.png" class="w-full md:h-[10px]" alt="circle" />
+                                            <div class="h-[30px] bg-[#ffffff1a] w-[0.5px]"></div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <p class="text-gradient ml-4 leading-[30px] font-medium text-[12px] md:text-[16px]">
-                                        {{
-                                            job
-                                        }} </p>
+                                    <div>
+                                        <p class="text-[#dededec9] ml-4 leading-[30px] font-normal text-[12px] md:text-[15px] ">{{ job }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
-
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
 
-  
+
 <script>
 
 import Navbar from '@/components/Navbar.vue';
@@ -67,38 +56,44 @@ export default {
         Navbar
     },
     mounted() {
-    setTimeout(() => {
-      this.filteredStack = [
-      ];
-      this.isLoading = false;
-    }, 2000);
-  },
+        setTimeout(() => {
+            this.filteredStack = [
+            ];
+            this.isLoading = false;
+        }, 500);
+    },
 
     data() {
         return {
             isLoading: true,
-      filteredStack: [],
+            filteredStack: [],
             stacks: [
                 {
                     id: 2,
                     name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering',
                     category: 'Software Engineering',
-                    year: '2023',
-                    company: 'Ownage Fidletech',
+                    year: 'July 2023 - Mar 2024',
+                    company: 'Ownage Fiditech',
                     jobDescription: 'Web developer (Intern)', jobWork: 'Create files for individuals thhat needs creating of the files needed',
                     jobs: [
-                        'Collaborated with professionals to the design and implementation of user-centric web interfaces leveraging HTML, CSS, and JavaScript, Vue and React.', 'Executed responsive web design techniques, ensuring compatibility across various devices and browsers for optimal user accessibility', ' Demonstrated adeptness in front-end frameworks such as React.js and Vue.js, applying these technologies to enhance user interactions and functionality'
+                        'Developed and optimized web applications by 20% using React.js and Vue.js to ensure seamless user experiences across devices.', 
+                        'Collaborated with UX designers and back-end developers to integrate front-end components with server-side logic via RESTful APIs.', 
+                        'Enhanced performance through implementation of asynchronous JavaScript loading techniques, lazy-loading images, and browser caching.',
+                        'Utilized Git for version control and participated in peer code reviews to improve team collaboration and code quality.'
                     ]
                 },
                 {
                     id: 2,
                     name: 'I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering',
                     category: 'Software Engineering',
-                    year: '2023',
+                    year: 'May 2023 - July 2023',
                     company: 'WeTech Mentorship',
                     jobDescription: 'Web developer (Contract)', jobWork: 'Create files for individuals thhat needs creating of the files needed',
                     jobs: [
-                        'Actively collaborated with  teams members to deliver solutions, integrating designs into responsive and optimized web applications.', 'Contributed to the creation of intuitive and visually appealing user interfaces, ensuring seamless user experiences across platforms', 'Actively pursued ongoing learning opportunities to stay updated with emerging front-end technologies and industry best practices.'
+                        'Developed responsive and optimized web applications using React.js, HTML, and CSS, contributing to a 40% improvement in user experience.',
+                         'Adapted quickly to new tools and frameworks, reducing development time by 20% and demonstrating a commitment to continuous learning.',
+                          'Incorporated mentor feedback to refine code quality and enhance user experience.',
+                          'Actively pursued ongoing learning opportunities to stay updated with industry best practices and emerging front-end technologies.'
                     ]
                 },
                 {
@@ -178,8 +173,11 @@ export default {
     },
 };
 </script>
-  
+
 <style scoped>
+#tabs{
+    padding: 8px !important;
+}
 .active {
     background: linear-gradient(122deg, #FFF 30.71%, #505356 153.64%);
     color: black;
@@ -187,6 +185,7 @@ export default {
     text-align: center;
     padding: 6px;
     font-weight: 600;
+   
 }
 
 .experience-li {
@@ -200,6 +199,8 @@ export default {
     border: 0.8px solid rgba(214, 251, 252, 0.06);
     padding: 0 12px;
     align-items: center;
+    box-shadow: 0 2px 2px 0px black;
+    color: #fbfbfb55;
 }
 
 

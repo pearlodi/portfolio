@@ -1,4 +1,3 @@
-
 <template>
     <div class="md:py-10 pb-10 project-background">
         <div>
@@ -40,18 +39,22 @@
                     </Vue3Marquee>
                 </div>
                 <div>
-                    <p class="text-gradient font-bold text-sm md:text-[18px] leading-8 mt-12 w-full max-w-full md:w-[1000px]"
+                    <p class="text-gradient font-bold text-sm md:text-[16px] leading-8 mt-12 w-full max-w-full md:w-[1000px]"
                         :class="{ '': !isDarkMode, 'dark-mode': isDarkMode }">
-                        I am a self-motivated individual with a strong passion for software engineering.
+                        <strong>HEY THERE  🌟</strong> 
                         <br>
-                        My technical expertise of about two years extends to HTML, CSS, JavaScript, React.js, and Vue.js,
-                        where I have
-                        successfully implemented front-end functionalities leveraging frameworks and APIs. As an individual
-                        committed to excellence, I have a proven track record of being a reliable and responsible team
-                        player, thriving in diverse and challenging situations.
+                        Welcome to my space.
+                        I'm a software enthusiast with a passion for coding and creating. Over the
+                        past two years, I've been getting hands-on with HTML, CSS, JavaScript, and having a blast
+                        with React.js and Vue.js.
                         <br>
-                        Eager to contribute and grow within the software engineering domain, I am excited about the
-                        opportunity to leverage my skills and knowledge in a collaborative and innovative environment.
+                        I love turning ideas into real, functional projects. I'm a team player through and through,
+                        always ready to pitch in and help out. I pride myself on being reliable and committed,
+                        especially when things get busy.
+                        <br>
+                        I'm eager to keep learning and growing in the software engineering world. So, if you've got a
+                        cool project or just want to connect, I'm all ears! Let's chat and see how we can make something
+                        awesome together!
 
                     </p>
                 </div>
@@ -204,6 +207,50 @@
 
 
                         </div>
+
+                        <div class="">
+                            <p class="text-xl text-white font-[800] mt-10">Hobbies</p>
+                            <div class="line h-1 w-[200px] mt-5">
+                            </div>
+                            <div class="mt-4 flex items-center">
+                                <div>
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
+                                    </div>
+                                </div>
+                                <p class="text-gradient  ml-4">Reading (Fantansy Novels 100%)</p>
+                            </div>
+                            <div class="mt-4 flex items-center">
+                                <div>
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
+                                    </div>
+                                </div>
+                                <p class="text-gradient  ml-4">Drawing</p>
+                            </div>
+                            <div class="mt-4 flex items-center">
+                                <div>
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
+                                    </div>
+                                </div>
+                                <p class="text-gradient  ml-4">Watching movies</p>
+                            </div>
+                            <div class="mt-4 flex items-center">
+                                <div>
+                                    <div><img src="@/assets/img/black-circle.png"
+                                            class="w-2 h-2"
+                                            alt="icons" />
+                                    </div>
+                                </div>
+                                <p class="text-gradient  ml-4"> Travel</p>
+                            </div>
+
+
+                        </div>
                     </div>
 
                 </div>
@@ -272,7 +319,7 @@ export default {
     },
 }
 </script>
-  
+
 <style scoped>
 .vue3-marquee.horizontal {
     --duration: 14s !important;

@@ -16,33 +16,28 @@
 
             <div class="card-details bg-opacity-90 max-w-full w-full pb-1 mt-6 md:mt-12">
                 <router-link to="/about">
-                    <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card  items-center rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card  items-center rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
                         data-aos="fade-down"
-                        
-                        data-aos-duration="2000"
-                        >
+                        data-aos-duration="2000">
                         <div class="w-10 md:w-14">
                             <img src="@/assets/img/about-img.png"
-                            class="w-full h-full"
-                            alt="" />
+                                class="w-full h-full"
+                                alt="" />
                         </div>
-                       
+
                         <p>
                             ABOUT ME
                         </p>
                     </div>
                 </router-link>
                 <router-link to="/experience">
-                    <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
                         data-aos="fade-down"
-                        data-aos-duration="2000"
-                        >
+                        data-aos-duration="2000">
                         <div class="w-10 md:w-14">
                             <img src="@/assets/img/stars.png"
-                            class="w-full h-full"
-                            alt="" />
+                                class="w-full h-full"
+                                alt="" />
                         </div>
                         <p>
                             EXPERIENCE
@@ -50,16 +45,14 @@
                     </div>
                 </router-link>
                 <router-link to="/projects">
-                    <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
                         data-aos="fade-down"
-                        data-aos-duration="2000"
-                        >
-                       <div class="w-10 md:w-14">
-                        <img src="@/assets/img/idea.png"
-                            class="w-full h-full"
-                            alt="" />
-                       </div>
+                        data-aos-duration="2000">
+                        <div class="w-10 md:w-14">
+                            <img src="@/assets/img/idea.png"
+                                class="w-full h-full"
+                                alt="" />
+                        </div>
                         <p>
                             PROJECTS
                         </p>
@@ -67,31 +60,27 @@
                 </router-link>
 
                 <router-link to="/articles">
-                    <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
                         data-aos="fade-down"
-                        data-aos-duration="2500"
-                        >
-                       <div  class="w-10 md:w-14 ">
-                        <img src="@/assets/img/note.png"
-                            class="w-full h-full"
-                            alt="" />
-                       </div>
+                        data-aos-duration="2500">
+                        <div class="w-10 md:w-14 ">
+                            <img src="@/assets/img/note.png"
+                                class="w-full h-full"
+                                alt="" />
+                        </div>
                         <p>
                             ARTICLES
                         </p>
                     </div>
                 </router-link>
                 <router-link to="/contact">
-                    <div
-                        class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
                         data-aos="fade-down"
-                        data-aos-duration="2500"
-                        >
-                        <div  class="w-10 md:w-14 " >
+                        data-aos-duration="2500">
+                        <div class="w-10 md:w-14 ">
                             <img src="@/assets/img/contacts.png"
-                            class="w-full h-full"
-                            alt="" />
+                                class="w-full h-full"
+                                alt="" />
                         </div>
                         <p>
                             CONTACT ME
@@ -99,17 +88,14 @@
                     </div>
                 </router-link>
                 <router-link to="/resume">
-                    <div
-                        class="flex cursor-pointer h-[132px] md:h-44 card items-center   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
+                    <div class="flex cursor-pointer h-[132px] md:h-44 card items-center   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
                         data-aos="fade-down"
-                        data-aos-duration="2500"
-                        
-                        >
-                       <div  class="w-10 md:w-14 ">
-                        <img src="@/assets/img/resume-img.png"
-                            class="w-full h-full"
-                            alt="" />
-                       </div>
+                        data-aos-duration="2500">
+                        <div class="w-10 md:w-14 ">
+                            <img src="@/assets/img/resume-img.png"
+                                class="w-full h-full"
+                                alt="" />
+                        </div>
                         <p>
                             MY RESUME
                         </p>
@@ -189,4 +175,5 @@ export default {
         box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.449);
     }
 
-}</style>
+}
+</style>

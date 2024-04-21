@@ -20,42 +20,43 @@
                     <div v-for="stack in stacks"
                         :key="stack.id"
                         class="stack-tech-li  project-card p-10 ">
-                        <el-skeleton v-if="isLoading" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item variant="text" style="width: 30%" />
-                <el-skeleton-item
-                  variant="image"
-                  style="width: 100%; height: 250px; margin-top: 8px; border-radius: 12px;"
-                />
-                <div style="margin-top: 14px">
-                  <!-- <el-skeleton-item variant="p" style="width: 50%" /> -->
-                  <div
-                    style="
+                        <el-skeleton v-if="isLoading"
+                            style="width: 100%"
+                            animated>
+                            <template #template>
+                                <el-skeleton-item variant="text"
+                                    style="width: 30%" />
+                                <el-skeleton-item variant="image"
+                                    style="width: 100%; height: 250px; margin-top: 8px; border-radius: 12px;" />
+                                <div style="margin-top: 14px">
+                                    <!-- <el-skeleton-item variant="p" style="width: 50%" /> -->
+                                    <div style="
                       display: flex;
                       align-items: center;
                       justify-content: space-between;
-                    "
-                  >
-                    <el-skeleton-item variant="text" style="width: 30%" />
-                  </div>
-                </div>
-              </template>
-            </el-skeleton>
+                    ">
+                                        <el-skeleton-item variant="text"
+                                            style="width: 30%" />
+                                    </div>
+                                </div>
+                            </template>
+                        </el-skeleton>
                         <div v-else>
                             <p class="text-[white] font-[900] text-sm md:text-xl  text-grad">{{
-                            stack.article }}</p>
-                        <div class="w-full h-fit">
-                            <img :src="stack.url"
-                                alt="image"
-                                class="h-full w-full   max-h-full  rounded-xl mt-5" />
-                        </div>
-                        <div class="pt-4 flex justify-between items-center">
-                            <a :href="stack.link"
-                                target="_blank">
-                                <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article</p>
+                        stack.article }}</p>
+                            <div class="w-full h-fit">
+                                <img :src="stack.url"
+                                    alt="image"
+                                    class="h-full w-full   max-h-full  rounded-xl mt-5" />
+                            </div>
+                            <div class="pt-4 flex justify-between items-center">
+                                <a :href="stack.link"
+                                    target="_blank">
+                                    <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article
+                                    </p>
 
-                            </a>
-                        </div>
+                                </a>
+                            </div>
                         </div>
 
                     </div>
@@ -67,7 +68,7 @@
     </div>
 </template>
 
-  
+
 <script>
 import Navbar from '@/components/Navbar.vue';
 import hooks from '@/assets/img/articles/react-hooks.png'
@@ -87,17 +88,17 @@ export default {
         Navbar
     },
     mounted() {
-    setTimeout(() => {
-      this.filteredStack = [
-      ];
-      this.isLoading = false;
-    }, 5000);
-  },
+        setTimeout(() => {
+            this.filteredStack = [
+            ];
+            this.isLoading = false;
+        }, 800);
+    },
 
     data() {
         return {
             isLoading: true,
-      filteredStack: [],
+            filteredStack: [],
             stacks: [
                 {
                     id: 1,
@@ -126,12 +127,12 @@ export default {
                     url: fingerprint,
                     link: 'https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/S1f1pjChp',
                     article: 'Browser Fingerprinting',
-                },{
+                }, {
                     id: 6,
                     url: table,
                     link: 'https://pearlblogs.hashnode.dev/preview/65d47339394d92f7e4b39b51',
                     article: 'Crafting dynamic tables',
-                },{
+                }, {
                     id: 7,
                     url: aos,
                     link: 'https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp',
@@ -144,7 +145,7 @@ export default {
 
 };
 </script>
-  
+
 <style scoped>
 .active {
     background: linear-gradient(122deg, #FFF 30.71%, #505356 153.64%);
@@ -153,15 +154,11 @@ export default {
     text-align: center;
     padding: 6px;
     font-weight: 600;
-
 }
-
-
 .stack-tech-li {
     align-items: center;
 
 }
-
 .experience-bg {
     border-radius: 16px;
     background: linear-gradient(111deg, #ffffff00 1.21%, rgba(19, 0, 0, 0.02) 100%);
@@ -170,13 +167,11 @@ export default {
     padding: 0 12px;
     align-items: center;
 }
-
 .stack-tech-ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
 }
-
 
 @media (max-width: 600px) {
     .stack-tech-ul {
@@ -188,4 +183,5 @@ export default {
     .active {
         font-size: 12px;
     }
-}</style>
+}
+</style>
