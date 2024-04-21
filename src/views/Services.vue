@@ -123,7 +123,7 @@ export default {
                     url: jsx,
                     link: 'https://dev.to/pearlodi/the-html-jsx-fusion-1dmc',
                     article: 'The HTML - JSX Fusion',
-                    summary: 'JavaScript Extensible Markup Language (JSX) is the fusion point where HTMLs structure collides with JavaScript dynamic capabilities.'
+                    summary: 'JavaScript Extensible Markup Language (JSX) is the fusion point where HTMLs structure collides with JavaScript dynamic capabilities.',
                 },
                {
                     id: 4,
