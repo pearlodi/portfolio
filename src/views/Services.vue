@@ -112,7 +112,7 @@ export default {
                     id: 1,
                     url: dom,
                     link: '/dom.pdf',
-                    article: 'Dom Demystified',
+                    article: 'Dom Demystified (PDF)',
                     summary: 'In this grand expedition, we will unravel the enigmatic world of Document Object Model (DOM)...',
                 },
                   {
