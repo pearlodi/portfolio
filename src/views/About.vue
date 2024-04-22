@@ -209,7 +209,7 @@
                         </div>
 
                         <div class="">
-                            <p class="text-xl text-white font-[800] mt-10">Hobbies</p>
+                            <p class="text-xl text-white font-[800] mt-10">HOBBIES</p>
                             <div class="line h-1 w-[200px] mt-5">
                             </div>
                             <div class="mt-4 flex items-center">
