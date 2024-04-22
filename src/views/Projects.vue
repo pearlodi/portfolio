@@ -61,7 +61,7 @@
                 <a :href="stack.link"
                   target="_blank">
                   <p class="text-[white] font-bold text-[12px] md:text-lg cursor-pointer">
-                    Visit {{ stack.company }} ➔ 
+                    Visit {{ stack.company }}
                   </p>
                 </a>
                 <p class="about-text mb-2 cursor-pointer">
