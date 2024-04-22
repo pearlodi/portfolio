@@ -36,6 +36,8 @@
                       justify-content: space-between;
                     ">
                                         <el-skeleton-item variant="text"
+                                    style="width: 60%" />
+                                        <el-skeleton-item variant="text"
                                             style="width: 30%" />
                                     </div>
                                 </div>
@@ -115,18 +117,19 @@ export default {
                 },
                   {
                     id: 2,
-                    url: hooks,
-                    link: 'https://dev.to/pearlodi/react-hooks-hal/edit',
-                    article: 'React Hooks',
-                    summary:'Okay, so you know how in React, we previously talked about these things called components right? They are like building blocks for our website. Now, think of React Hooks as special tools that make it easier to do certain things with these components. ',
-                },
-                {
-                    id: 3,
                     url: jsx,
                     link: 'https://dev.to/pearlodi/the-html-jsx-fusion-1dmc',
                     article: 'The HTML - JSX Fusion',
                     summary: 'JavaScript Extensible Markup Language (JSX) is the fusion point where HTMLs structure collides with JavaScript dynamic capabilities.',
                 },
+                  {
+                    id: 3,
+                    url: hooks,
+                    link: 'https://dev.to/pearlodi/react-hooks-hal/edit',
+                    article: 'React Hooks',
+                    summary:'Okay, so you know how in React, we previously talked about these things called components right? They are like building blocks for our website. Now, think of React Hooks as special tools that make it easier to do certain things with these components. ',
+                },
+              
                {
                     id: 4,
                     url: com,
