@@ -101,7 +101,7 @@ export default {
             this.filteredStack = [
             ];
             this.isLoading = false;
-        }, 1000);
+        }, 2500);
     },
 
     data() {
