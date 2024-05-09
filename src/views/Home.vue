@@ -4,7 +4,7 @@
         <div class="flex flex-col justify-center items-center mt-20 px-4">
             <div class="md:flex items-center justify-center md:justify-between w-full max-w-full md:w-[800px]">
                 <p class="text-gradient font-[700] text-xl md:text-4xl text-white pb-4">RESUME</p>
-                <a href="/pearl.pdf" download="Pearl Resume.pdf"
+                <a href="/resume.pdf" download="Pearl Resume.pdf"
                     class="portt mt-8 md:mt-0 text-white p-3 text-center cursor-pointer w-[200px]">
                     Download My Resume
                 </a>
