@@ -49,11 +49,6 @@
 import { ref } from 'vue'
 import { defineComponent } from 'vue'
 import { Carousel, Navigation, Slide } from 'vue3-carousel'
-// import home from '../../assets/img/portfolio/home.png'
-// import contact from '../../assets/img/portfolio/contact.png'
-// import about from '../../assets/img/portfolio/about.png'
-// import experience from '../../assets/img/portfolio/experience.png'
-// import resume from '../../assets/img/portfolio/resume.png'
 import 'vue3-carousel/dist/carousel.css'
 
 

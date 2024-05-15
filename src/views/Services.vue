@@ -32,11 +32,14 @@
                                     style="width: 100%; height: 250px; margin-top: 8px; border-radius: 12px;" />
                                 <div style="margin-top: 14px">
                                     <!-- <el-skeleton-item variant="p" style="width: 50%" /> -->
+                                     <el-skeleton-item variant="text"
+                                    style="width: 60%" />
                                     <div style="
                       display: flex;
                       align-items: center;
                       justify-content: space-between;
                     ">
+                                       
                                         <el-skeleton-item variant="text"
                                             style="width: 30%" />
                                     </div>
@@ -51,7 +54,13 @@
                                     alt="image"
                                     class="h-full w-full   max-h-full  rounded-xl mt-5" />
                             </div>
-                            <div class="pt-4 flex justify-between items-center">
+                                              <p class="text-[white] font-bold mt-2 text-sm md:text-[15px] text-grad">
+  {{ stack.summary && stack.summary.length > 100 ? stack.summary.slice(0, 100) + '...' : stack.summary }}
+</p>
+
+                            <div class="pt-2 flex justify-between items-center">
+                              
+                                
                                 <a :href="stack.link"
                                     target="_blank">
                                     <p class="text-[white] font-bold text-[10px] md:text-lg cursor-pointer">Read article
@@ -96,7 +105,7 @@ export default {
             this.filteredStack = [
             ];
             this.isLoading = false;
-        }, 800);
+        }, 2500);
     },
 
     data() {
@@ -108,39 +117,49 @@ export default {
                     id: 1,
                     url: dom,
                     link: '/dom.pdf',
-                    article: 'Dom Demystified',
-                }, {
+                    article: 'Dom Demystified (PDF)',
+                    summary: 'In this grand expedition, we will unravel the enigmatic world of Document Object Model (DOM)...',
+                },
+                  {
                     id: 2,
                     url: jsx,
                     link: 'https://dev.to/pearlodi/the-html-jsx-fusion-1dmc',
                     article: 'The HTML - JSX Fusion',
+                    summary: 'JavaScript Extensible Markup Language (JSX) is the fusion point where HTMLs structure collides with JavaScript dynamic capabilities.',
                 },
-                {
+                  {
                     id: 3,
                     url: hooks,
                     link: 'https://dev.to/pearlodi/react-hooks-hal/edit',
                     article: 'React Hooks',
-                }, {
+                    summary:'Okay, so you know how in React, we previously talked about these things called components right? They are like building blocks for our website. Now, think of React Hooks as special tools that make it easier to do certain things with these components. ',
+                },
+              
+               {
                     id: 4,
                     url: com,
                     link: 'https://dev.to/pearlodi/react-components-3oa2',
                     article: 'React Components',
+                    summary: 'In React, components are like building blocks of a webpage. They are small, reusable pieces of code that handle specific tasks.',
                 },
                 {
                     id: 5,
                     url: fingerprint,
                     link: 'https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/S1f1pjChp',
                     article: 'Browser Fingerprinting',
+                    summary:'Think of browser fingerprinting as cookies, but on steriods – it is like the upgraded, super version! While cookies are the old school way of tracking you',
                 }, {
                     id: 6,
                     url: table,
                     link: 'https://pearlblogs.hashnode.dev/preview/65d47339394d92f7e4b39b51',
                     article: 'Crafting dynamic tables',
+                    summary: 'Tables are the backbone of web development, organizing data for seamless user interaction. Yet, creating feature-rich tables with can be daunting, especially for newcomers.',
                 }, {
                     id: 7,
                     url: aos,
                     link: 'https://hackmd.io/@df7sz_q6Qq-knDEpnb3K_Q/Sk26-Fynp',
                     article: 'Animate on scoll',
+                    summary: 'User experience plays a crucial role in web development today. One way to make your web applications more visually appealing is through the use of animations which can enhance user engagement.',
                 },
             ],
 

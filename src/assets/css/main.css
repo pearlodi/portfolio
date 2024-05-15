@@ -36,6 +36,9 @@
     text-align: center !important;
 
 }
+.el-button.is-text{
+    color: white !important;
+}
 .el-tabs__header {
     width: 100% !important;
 }
