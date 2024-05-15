@@ -1,6 +1,8 @@
 <template>
    <div class="md:py-10 pb-10 project-background">
         <Navbar />
+        <div class="w-full flex justify-center">
+            <div class="w-full max-w-full md:w-[1500px]">
         <div class=" mx-5 md:mx-20">
             <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4">
                 <div class="mt-8 md:mt-16">
@@ -14,7 +16,8 @@
                     </el-tab-pane>
                 </el-tabs>
             </div>
-            <div class="tech-list mt-8 experience-li">
+        
+                <div class="tech-list mt-8 experience-li">
                 <div class="experience-ul experience-li ">
                     <div v-for="stack in filteredStack" :key="stack.id" class="experience-li  experiences h-full overflow-scroll ">
                         <el-skeleton v-if="isLoading" style="width: 100%" animated>
@@ -43,6 +46,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+          </div>
         </div>
     </div>
 </template>

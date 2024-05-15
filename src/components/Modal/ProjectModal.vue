@@ -1,6 +1,8 @@
 <template>
-    <el-button text @click="centerDialogVisible = true" class="cursor-pointer">
-        Project Details
+    <el-button text @click="centerDialogVisible = true" class="cursor-pointer text-white ">
+        Project Details<el-icon :size="size" :color="color">
+      <Edit />
+    </el-icon>
     </el-button>
 
     <el-dialog v-model="centerDialogVisible" :open-delay="9" width="30%" align-center class="pb-10">

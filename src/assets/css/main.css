@@ -4,6 +4,12 @@
     --el-fill-color-light: transparent !important;
     --el-color-primary: white !important;
 }
+.el-carousel__item[data-v-4b6b2fce]{
+    background-color: transparent !important;
+}
+.el-button.is-text{
+    color: white !important;
+}
 .el-tabs__active-bar 
     {
     background: linear-gradient(122deg, #FFF 30.71%, #505356 153.64%) !important;

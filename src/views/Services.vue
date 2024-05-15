@@ -4,7 +4,9 @@
             <Navbar />
 
         </div>
-        <div class=" mx-5 md:mx-20 ">
+        <div class="w-full flex flex-col items-center justify-center">
+            <div class="w-full max-w-full md:w-[1500px]">
+                <div class=" mx-5 md:mx-20 ">
             <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4 ">
                 <div class=" mt-12 ">
                     <p class="text-2xl md:text-3xl text-white font-[800] ">ARTICLES</p>
@@ -64,6 +66,8 @@
                 </div>
             </div>
 
+        </div>
+            </div>
         </div>
     </div>
 </template>

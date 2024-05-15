@@ -3,8 +3,12 @@
     <div class="">
       <Navbar />
     </div>
-    <div class="mx-5 md:mx-20">
-      <div class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4">
+    <div class="w-full max-w-full flex flex-col items-center justify-center">
+      <div class="w-full max-w-full md:w-[1600px]">
+        <div class="mx-5 md:mx-20">
+      <div
+        class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4"
+      >
         <div class="mt-12">
           <p class="text-2xl md:text-3xl text-white font-[800]">PROJECTS</p>
           <div class="line h-1 w-[200px] mt-3 md:mt-5"></div>
@@ -21,63 +25,82 @@
           </div>
         </div>
       </div> -->
-      <el-tabs v-model="selectedCategory" id="tabs" class="experience-bg flex justify-between w-full max-w-full  md:w-[700px] cursor-pointer mt-4">
-                    <el-tab-pane v-for="category in categories" :key="category" :label="category" :name="category" class="experience cursor-pointer flex py-3  text-[12px] md:text-[18px] w-[50%] text-center justify-center ">
-                    </el-tab-pane>
-                </el-tabs>
-      <div class="tech-list mt-8 stack-tech-li">
+      <el-tabs
+        v-model="selectedCategory"
+        id="tabs"
+        class="experience-bg flex justify-between w-full max-w-full md:w-[700px] cursor-pointer mt-4"
+      >
+        <el-tab-pane
+          v-for="category in categories"
+          :key="category"
+          :label="category"
+          :name="category"
+          class="experience cursor-pointer flex py-3 text-[12px] md:text-[18px] w-[50%] text-center justify-center"
+        >
+        </el-tab-pane>
+      </el-tabs>
+   
+        <div class="tech-list mt-8 stack-tech-li">
         <div class="stack-tech-ul stack-tech-li">
-          <div v-for="stack in filteredStack"
+          <div
+            v-for="stack in filteredStack"
             :key="stack.id"
-            class="stack-tech-li project-card p-10">
-            <el-skeleton v-if="isLoading"
-              style="width: 100%"
-              animated>
+            class="stack-tech-li project-card p-10"
+          >
+            <el-skeleton v-if="isLoading" style="width: 100%" animated>
               <template #template>
-                <el-skeleton-item variant="image"
-                  style="width: 100%; height: 250px; border-radius: 12px" />
+                <el-skeleton-item
+                  variant="image"
+                  style="width: 100%; height: 250px; border-radius: 12px"
+                />
                 <div style="margin-top: 14px">
-                  <!-- <el-skeleton-item variant="p" style="width: 50%" /> -->
-                  <div style="
+                  <div
+                    style="
                       display: flex;
                       align-items: center;
                       justify-content: space-between;
-                    ">
-                    <el-skeleton-item variant="text"
-                      style="width: 30%" />
-                    <el-skeleton-item variant="text"
-                      style="width: 30%" />
+                    "
+                  >
+                    <el-skeleton-item variant="text" style="width: 30%" />
+                    <el-skeleton-item variant="text" style="width: 30%" />
                   </div>
                 </div>
               </template>
             </el-skeleton>
-
-            <!-- <h5 class="font-bold text-xl md:text-[40px] text-white">{{ stack.year }}</h5> -->
             <div v-else>
-              <img :src="stack.url"
+              <a :href="stack.link" target="_blank">
+                <img
+                :src="stack.url"
                 alt="image"
-                class="h-full md:h-[270px] max-h-full w-full rounded-xl mt-5" />
+                class="h-full w-full rounded-xl mt-5"
+              /></a>
               <div class="pt-4 flex justify-between items-center">
-                <a :href="stack.link"
-                  target="_blank">
-                  <p class="text-[white] font-bold text-[12px] md:text-lg cursor-pointer">
+                <a :href="stack.link" target="_blank">
+                  <p
+                    class="text-[white] font-bold text-[12px] md:text-lg cursor-pointer"
+                  >
                     Visit {{ stack.company }}
                   </p>
                 </a>
                 <p class="about-text mb-2 cursor-pointer">
-                  <ProjectModal :itemProps="stack.company"
+                  <ProjectModal
+                    :itemProps="stack.company"
                     :itemDescription="stack.description"
                     :itemTechnologies="stack.technologies"
                     :itemLibraries="stack.libraries"
                     :itemImages="stack.images"
-                    :itemLinks="stack.link" />
+                    :itemLinks="stack.link"
+                  />
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
+      </div>
     </div>
+    
   </div>
 </template>
 
@@ -346,7 +369,7 @@ export default {
 </script>
 
 <style scoped>
-#tabs{
+#tabs {
   padding: 8px;
 }
 .active {
@@ -364,9 +387,11 @@ export default {
 
 .experience-bg {
   border-radius: 16px;
-  background: linear-gradient(111deg,
-      #ffffff00 1.21%,
-      rgba(19, 0, 0, 0.02) 100%);
+  background: linear-gradient(
+    111deg,
+    #ffffff00 1.21%,
+    rgba(19, 0, 0, 0.02) 100%
+  );
   backdrop-filter: blur(15px);
   border: 0.8px solid rgba(214, 251, 252, 0.06);
   padding: 0 12px;

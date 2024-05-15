@@ -1,179 +1,311 @@
 <template>
-    <div class="project-background flex flex-col  md:h-full items-center">
-        <div class="flex flex-col  md:h-[100%] items-center w-[90%]">
-            <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-10 md:mt-12 flex items-center">
-                <div class="line h-40 md:h-52 w-1">
-                </div>
-                <div class="ml-4 mt-4">
-                    <p class="text-xl md:text-3xl text-white font-[800]">ODI PEARL
-                    </p>
-                    <div class="mt-4 md:mt-8 typewriter flex">
-                        <Typewriter />
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card-details bg-opacity-90 max-w-full w-full pb-1 mt-6 md:mt-12">
-                <router-link to="/about">
-                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card  items-center rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
-                        data-aos="fade-down"
-                        data-aos-duration="2000">
-                        <div class="w-10 md:w-14">
-                            <img src="@/assets/img/about-img.png"
-                                class="w-full h-full"
-                                alt="" />
-                        </div>
-
-                        <p>
-                            ABOUT ME
-                        </p>
-                    </div>
-                </router-link>
-                <router-link to="/experience">
-                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center   rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
-                        data-aos="fade-down"
-                        data-aos-duration="2000">
-                        <div class="w-10 md:w-14">
-                            <img src="@/assets/img/stars.png"
-                                class="w-full h-full"
-                                alt="" />
-                        </div>
-                        <p>
-                            EXPERIENCE
-                        </p>
-                    </div>
-                </router-link>
-                <router-link to="/projects">
-                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
-                        data-aos="fade-down"
-                        data-aos-duration="2000">
-                        <div class="w-10 md:w-14">
-                            <img src="@/assets/img/idea.png"
-                                class="w-full h-full"
-                                alt="" />
-                        </div>
-                        <p>
-                            PROJECTS
-                        </p>
-                    </div>
-                </router-link>
-
-                <router-link to="/articles">
-                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
-                        data-aos="fade-down"
-                        data-aos-duration="2500">
-                        <div class="w-10 md:w-14 ">
-                            <img src="@/assets/img/note.png"
-                                class="w-full h-full"
-                                alt="" />
-                        </div>
-                        <p>
-                            ARTICLES
-                        </p>
-                    </div>
-                </router-link>
-                <router-link to="/contact">
-                    <div class="cards-background cursor-pointer flex h-[132px] md:h-44 card items-center  rounded-lg   text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
-                        data-aos="fade-down"
-                        data-aos-duration="2500">
-                        <div class="w-10 md:w-14 ">
-                            <img src="@/assets/img/contacts.png"
-                                class="w-full h-full"
-                                alt="" />
-                        </div>
-                        <p>
-                            CONTACT ME
-                        </p>
-                    </div>
-                </router-link>
-                <router-link to="/resume">
-                    <div class="flex cursor-pointer h-[132px] md:h-44 card items-center   rounded-lg bg-opacity-30 bg-[#00000013] backdrop-blur-lg shadow-xl  text-[#FFF] p-12 text-xl md:text-2xl font-[700] gap-4"
-                        data-aos="fade-down"
-                        data-aos-duration="2500">
-                        <div class="w-10 md:w-14 ">
-                            <img src="@/assets/img/resume-img.png"
-                                class="w-full h-full"
-                                alt="" />
-                        </div>
-                        <p>
-                            MY RESUME
-                        </p>
-                    </div>
-                </router-link>
-            </div>
-
-        </div>
+  <div class="project-background h-fit pb-8 md:pb-0">
+    <div class="fixed z-[1200] w-full">
+      <homeNavVue />
     </div>
+    <div class="project-background flex flex-col md:h-full items-center">
+      <div class="flex flex-col md:h-[100%] w-[90%]">
+        <div class="flex">
+          <div
+            class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-10 md:mt-12 flex items-center"
+          >
+            <div class="line h-40 md:h-44 w-1"></div>
+            <div class="ml-4 mt-4">
+              <p class="text-xl md:text-3xl text-white font-[800]">ODI PEARL</p>
+              <div class="mt-4 md:mt-6 flex">
+                <Typewriter />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div
+            class="md:w-[1100px] w-full max-w-full mt-6 md:mt-10 rounded-xl"
+            :class="{ 'stack-dark': isDarkMode }"
+          >
+            <Vue3Marquee :pause-on-hover="true">
+              <div
+                class="index-a-trusted-companies-img gap-10 py-4"
+                v-for="avatar in cards"
+                :key="avatar"
+              >
+                <div class="img-a flex items-center gap-4">
+                  <img
+                    :src="avatar.url"
+                    alt="stack Image"
+                    class="comp-img w-8 h-8 gap-12"
+                  />
+                  <h4 class="text-white">{{ avatar.stack }}</h4>
+                </div>
+              </div>
+            </Vue3Marquee>
+          </div>
+        </div>
+
+        <div class="about-background w-full max-w-full md:w-[1100px] h-[350px] md:h-full overflow-scroll">
+          <div
+            class="text-gradient font-bold text-sm md:text-[16px] leading-8 w-full max-w-full md:w-[1000px]"
+            :class="{ '': !isDarkMode, 'dark-mode': isDarkMode }"
+          >
+            <strong class="text-[24px] text-gradient">HEY THERE 🌟</strong>
+            <br />
+            <p class="mt-3 text-gradient ">
+              Welcome to my space. I'm a software Engineer with a passion for
+              coding and creating. Over the past two years, I've been getting
+              hands-on with HTML, CSS, JavaScript, and having a blast with
+              React.js and Vue.js. I love turning ideas into real, functional
+              projects. I'm a team player through and through, always ready to
+              pitch in and help out. I pride myself on being reliable and
+              committed, especially when things get busy. I'm eager to keep
+              learning and growing in the software engineering world. So, if
+              you've got a cool project or just want to connect, I'm all ears!
+              Let's chat and see how we can make something awesome together!
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-14 grid md:flex">
+          <a href="https://github.com/pearlodi" target="_blank">
+            <div class="flex items-center">
+              <div class="stack rounded-lg">
+                <div class="w-11 md:w-12  flex justify-center items-center">
+                  <img
+                    src="@/assets/img/github.png"
+                    class="p-3 w-full h-full"
+                    alt="contact"
+                  />
+                </div>
+              </div>
+              <div class="ml-3 md:ml-6">
+                <p class="text-grad font-bold">Checkout</p>
+                <p class="text-white text-sm md:text-base">Github</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
+            <div class="flex items-center  md:mt-0 md:ml-10">
+              <div class="stack rounded-lg">
+                <div class="w-11 md:w-12  flex justify-center items-center">
+                  <img
+                    src="@/assets/img/Linkedin.png"
+                    class="p-3 w-full h-full"
+                    alt="contact"
+                  />
+                </div>
+              </div>
+              <div class="ml-3 md:ml-6">
+                <p class="text-grad font-bold">Connect</p>
+                <p class="text-white text-sm md:text-base">Linkedin</p>
+              </div>
+            </div>
+          </a>
+          <div class="flex items-center mt-6 md:mt-0 md:ml-10">
+            <div class="stack rounded-lg">
+              <div class="w-11 md:w-12  flex justify-center items-center">
+                <img
+                  src="@/assets/img/location.png"
+                  class="p-3 w-full h-full"
+                  alt="contact"
+                />
+              </div>
+            </div>
+            <div class="ml-3 md:ml-6">
+              <p class="text-grad font-bold">Location</p>
+              <p class="text-white text-sm md:text-base">Nigeria</p>
+            </div>
+          </div>
+          <div class="flex items-center mt-6 md:mt-0 md:ml-10">
+            <div class="stack rounded-lg">
+              <div class="w-11 md:w-12  flex justify-center items-center">
+                <img
+                  src="@/assets/img/gmail.png"
+                  class="p-3 w-full h-full"
+                  alt="contact"
+                />
+              </div>
+            </div>
+            <div class="ml-3 md:ml-6">
+              <p class="text-grad font-bold">E-Mail</p>
+              <p class="text-white text-sm md:text-base">pearlodi7@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 
 <script>
+import { Vue3Marquee } from "vue3-marquee";
+import companies4 from "@/assets/img/figma.svg";
+import companies1 from "@/assets/img/react.svg";
+import companies2 from "@/assets/img/vue.svg";
+import companies6 from "@/assets/img/java.svg";
+import companies3 from "@/assets/img/git.svg";
+import companies7 from "@/assets/img/docker.svg";
+import companies8 from "@/assets/img/typescript.png";
+import Navbar from "@/components/Navbar.vue";
 import Typewriter from "@/components/Typewriter.vue";
 import ProjectModal from "@/components/Modal/ProjectModal.vue";
+import homeNavVue from "./homeNav.vue";
 
 export default {
-    components: {
-        Typewriter,
-        ProjectModal
-    },
+  components: {
+    Typewriter,
+    ProjectModal,
+    Vue3Marquee,
+    homeNavVue,
+    Navbar,
+  },
+  data() {
+    return {
+      cards: [
+        {
+          url: companies1,
+          stack: "React",
+        },
+        {
+          url: companies2,
+          stack: "Vue",
+        },
+        {
+          url: companies4,
+          stack: "Figma",
+        },
+
+        {
+          url: companies7,
+          stack: "Docker",
+        },
+        {
+          url: companies6,
+          stack: "JavaScript",
+        },
+        {
+          url: companies3,
+          stack: "Github",
+        },
+        {
+          url: companies6,
+          stack: "Typescript",
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style>
+
 .card-details {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .cards-background {
-    border-radius: 16px;
-    background: linear-gradient(111deg, rgba(255, 255, 255, 0.14) 1.21%, rgba(196, 196, 196, 0.02) 100%);
-    backdrop-filter: blur(15px);
-    border: 0.8px solid rgba(255, 255, 255, 0.167);
+  border-radius: 16px;
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.14) 1.21%,
+    rgba(196, 196, 196, 0.02) 100%
+  );
+  backdrop-filter: blur(15px);
+  border: 0.8px solid rgba(255, 255, 255, 0.167);
 }
 
 .typewriter,
 .category {
-    background: linear-gradient(169deg, #505356 8.16%, #fff 150.61%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(169deg, #505356 8.16%, #fff 150.61%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .line {
-    border-radius: 16px;
-    background: linear-gradient(111deg, rgba(255, 255, 255, 0.14) 1.21%, rgba(196, 196, 196, 0.02) 100%);
-    backdrop-filter: blur(15px);
-    border: 0.8px solid rgba(214, 251, 252, 0.06);
+  border-radius: 16px;
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.14) 1.21%,
+    rgba(196, 196, 196, 0.02) 100%
+  );
+  backdrop-filter: blur(15px);
+  border: 0.8px solid rgba(214, 251, 252, 0.06);
 }
-
+.stack {
+  background: linear-gradient(111deg, #ffffff1a 1.21%, transparent 100%);
+}
 .card {
-    background: url('');
-    background-size: cover;
-    box-shadow: 0 2px 2px 0px black;
+  background: url("");
+  background-size: cover;
+  box-shadow: 0 2px 2px 0px black;
+}
+.vue3-marquee.horizontal {
+  --duration: 14s !important;
 }
 
+.vue3-marquee.horizontal > .marquee {
+  gap: 42px !important;
+}
+
+.img-a {
+  margin-left: 32px;
+}
+
+.cards-background {
+  border-radius: 16px;
+  background: linear-gradient(
+    111deg,
+    rgba(255, 255, 255, 0.072) 1.21%,
+    rgba(196, 196, 196, 0) 100%
+  );
+  backdrop-filter: blur(15px);
+  border: 0.8px solid rgba(255, 255, 255, 0.167);
+  padding: 24px;
+}
+.about-background {
+  border-radius: 16px;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border: 0.8px solid rgba(255, 255, 255, 0.167);
+  padding: 24px;
+  background: #151515;
+  box-shadow: -1px -1px 1px #efede3, 0px 1px 0 #161616, 0px 2px 0 #2c2c2c,
+    0px 3px 0 #2a2a2a, 0px 4px 0 #282828, 0px 5px 0 #262626, 0px 6px 0 #242424,
+    0px 7px 0 #222, 0px 8px 0 #202020, 0px 9px 0 #1e1e1e, 0px 10px 0 #1c1c1c,
+    0px 11px 0 #1a1a1a,
+    /* 0px 12px 0 #181818, 
+      0px 13px 0 #161616, 
+      0px 14px 0 #141414, 
+      0px 15px 0 #121212, */
+      /* 2px 20px 5px rgba(0, 0, 0, 0.9), */
+      /* 5px 23px 5px rgba(0, 0, 0, 0.3),
+      8px 27px 8px rgba(0, 0, 0, 0.5), */
+      8px 15px 25px rgba(0, 0, 0, 0.9);
+}
 @media (max-width: 950px) {
-    .card-details {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
+  .card-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 @media (max-width: 600px) {
-    .card-details {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+  .card-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
 
-    }
-
-    .card {
-        box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.449);
-    }
-
+  .card {
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.449);
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:14px
+  }
 }
 </style>

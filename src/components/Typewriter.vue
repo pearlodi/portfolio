@@ -1,7 +1,7 @@
 <template>
   <div class="typewriter">
     <div class="text-3xl md:text-5xl font-semibold mb-4">
-      {{ currentText }} |
+      I'M A {{ currentText }} |
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
     typewriter(index) {
       const text = this.texts[index];
       let i = 0;
-      const speed = 100; // Adjust typing speed here
+      const speed = 50; // Adjust typing speed here
 
       const type = () => {
         if (i < text.length) {
@@ -29,7 +29,7 @@ export default {
           i++;
           setTimeout(type, speed);
         } else {
-          setTimeout(() => this.backspace(index), 1000);
+          setTimeout(() => this.backspace(index), 2000);
         }
       };
 
@@ -37,7 +37,7 @@ export default {
     },
     backspace(index) {
       let i = this.currentText.length;
-      const speed = 50; // Adjust backspacing speed here
+      const speed = 30; // Adjust backspacing speed here
 
       const erase = () => {
         if (i > 0) {
@@ -46,7 +46,7 @@ export default {
           setTimeout(erase, speed);
         } else {
           index = (index + 1) % this.texts.length;
-          setTimeout(() => this.typewriter(index), 500);
+          setTimeout(() => this.typewriter(index), 50);
         }
       };
 
