@@ -1,6 +1,6 @@
 <template>
   <div class="project-background h-fit pb-8 md:pb-0">
-    <div class="pt-10">
+    <div class="md:pt-10">
       <Navbar />
     </div>
     <div class="project-background flex flex-col md:h-full items-center">
@@ -9,7 +9,7 @@
           <div
             class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-10 md:mt-12 flex items-center"
           >
-            <div class="line h-40 md:h-44 w-1"></div>
+            <div class="line h-32 md:h-44 w-1"></div>
             <div class="ml-4 mt-4">
               <p class="text-xl md:text-3xl text-white font-[800]">ODI PEARL</p>
               <div class="mt-4 md:mt-6 flex">
@@ -76,7 +76,7 @@ My journey into web development started with a simple curiosity, which quickly g
             </div>
           </a>
           <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
-            <div class="flex items-center  md:mt-0 md:ml-10">
+            <div class="flex items-center mt-6  md:mt-0 md:ml-10">
               <div class="stack rounded-lg">
                 <div class="w-11 md:w-12  flex justify-center items-center">
                   <img
@@ -86,7 +86,7 @@ My journey into web development started with a simple curiosity, which quickly g
                   />
                 </div>
               </div>
-              <div class="ml-3 md:ml-6">
+              <div class="ml-3 md:ml-6 ">
                 <p class="text-grad font-bold">Connect</p>
                 <p class="text-white text-sm md:text-base">Linkedin</p>
               </div>
@@ -298,7 +298,7 @@ export default {
   }
   .grid{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns:  auto;
     gap:14px
   }
 }
