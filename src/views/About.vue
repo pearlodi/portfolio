@@ -10,7 +10,9 @@
             <p class="text-3xl text-white font-[800]">ABOUT ME</p>
             <div>
               <div>
-                <div class="line h-1  max-w-full md w-full max-w-full:md:w-[200px] mt-5"></div>
+                <div
+                  class="line h-1 max-w-full md w-full max-w-full:md:w-[200px] mt-5"
+                ></div>
               </div>
             </div>
           </div>
@@ -25,8 +27,16 @@
               >I’m a Frontend Developer. <br />I build interactive and
               user-friendly applications.</strong
             >
-            <br><br>
-            Hi, I'm Odi Pearl. I'm a frontend developer based in Nigeria with over two years of experience in creating beautiful and functional web applications. I have a strong foundation in HTML, CSS, JavaScript, React, and Vue, focusing on building scalable and user-friendly experiences. My journey into web development started with genuine curiosity and has evolved into a deep passion for turning ideas and mockups into reality. I love the challenge of bringing designs to life and consistently strive to enhance my skills.
+            <br /><br />
+            Hi, I'm Odi Pearl. I'm a frontend developer based in Nigeria with
+            over two years of experience in creating beautiful and functional
+            web applications. I have a strong foundation in HTML, CSS,
+            JavaScript, React, and Vue, focusing on building scalable and
+            user-friendly experiences. My journey into web development started
+            with genuine curiosity and has evolved into a deep passion for
+            turning ideas and mockups into reality. I love the challenge of
+            bringing designs to life and consistently strive to enhance my
+            skills.
           </p>
         </div>
         <div>
@@ -57,317 +67,54 @@
           </div>
         </div>
 
-        <div class="mt-4">
-          <div class="w-full max-w-full md:w-[900px]">
-            <div class="md:flex w-full max-w-full justify-between mt-4">
-              <div data-aos="zoom-in" data-aos-duration="3000">
-                <div class="flex flex-col items-center md:items-start">
-                  <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
-                  Programming Languages
-                </p>
-                <div class="line h-1 w-[70%] md:w-[200px] max-w-full mt-2"></div>
-                </div>
-                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 ">
-                  <div class="flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/htmls.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
+        <div class="grid grid-cols-1 md:grid-cols-2">
+          <div
+            v-for="category in categories"
+            :key="category.title"
+            class="mt-4"
+          >
+            <div class="w-full max-w-full md:w-[900px] ">
+              <div class="md:flex w-full max-w-full justify-between mt-4">
+                <div data-aos="zoom-in" :data-aos-duration="category.duration">
+                  <div class="">
+                    <p
+                      class="text-xl text-white font-[800] mt-10"
+                    >
+                      {{ category.title }}
+                    </p>
+                    <div
+                      class="line h-1 w-[40%] md:w-[200px] max-w-full mt-2"
+                    ></div>
+                  </div>
+                 <div >
+                  <div class="mt-6 grid grid-cols-4 gap-8 md:gap-6 overflow-scroll" >
+                    <div
+                      v-for="item in category.items"
+                      :key="item.name"
+                      class=""
+                    >
+                      <div class="stack rounded-lg h-full flex justify-center">
+                        <div
+                          class="w-11 md:w-12 flex justify-center items-center"
+                        >
+                          <img
+                            :src="item.img"
+                            class="p-3 w-full"
+                            :alt="item.name"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <!-- <p class="text-grad font-bold">{{ item.name }}</p> -->
                       </div>
                     </div>
-                    <div>
-                      <p class="text-grad font-bold">HTML</p>
-                    </div>
                   </div>
-                  <div class="md:ml-5 flex flex-col items-center">
-                    <div class="stack rounded-lg flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/csss.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">CSS</p>
-                    </div>
-                  </div>
-                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
-                    <div class="stack rounded-lg flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/java.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Javascript</p>
-                    </div>
-                  </div>
-                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/ts.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Typescript</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div data-aos="zoom-in" data-aos-duration="2000">
-                <div class="flex flex-col items-center md:items-start">
-                  <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
-                  Frameworks/Libraries
-                </p>
-                <div class="line h-1 w-[70%] md:w-[200px] max-w-full mt-2"></div>
-                </div>
-                <div class="mt-6 grid grid-cols-2 md:grid-cols-1 md:flex">
-                  <div class="flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div class="w-11 md:w-12 flex flex-col items-center">
-                        <img
-                          src="@/assets/img/react.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">React</p>
-                    </div>
-                  </div>
-                  <div class="ml-5 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div class="w-11 md:w-12 flex flex-col items-center">
-                        <img
-                          src="@/assets/img/vue.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Vue</p>
-                    </div>
-                  </div>
-                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/nuxtw.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Nuxt</p>
-                    </div>
-                  </div>
-                  <div class="ml-5 mt-4 md:mt-0 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/wordpress.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Wordpress</p>
-                    </div>
-                  </div>
+                 </div>
                 </div>
               </div>
             </div>
-
-
-
           </div>
-        </div> 
-
-        <div class="mt-4">
-          <div class="w-full max-w-full md:w-[900px]">
-            <div class="md:flex w-full max-w-full justify-between mt-4">
-             
-              <div data-aos="zoom-in" data-aos-duration="3000">
-                <div class="flex flex-col items-center md:items-start">
-                  <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
-                  Design
-                </p>
-                <div class="line h-1 w-[70%] md:w-[200px] max-w-full mt-2"></div>
-                </div>
-                <div class="mt-6  grid grid-cols-2 md:grid-cols-4">
-                  <div class="flex flex-col items-center">
-                    <div class="stack rounded-lg flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/tail.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Tailwind</p>
-                    </div>
-                  </div>
-                  <div class="ml-5 flex flex-col items-center">
-                    <div class="stack rounded-lg flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/boot.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Bootstrap</p>
-                    </div>
-                  </div>
-                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/material-ui.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Material</p>
-                    </div>
-                  </div>
-                  <div class="ml-5 mt-4 md:mt-0 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/element.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Elementplus</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-
-              <div data-aos="zoom-in" data-aos-duration="2000" class="pb-20">
-                <div class="flex flex-col items-center md:items-start">
-                  <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
-                  State Management
-                </p>
-                <div class="line h-1 w-[70%] md:w-[200px] max-w-full mt-2"></div>
-                </div>
-                <div class="mt-6 grid grid-cols-2 md:grid-cols-4">
-                  <div class="flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div class="w-11 md:w-12 flex flex-col items-center">
-                        <img
-                          src="@/assets/img/rredux.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Redux</p>
-                    </div>
-                  </div>
-                  <div class="ml-5 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div class="w-11 md:w-12 flex flex-col items-center">
-                        <img
-                          src="@/assets/img/letter-c.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Context</p>
-                    </div>
-                  </div>
-                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11  flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/pinia.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Pinia</p>
-                    </div>
-                  </div>
-                  <div class="ml-5 mt-4 md:mt-0 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/vue.svg"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">VueX</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-        </div> 
-
+        </div>
       </div>
     </div>
   </div>
@@ -385,6 +132,22 @@ import companies6 from "@/assets/img/java.svg";
 import companies3 from "@/assets/img/git.svg";
 import companies7 from "@/assets/img/docker.svg";
 import Navbar from "@/components/Navbar.vue";
+import html from "../assets/img/htmls.png";
+import css from "../assets/img/csss.png";
+import javascript from "../assets/img/java.png";
+import typescript from "../assets/img/ts.png";
+import react from "../assets/img/react.png";
+import vue from "../assets/img/vue.png";
+import nuxt from "../assets/img/nuxtw.png";
+import wordpress from "../assets/img/wordpress.png";
+import tailwind from "../assets/img/tail.png";
+import bootstrap from "../assets/img/boot.png";
+import material from "../assets/img/material-ui.png";
+import elementplus from "../assets/img/element.png";
+import redux from "../assets/img/rredux.png";
+import context from "../assets/img/letter-c.png";
+import pinia from "../assets/img/pinia.png";
+import vuex from "../assets/img/vue.svg";
 
 export default {
   components: {
@@ -421,6 +184,48 @@ export default {
           stack: "Github",
         },
       ],
+      categories: [
+        {
+          title: "Programming Languages",
+          duration: "3000",
+          items: [
+            { name: "HTML", img: html },
+            { name: "CSS", img: css },
+            { name: "JavaScript", img: javascript },
+            { name: "TypeScript", img: typescript },
+          ],
+        },
+        {
+          title: "Frameworks/Libraries",
+          duration: "2000",
+          items: [
+            { name: "React", img: react },
+            { name: "Vue", img: vue },
+            { name: "Nuxt", img: nuxt },
+            { name: "Wordpress", img: wordpress },
+          ],
+        },
+        {
+          title: "Design",
+          duration: "3000",
+          items: [
+            { name: "Tailwind", img: tailwind },
+            { name: "Bootstrap", img: bootstrap },
+            { name: "Material", img: material },
+            { name: "Elementplus", img: elementplus },
+          ],
+        },
+        {
+          title: "State Management",
+          duration: "2000",
+          items: [
+            { name: "Redux", img: redux },
+            { name: "Context", img: context },
+            { name: "Pinia", img: pinia },
+            { name: "VueX", img: vuex },
+          ],
+        },
+      ],
     };
   },
 };
@@ -446,8 +251,6 @@ export default {
 
 .stack {
   background: linear-gradient(111deg, #ffffff1a 1.21%, transparent 100%);
-  width: 50px;
-  height: 40px;
 }
 .gradient-text {
   background: linear-gradient(
