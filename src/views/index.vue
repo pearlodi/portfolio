@@ -80,7 +80,7 @@ My journey into web development started with a simple curiosity, which quickly g
               <div class="stack rounded-lg">
                 <div class="w-11 md:w-12  flex justify-center items-center">
                   <img
-                    src="@/assets/img/Linkedin.png"
+                    src="@/assets/img/linkedin.png"
                     class="p-3 w-full h-full"
                     alt="contact"
                   />
