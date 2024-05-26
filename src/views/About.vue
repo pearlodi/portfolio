@@ -58,16 +58,16 @@
         </div>
 
         <div class="mt-4">
-          <div class="w-full max-w-full md:w-[800px]">
+          <div class="w-full max-w-full md:w-[900px]">
             <div class="md:flex w-full max-w-full justify-between mt-4">
-              <div data-aos="zoom-out" data-aos-duration="3000">
-                <div class="flex flex-col items-center">
+              <div data-aos="zoom-in" data-aos-duration="3000">
+                <div class="flex flex-col items-center md:items-start">
                   <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
                   Programming Languages
                 </p>
-                <div class="line h-1 w-[70%] max-w-full md:w-[200px] mt-2"></div>
+                <div class="line h-1 w-[70%] md:w-[200px] max-w-full mt-2"></div>
                 </div>
-                <div class="mt-6 grid grid-cols-2 md:grid-cols-1 ">
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-4 ">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
@@ -134,12 +134,12 @@
                   </div>
                 </div>
               </div>
-              <div data-aos="zoom-out" data-aos-duration="2000">
-                <div class="flex flex-col items-center">
+              <div data-aos="zoom-in" data-aos-duration="2000">
+                <div class="flex flex-col items-center md:items-start">
                   <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
                   Frameworks/Libraries
                 </p>
-                <div class="line h-1 w-[70%] max-w-full md:w-[200px] mt-2"></div>
+                <div class="line h-1 w-[70%] md:w-[200px] max-w-full mt-2"></div>
                 </div>
                 <div class="mt-6 grid grid-cols-2 md:grid-cols-1 md:flex">
                   <div class="flex flex-col items-center">
@@ -212,17 +212,17 @@
         </div> 
 
         <div class="mt-4">
-          <div class="w-full max-w-full md:w-[800px]">
+          <div class="w-full max-w-full md:w-[900px]">
             <div class="md:flex w-full max-w-full justify-between mt-4">
              
-              <div data-aos="zoom-out" data-aos-duration="3000">
-                <div class="flex flex-col items-center">
+              <div data-aos="zoom-in" data-aos-duration="3000">
+                <div class="flex flex-col items-center md:items-start">
                   <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
                   Design
                 </p>
-                <div class="line h-1 w-[70%] max-w-full md:w-[200px] mt-2"></div>
+                <div class="line h-1 w-[70%] md:w-[200px] max-w-full mt-2"></div>
                 </div>
-                <div class="mt-6  grid grid-cols-2 md:grid-cols-1">
+                <div class="mt-6  grid grid-cols-2 md:grid-cols-4">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg flex justify-center">
                       <div
@@ -268,7 +268,7 @@
                       </div>
                     </div>
                     <div>
-                      <p class="text-grad font-bold">Material UI</p>
+                      <p class="text-grad font-bold">Material</p>
                     </div>
                   </div>
                   <div class="ml-5 mt-4 md:mt-0 flex flex-col items-center">
@@ -284,21 +284,21 @@
                       </div>
                     </div>
                     <div>
-                      <p class="text-grad font-bold">Element Plus</p>
+                      <p class="text-grad font-bold">Elementplus</p>
                     </div>
                   </div>
                 </div>
               </div>
               
 
-              <div data-aos="zoom-out" data-aos-duration="2000" class="pb-20">
-                <div class="flex flex-col items-center">
+              <div data-aos="zoom-in" data-aos-duration="2000" class="pb-20">
+                <div class="flex flex-col items-center md:items-start">
                   <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
-                  State management
+                  State Management
                 </p>
-                <div class="line h-1 w-[70%] max-w-full md:w-[200px] mt-2"></div>
+                <div class="line h-1 w-[70%] md:w-[200px] max-w-full mt-2"></div>
                 </div>
-                <div class="mt-6 grid grid-cols-2 md:grid-cols-1">
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-4">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div class="w-11 md:w-12 flex flex-col items-center">
@@ -324,7 +324,7 @@
                       </div>
                     </div>
                     <div>
-                      <p class="text-grad font-bold">Context API</p>
+                      <p class="text-grad font-bold">Context</p>
                     </div>
                   </div>
                   <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
@@ -446,6 +446,8 @@ export default {
 
 .stack {
   background: linear-gradient(111deg, #ffffff1a 1.21%, transparent 100%);
+  width: 50px;
+  height: 40px;
 }
 .gradient-text {
   background: linear-gradient(
