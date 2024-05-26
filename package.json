@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.5",
+    "@tato30/vue-pdf": "^1.9.7",
     "aos": "^2.3.4",
     "element-plus": "^2.4.3",
     "vue": "^3.3.12",

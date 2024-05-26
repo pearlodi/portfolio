@@ -5,12 +5,7 @@ const routes = [
     name: 'home',
     component: () => import('@/views/index.vue'),
         meta: { title: "pearl - Home" },
-  },  {
-    path: '/contact',
-    name: 'contact',
-    component: () => import('@/views/Contact.vue'),
-            meta: { title: "Pearl - Contact" },
-  },  {
+  },{
     path: '/about',
     name: 'about',
     component: () => import('@/views/About.vue'),
@@ -47,10 +42,10 @@ const routes = [
         meta: { title: "Pearl - Resume" },
 
   },
-  {
-    path: '/:catchAll(.*)',
-    redirect: { name: 'home' } 
-  }
+  // {
+  //   path: '/:catchAll(.*)',
+  //   redirect: { name: 'home' } 
+  // }
   
 
 ]

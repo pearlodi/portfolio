@@ -82,16 +82,23 @@
                     Visit {{ stack.company }}
                   </p>
                 </a>
-                <p class="about-text mb-2 cursor-pointer">
-                  <ProjectModal
-                    :itemProps="stack.company"
-                    :itemDescription="stack.description"
-                    :itemTechnologies="stack.technologies"
-                    :itemLibraries="stack.libraries"
-                    :itemImages="stack.images"
-                    :itemLinks="stack.link"
-                  />
-                </p>
+                <div class="flex items-center">
+                  <p class="about-text mb-2 cursor-pointer">
+
+<ProjectModal
+  :itemProps="stack.company"
+  :itemDescription="stack.description"
+  :itemTechnologies="stack.technologies"
+  :itemLibraries="stack.libraries"
+  :itemImages="stack.images"
+  :itemLinks="stack.link"
+/>
+</p>
+<div class="w-5">
+  <img src="../assets/img/bells.png" class="bell w-full" alt="bell" />
+
+</div>
+                </div>
               </div>
             </div>
           </div>
@@ -105,13 +112,13 @@
 </template>
 
 <script>
-import ownage from "@/assets/img/ownage.png";
+import ownage from "@/assets/img/ownage/ownage4.png";
 import hmgls from "@/assets/img/hmgls.png";
-import abitto from "@/assets/img/abitto.png";
+import abitto from "@/assets/img/ssv/ssv3.png";
 import movie from "@/assets/img/movie.png";
 import ecomm from "@/assets/img/ecomm.png";
 import pods from "@/assets/img/pods1.png";
-import tfs from "@/assets/img/tfs.png";
+import tfs from "@/assets/img/tfs/tfs9w.png";
 import ProjectModal from "@/components/Modal/ProjectModal.vue";
 import Navbar from "@/components/Navbar.vue";
 import home from "@/assets/img/port/home.png";
@@ -167,27 +174,7 @@ export default {
       isLoading: true,
       filteredStack: [],
       stacks: [
-        {
-          id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences",
-          category: "Professional Projects",
-          year: "2023",
-          company: "Ownage Fiditech",
-          jobDescription: "Web developer",
-          url: ownage,
-          description:
-            "Designed the official website for Ownage Fiditech web development company. Designed and built a modern, responsive online platform showcasing our services and expertise. Utilized current web technologies to create a user-friendly interface that effectively communicated our brand identity and capabilities and also ensuring SEO for the website",
-          link: "https://ownagefiditech.com/",
-          technologies: ["HTML", "CSS", "Vue.js", "Vite", "Sitemap"],
-          libraries: [
-            "Element Plus",
-            "Animate on scroll",
-            "Vue3 marquee",
-            "Vue3 carousel",
-          ],
-          images: [ownage5, ownage1, ownage2, ownage3, ownage4],
-        },
-        {
+      {
           id: 1,
           name: "I am a natural team worker and adaptable to all challenging situations categoryProfessional Projects",
           category: "Professional Projects",
@@ -244,6 +231,28 @@ export default {
           ],
           images: [tfs2, tfs1, tfs3, tfs4, tfs5],
         },
+        {
+          id: 1,
+          name: "I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences",
+          category: "Professional Projects",
+          year: "2023",
+          company: "Ownage Fiditech",
+          jobDescription: "Web developer",
+          url: ownage,
+          description:
+            "Designed the official website for Ownage Fiditech web development company. Designed and built a modern, responsive online platform showcasing our services and expertise. Utilized current web technologies to create a user-friendly interface that effectively communicated our brand identity and capabilities and also ensuring SEO for the website",
+          link: "https://ownagefiditech.com/",
+          technologies: ["HTML", "CSS", "Vue.js", "Vite", "Sitemap"],
+          libraries: [
+            "Element Plus",
+            "Animate on scroll",
+            "Vue3 marquee",
+            "Vue3 carousel",
+          ],
+          images: [ownage5, ownage1, ownage2, ownage3, ownage4],
+        },
+       
+        
         {
           id: 1,
           name: "I am a natural team worker and adaptable to all challenging situations categoryProfessional Projects",
@@ -380,11 +389,35 @@ export default {
   padding: 6px;
   font-weight: 600;
 }
-
+@keyframes ring {
+    0%, 20%, 50%, 80%, 100% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(15deg);
+    }
+    30% {
+        transform: rotate(-15deg);
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(-10deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+}
 .stack-tech-li {
   align-items: center;
 }
-
+.bell{
+  animation: ring 2s infinite;
+}
 .experience-bg {
   border-radius: 16px;
   background: linear-gradient(

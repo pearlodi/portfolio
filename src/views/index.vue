@@ -1,7 +1,7 @@
 <template>
   <div class="project-background h-fit pb-8 md:pb-0">
-    <div class="fixed z-[1200] w-full">
-      <homeNavVue />
+    <div class="pt-10">
+      <Navbar />
     </div>
     <div class="project-background flex flex-col md:h-full items-center">
       <div class="flex flex-col md:h-[100%] w-[90%]">
@@ -20,7 +20,7 @@
         </div>
         <div>
           <div
-            class="md:w-[1100px] w-full max-w-full mt-6 md:mt-10 rounded-xl"
+            class="md:w-[1100px] w-full max-w-full mt-6 md:mt-7 rounded-xl"
             :class="{ 'stack-dark': isDarkMode }"
           >
             <Vue3Marquee :pause-on-hover="true">
@@ -50,16 +50,9 @@
             <strong class="text-[24px] text-gradient">HEY THERE 🌟</strong>
             <br />
             <p class="mt-3 text-gradient ">
-              Welcome to my space. I'm a software Engineer with a passion for
-              coding and creating. Over the past two years, I've been getting
-              hands-on with HTML, CSS, JavaScript, and having a blast with
-              React.js and Vue.js. I love turning ideas into real, functional
-              projects. I'm a team player through and through, always ready to
-              pitch in and help out. I pride myself on being reliable and
-              committed, especially when things get busy. I'm eager to keep
-              learning and growing in the software engineering world. So, if
-              you've got a cool project or just want to connect, I'm all ears!
-              Let's chat and see how we can make something awesome together!
+              Welcome to my space. I'm Odi Pearl. A frontend developer who loves creating things on the web. I have a strong foundation in HTML, CSS, JavaScript, React, Vue, Nuxt and Next and I build responsive, user-friendly applications that scale.
+
+My journey into web development started with a simple curiosity, which quickly grew into a passion for crafting beautiful and functional user interfaces. I love turning ideas and mockups into reality and am always looking to learn and improve.
             </p>
           </div>
         </div>
@@ -137,13 +130,14 @@
 
 
 <script>
+
 import { Vue3Marquee } from "vue3-marquee";
-import companies4 from "@/assets/img/figma.svg";
-import companies1 from "@/assets/img/react.svg";
-import companies2 from "@/assets/img/vue.svg";
-import companies6 from "@/assets/img/java.svg";
+import companies4 from "@/assets/img/figma.png";
+import companies1 from "@/assets/img/react.png";
+import companies2 from "@/assets/img/vue.png";
+import companies6 from "@/assets/img/java.png";
 import companies3 from "@/assets/img/git.svg";
-import companies7 from "@/assets/img/docker.svg";
+import companies7 from "@/assets/img/dock.png";
 import companies8 from "@/assets/img/typescript.png";
 import Navbar from "@/components/Navbar.vue";
 import Typewriter from "@/components/Typewriter.vue";

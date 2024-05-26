@@ -54,9 +54,9 @@
                                     alt="image"
                                     class="h-full w-full   max-h-full  rounded-xl mt-5" />
                             </div>
-                                              <p class="text-[white] font-bold mt-2 text-sm md:text-[15px] text-grad">
+                                              <!-- <p class="text-[white] font-bold mt-2 text-sm md:text-[15px] text-grad">
   {{ stack.summary && stack.summary.length > 100 ? stack.summary.slice(0, 100) + '...' : stack.summary }}
-</p>
+</p> -->
 
                             <div class="pt-2 flex justify-between items-center">
                               

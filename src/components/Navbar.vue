@@ -19,37 +19,37 @@
 
 
             <router-link to="/" class="cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-md font-bold cursor-pointer mt-6 md:mt-0">
+                <li class="text text-md font-bold cursor-pointer mt-6 md:mt-0">
                     Home
                 </li>
             </router-link>
             <router-link to="/about" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-md font-bold  cursor-pointer">
+                <li class="text text-md font-bold  cursor-pointer">
                     About
                 </li>
             </router-link>
             <router-link to="/experience" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-md font-bold  cursor-pointer">
+                <li class="text text-md font-bold  cursor-pointer">
                     Experience
                 </li>
             </router-link>
             <router-link to="/projects" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
-                <li class=" text-md text-gradient font-bold  cursor-pointer">
+                <li class=" text-md text font-bold  cursor-pointer">
                     Projects
                 </li>
             </router-link>
             <router-link to="/articles" class="md:ml-8 mt-4 md:mt-0 cursor-pointer " active-class="active-link">
-                <li class=" text-md text-gradient font-bold  cursor-pointer">
+                <li class=" text-md text font-bold  cursor-pointer">
                     Articles
                 </li>
             </router-link>
             <router-link to="/contact" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-md font-bold  cursor-pointer">
+                <li class="text text-md font-bold  cursor-pointer">
                     Contact
                 </li>
             </router-link>
             <router-link to="/resume" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
-                <li class="text-gradient text-md font-bold  cursor-pointer">
+                <li class="text text-md font-bold  cursor-pointer">
                     Resume
                 </li>
             </router-link>
@@ -61,17 +61,38 @@
 
 <style scoped>
 .active-link {
-
-    border-bottom: 4px solid #fff;
-    padding-bottom: 4px;
+    position: relative; /* Ensure the element is positioned relative */
     color: white;
     background: transparent !important;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 5px;
+    
 }
 
-.active-link .text-gradient {
+.text {
+    background: linear-gradient(169deg, #d3d4d559 8.16%, #fff 150.61%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust position if needed */
+    width: 100%;
+    height: 4px;
+    border-bottom: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5);
+    filter: blur(2px);
+}
+
+.active-link .text {
     color: white !important;
     background: transparent !important;
     background-clip: text;

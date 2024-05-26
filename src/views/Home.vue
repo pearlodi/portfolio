@@ -1,18 +1,19 @@
 <template>
     <div class="project-background md:py-10 pb-10">
         <Navbar />
-        <div class="flex flex-col justify-center items-center mt-20 px-4">
-            <div class="md:flex items-center justify-center md:justify-between w-full max-w-full md:w-[800px]">
-                <p class="text-gradient font-[700] text-xl md:text-4xl text-white pb-4">RESUME</p>
-                <a href="/pearls.pdf" download="Pearl Resume.pdf"
+        <div class="flex flex-col justify-center items-center mt-10 px-4">
+             <div class="md:flex items-center justify-center md:justify-end w-full max-w-full md:w-[60%]">
+                <a href="/resum.pdf" download="Pearl Resume.pdf"
                     class="portt mt-8 md:mt-0 text-white p-3 text-center cursor-pointer w-[200px]">
                     Download My Resume
                 </a>
-            </div>
+            </div> 
 
-            <div class="mt-4 md:w-[800px] w-full max-w-full">
-                <iframe src="/pearls.pdf" class="max-w-full w-full h-full iframe-container" title=""></iframe>
-            </div>
+           
+            <div class="flex justify-center items-center h-screen w-[60%] mt-4">
+    <embed src="/resum.pdf" type="application/pdf" class="w-full h-full" controls="false" />
+    
+  </div>
         </div>
     </div>
 </template>

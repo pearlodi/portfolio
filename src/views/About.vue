@@ -10,7 +10,7 @@
             <p class="text-3xl text-white font-[800]">ABOUT ME</p>
             <div>
               <div>
-                <div class="line h-1 w-full max-w-full md:w-[200px] mt-5"></div>
+                <div class="line h-1  max-w-full md w-full max-w-full:md:w-[200px] mt-5"></div>
               </div>
             </div>
           </div>
@@ -21,25 +21,12 @@
             data-aos="fade-zoom-in"
             data-aos-duration="3000"
           >
-            <strong class="text-5xl gradient-text"
+            <strong class="text-4xl md:text-5xl gradient-text"
               >I’m a Frontend Developer. <br />I build interactive and
               user-friendly applications.</strong
             >
-            <br /><br />
-            Welcome to my space. I'm a software enthusiast with a passion for
-            coding and creating. Over the past two years, I've been getting
-            hands-on with HTML, CSS, JavaScript, and having a blast with
-            React.js and Vue.js.
-            <br />
-            I love turning ideas into real, functional projects. I'm a team
-            player through and through, always ready to pitch in and help out. I
-            pride myself on being reliable and committed, especially when things
-            get busy.
-            <br />
-            I'm eager to keep learning and growing in the software engineering
-            world. So, if you've got a cool project or just want to connect, I'm
-            all ears! Let's chat and see how we can make something awesome
-            together!
+            <br><br>
+            Hi, I'm Odi Pearl. I'm a frontend developer based in Nigeria with over two years of experience in creating beautiful and functional web applications. I have a strong foundation in HTML, CSS, JavaScript, React, and Vue, focusing on building scalable and user-friendly experiences. My journey into web development started with genuine curiosity and has evolved into a deep passion for turning ideas and mockups into reality. I love the challenge of bringing designs to life and consistently strive to enhance my skills.
           </p>
         </div>
         <div>
@@ -69,14 +56,14 @@
             </div>
           </div>
         </div>
+
+
         <div class="mt-4">
           <div class="w-full max-w-full md:w-[800px]">
-            <div class="flex w-full max-w-full justify-between">
-              <div data-aos="zoom-out" data-aos-duration="2000">
-                <p class="text-xl text-white font-[800] mt-10">
-                  Programming Languages
-                </p>
-                <div class="line h-1 w-[200px] mt-2"></div>
+            <div class="md:flex w-full max-w-full justify-between mt-4">
+              <div data-aos="zoom-out" data-aos-duration="3000">
+                <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">Programming Languages</p>
+                <div class="line h-1 w-full max-w-full md:w-[120px] mt-2"></div>
                 <div class="mt-6 grid md:flex">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
@@ -84,7 +71,7 @@
                         class="w-11 md:w-12 flex justify-center items-center"
                       >
                         <img
-                          src="@/assets/img/Files.png"
+                          src="@/assets/img/htmls.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -94,13 +81,13 @@
                       <p class="text-grad font-bold">HTML</p>
                     </div>
                   </div>
-                  <div class="ml-5 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
+                  <div class="md:ml-5 flex flex-col items-center">
+                    <div class="stack rounded-lg flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
                       >
                         <img
-                          src="@/assets/img/css2.png"
+                          src="@/assets/img/csss.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -110,50 +97,51 @@
                       <p class="text-grad font-bold">CSS</p>
                     </div>
                   </div>
+                  <div class="md:ml-5 flex flex-col items-center">
+                    <div class="stack rounded-lg flex justify-center">
+                      <div
+                        class="w-11 md:w-12 flex justify-center items-center"
+                      >
+                        <img
+                          src="@/assets/img/java.png"
+                          class="p-3 w-full"
+                          alt="contact"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <p class="text-grad font-bold">Javascript</p>
+                    </div>
+                  </div>
                   <div class="ml-5 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
                       >
                         <img
-                          src="@/assets/img/java-script.png"
+                          src="@/assets/img/ts.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
                       </div>
                     </div>
                     <div>
-                      <p class="text-grad font-bold">JavaScript</p>
-                    </div>
-                  </div>
-                  <div class="ml-5 flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div class="w-11 md:w-12 flex flex-col items-center">
-                        <img
-                          src="@/assets/img/typescripts.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">Tyescript</p>
+                      <p class="text-grad font-bold">Typescript</p>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div data-aos="zoom-out" data-aos-duration="3000">
-                <p class="text-xl text-white font-[800] mt-10">
+              <div data-aos="zoom-out" data-aos-duration="2000">
+                <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
                   Frameworks/Libraries
                 </p>
-                <div class="line h-1 w-[200px] mt-2"></div>
+                <div class="line h-1 w-full max-w-full md:w-[200px] mt-2"></div>
                 <div class="mt-6 grid md:flex">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div class="w-11 md:w-12 flex flex-col items-center">
                         <img
-                          src="@/assets/img/structure.png"
+                          src="@/assets/img/react.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -167,7 +155,7 @@
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div class="w-11 md:w-12 flex flex-col items-center">
                         <img
-                          src="@/assets/img/document.png"
+                          src="@/assets/img/vue.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -177,13 +165,13 @@
                       <p class="text-grad font-bold">Vue</p>
                     </div>
                   </div>
-                  <div class="ml-5 flex flex-col items-center">
+                  <div class="md:ml-5 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
                       >
                         <img
-                          src="@/assets/img/nuxt1.png"
+                          src="@/assets/img/nuxtw.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -213,34 +201,26 @@
               </div>
             </div>
 
-            <div class="flex w-full max-w-full justify-between mt-4">
+
+
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <div class="w-full max-w-full md:w-[800px]">
+            <div class="md:flex w-full max-w-full justify-between mt-4">
+             
               <div data-aos="zoom-out" data-aos-duration="3000">
-                <p class="text-xl text-white font-[800] mt-10">Design</p>
-                <div class="line h-1 w-[120px] mt-2"></div>
+                <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">Design</p>
+                <div class="line h-1 w-full max-w-full md:w-[120px] mt-2"></div>
                 <div class="mt-6 grid md:flex">
                   <div class="flex flex-col items-center">
-                    <div class="stack rounded-lg h-full flex justify-center">
-                      <div
-                        class="w-11 md:w-12 flex justify-center items-center"
-                      >
-                        <img
-                          src="@/assets/img/scss.png"
-                          class="p-3 w-full"
-                          alt="contact"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <p class="text-grad font-bold">SCSS</p>
-                    </div>
-                  </div>
-                  <div class="ml-5 flex flex-col items-center">
                     <div class="stack rounded-lg flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
                       >
                         <img
-                          src="@/assets/img/tailwind.png"
+                          src="@/assets/img/tail.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -256,7 +236,7 @@
                         class="w-11 md:w-12 flex justify-center items-center"
                       >
                         <img
-                          src="@/assets/img/bootstrap.png"
+                          src="@/assets/img/boot.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -266,7 +246,7 @@
                       <p class="text-grad font-bold">Bootstrap</p>
                     </div>
                   </div>
-                  <div class="ml-5 flex flex-col items-center">
+                  <div class="md:ml-5 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
@@ -300,17 +280,19 @@
                   </div>
                 </div>
               </div>
-              <div data-aos="zoom-out" data-aos-duration="2000">
-                <p class="text-xl text-white font-[800] mt-10">
+              
+
+              <div data-aos="zoom-out" data-aos-duration="2000" class="pb-20">
+                <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
                   State Management
                 </p>
-                <div class="line h-1 w-[200px] mt-2"></div>
+                <div class="line h-1 w-full max-w-full md:w-[200px] mt-2"></div>
                 <div class="mt-6 grid md:flex">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div class="w-11 md:w-12 flex flex-col items-center">
                         <img
-                          src="@/assets/img/react-redux.png"
+                          src="@/assets/img/rredux.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -334,13 +316,13 @@
                       <p class="text-grad font-bold">Context API</p>
                     </div>
                   </div>
-                  <div class="ml-5 flex flex-col items-center">
+                  <div class="md:ml-5 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
-                        class="w-11 md:w-12 flex justify-center items-center"
+                        class="w-11  flex justify-center items-center"
                       >
                         <img
-                          src="@/assets/img/pineapple.png"
+                          src="@/assets/img/pinia.png"
                           class="p-3 w-full"
                           alt="contact"
                         />
@@ -369,8 +351,12 @@
                 </div>
               </div>
             </div>
+
+
+
           </div>
         </div>
+
       </div>
     </div>
   </div>

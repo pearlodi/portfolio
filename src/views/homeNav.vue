@@ -214,14 +214,14 @@ export default {
         <div class="hidden md:flex mt-4 md:mt-16 ">
         <div class="w-full -rotate-6">
           <img
-            src="../assets/img/ownage/ownage6.png"
+            src="../assets/img/articles/fingerprint.jpg"
             alt="menu"
             class="w-full h-full"
           />
         </div>
         <div class="w-full ml-8 rotate-3">
           <img
-            src="../assets/img/ownage/ownage2.png"
+            src="../assets/img/ecomm/ecomm1.png"
             alt="menu"
             class="w-full h-full"
           />
@@ -235,7 +235,7 @@ export default {
         </div>
         <div class="w-full ml-8 rotate-3">
           <img
-            src="../assets/img/ownage/ownage4.png"
+            src="../assets/img/tfs/tfs4.png"
             alt="menu"
             class="w-full h-full"
           />
