@@ -57,14 +57,17 @@
           </div>
         </div>
 
-
         <div class="mt-4">
           <div class="w-full max-w-full md:w-[800px]">
             <div class="md:flex w-full max-w-full justify-between mt-4">
               <div data-aos="zoom-out" data-aos-duration="3000">
-                <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">Programming Languages</p>
-                <div class="line h-1 w-full max-w-full md:w-[120px] mt-2"></div>
-                <div class="mt-6 grid md:flex">
+                <div class="flex flex-col items-center">
+                  <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
+                  Programming Languages
+                </p>
+                <div class="line h-1 w-[70%] max-w-full md:w-[200px] mt-2"></div>
+                </div>
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-1 ">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
@@ -97,7 +100,7 @@
                       <p class="text-grad font-bold">CSS</p>
                     </div>
                   </div>
-                  <div class="md:ml-5 flex flex-col items-center">
+                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
                     <div class="stack rounded-lg flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
@@ -113,7 +116,7 @@
                       <p class="text-grad font-bold">Javascript</p>
                     </div>
                   </div>
-                  <div class="ml-5 flex flex-col items-center">
+                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
@@ -132,11 +135,13 @@
                 </div>
               </div>
               <div data-aos="zoom-out" data-aos-duration="2000">
-                <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
+                <div class="flex flex-col items-center">
+                  <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
                   Frameworks/Libraries
                 </p>
-                <div class="line h-1 w-full max-w-full md:w-[200px] mt-2"></div>
-                <div class="mt-6 grid md:flex">
+                <div class="line h-1 w-[70%] max-w-full md:w-[200px] mt-2"></div>
+                </div>
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-1 md:flex">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div class="w-11 md:w-12 flex flex-col items-center">
@@ -165,7 +170,7 @@
                       <p class="text-grad font-bold">Vue</p>
                     </div>
                   </div>
-                  <div class="md:ml-5 flex flex-col items-center">
+                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
@@ -181,7 +186,7 @@
                       <p class="text-grad font-bold">Nuxt</p>
                     </div>
                   </div>
-                  <div class="ml-5 flex flex-col items-center">
+                  <div class="ml-5 mt-4 md:mt-0 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
@@ -204,16 +209,20 @@
 
 
           </div>
-        </div>
+        </div> 
 
         <div class="mt-4">
           <div class="w-full max-w-full md:w-[800px]">
             <div class="md:flex w-full max-w-full justify-between mt-4">
              
               <div data-aos="zoom-out" data-aos-duration="3000">
-                <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">Design</p>
-                <div class="line h-1 w-full max-w-full md:w-[120px] mt-2"></div>
-                <div class="mt-6 grid md:flex">
+                <div class="flex flex-col items-center">
+                  <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
+                  Design
+                </p>
+                <div class="line h-1 w-[70%] max-w-full md:w-[200px] mt-2"></div>
+                </div>
+                <div class="mt-6  grid grid-cols-2 md:grid-cols-1">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg flex justify-center">
                       <div
@@ -246,7 +255,7 @@
                       <p class="text-grad font-bold">Bootstrap</p>
                     </div>
                   </div>
-                  <div class="md:ml-5 flex flex-col items-center">
+                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
@@ -262,7 +271,7 @@
                       <p class="text-grad font-bold">Material UI</p>
                     </div>
                   </div>
-                  <div class="ml-5 flex flex-col items-center">
+                  <div class="ml-5 mt-4 md:mt-0 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
@@ -283,11 +292,13 @@
               
 
               <div data-aos="zoom-out" data-aos-duration="2000" class="pb-20">
-                <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
-                  State Management
+                <div class="flex flex-col items-center">
+                  <p class="text-xl text-white font-[800] mt-10 text-center md:text-left">
+                  State management
                 </p>
-                <div class="line h-1 w-full max-w-full md:w-[200px] mt-2"></div>
-                <div class="mt-6 grid md:flex">
+                <div class="line h-1 w-[70%] max-w-full md:w-[200px] mt-2"></div>
+                </div>
+                <div class="mt-6 grid grid-cols-2 md:grid-cols-1">
                   <div class="flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div class="w-11 md:w-12 flex flex-col items-center">
@@ -316,7 +327,7 @@
                       <p class="text-grad font-bold">Context API</p>
                     </div>
                   </div>
-                  <div class="md:ml-5 flex flex-col items-center">
+                  <div class="md:ml-5 mt-4 md:mt-0 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11  flex justify-center items-center"
@@ -332,7 +343,7 @@
                       <p class="text-grad font-bold">Pinia</p>
                     </div>
                   </div>
-                  <div class="ml-5 flex flex-col items-center">
+                  <div class="ml-5 mt-4 md:mt-0 flex flex-col items-center">
                     <div class="stack rounded-lg h-full flex justify-center">
                       <div
                         class="w-11 md:w-12 flex justify-center items-center"
@@ -355,7 +366,7 @@
 
 
           </div>
-        </div>
+        </div> 
 
       </div>
     </div>
