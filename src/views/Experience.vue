@@ -176,7 +176,7 @@ export default {
           jobs: [
             "Developed responsive and optimized web applications using React.js, HTML, and CSS, contributing to a 40% improvement in user experience.",
             "Adapted quickly to new tools and frameworks, reducing development time by 20% and demonstrating a commitment to continuous learning.",
-            "Incorporated mentor feedback to refine code quality and enhance user experience.",
+            "Incorporated mentor feedback to refine code quality and enhance user experience while actively keeping up to date with new technologies.",
           ],
           imgs: [
             {
