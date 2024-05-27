@@ -7,9 +7,7 @@
                     class="portt mt-8 md:mt-0 text-white p-3 text-center cursor-pointer w-[200px]">
                     Download My Resume
                 </a>
-            </div> 
-
-           
+            </div>         
             <div class="flex justify-center items-center h-screen w-full md:w-[60%] mt-4">
     <embed src="/resum.pdf" type="application/pdf" class="w-full h-full" controls="false" />
     
@@ -36,9 +34,7 @@ export default {
 }
 
 .iframe-container {
-    /* Adjust styles for iframe container on smaller screens */
     width: 100%;
     height: 500px;
-    /* Adjust as needed */
 }
 </style>

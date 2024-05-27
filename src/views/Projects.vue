@@ -6,108 +6,98 @@
     <div class="w-full max-w-full flex flex-col items-center justify-center">
       <div class="w-full max-w-full md:w-[1600px]">
         <div class="mx-5 md:mx-20">
-      <div
-        class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4"
-      >
-        <div class="mt-12">
-          <p class="text-2xl md:text-3xl text-white font-[800]">PROJECTS</p>
-          <div class="line h-1 w-[200px] mt-3 md:mt-5"></div>
-        </div>
-      </div>
-      <!-- <div>
-        <div class="experience-bg flex justify-between w-full max-w-full md:w-[700px] cursor-pointer mt-4">
-          <div v-for="category in categories"
-            :key="category"
-            @click="filterStack(category)"
-            :class="{ active: selectedCategory === category }"
-            class="experience cursor-pointer flex py-3 text-[white] text-[12px] md:text-[18px] w-[50%] text-center px-4 justify-center">
-            {{ category }}
-          </div>
-        </div>
-      </div> -->
-      <el-tabs
-        v-model="selectedCategory"
-        id="tabs"
-        class="experience-bg flex justify-between w-full max-w-full md:w-[700px] cursor-pointer mt-4"
-      >
-        <el-tab-pane
-          v-for="category in categories"
-          :key="category"
-          :label="category"
-          :name="category"
-          class="experience cursor-pointer flex py-3 text-[12px] md:text-[18px] w-[50%] text-center justify-center"
-        >
-        </el-tab-pane>
-      </el-tabs>
-   
-        <div class="tech-list mt-8 stack-tech-li">
-        <div class="stack-tech-ul stack-tech-li">
           <div
-            v-for="stack in filteredStack"
-            :key="stack.id"
-            class="stack-tech-li project-card p-10"
+            class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4"
           >
-            <el-skeleton v-if="isLoading" style="width: 100%" animated>
-              <template #template>
-                <el-skeleton-item
-                  variant="image"
-                  style="width: 100%; height: 250px; border-radius: 12px"
-                />
-                <div style="margin-top: 14px">
-                  <div
-                    style="
-                      display: flex;
-                      align-items: center;
-                      justify-content: space-between;
-                    "
-                  >
-                    <el-skeleton-item variant="text" style="width: 30%" />
-                    <el-skeleton-item variant="text" style="width: 30%" />
+            <div class="mt-12">
+              <p class="text-2xl md:text-3xl text-white font-[800]">PROJECTS</p>
+              <div class="line h-1 w-[200px] mt-3 md:mt-5"></div>
+            </div>
+          </div>
+          <el-tabs
+            v-model="selectedCategory"
+            id="tabs"
+            class="experience-bg flex justify-between w-full max-w-full md:w-[700px] cursor-pointer mt-4"
+          >
+            <el-tab-pane
+              v-for="category in categories"
+              :key="category"
+              :label="category"
+              :name="category"
+              class="experience cursor-pointer flex py-3 text-[12px] md:text-[18px] w-[50%] text-center justify-center"
+            >
+            </el-tab-pane>
+          </el-tabs>
+
+          <div class="tech-list mt-8 stack-tech-li">
+            <div class="stack-tech-ul stack-tech-li">
+              <div
+                v-for="stack in filteredStack"
+                :key="stack.id"
+                class="stack-tech-li project-card p-10"
+              >
+                <el-skeleton v-if="isLoading" style="width: 100%" animated>
+                  <template #template>
+                    <el-skeleton-item
+                      variant="image"
+                      style="width: 100%; height: 250px; border-radius: 12px"
+                    />
+                    <div style="margin-top: 14px">
+                      <div
+                        style="
+                          display: flex;
+                          align-items: center;
+                          justify-content: space-between;
+                        "
+                      >
+                        <el-skeleton-item variant="text" style="width: 30%" />
+                        <el-skeleton-item variant="text" style="width: 30%" />
+                      </div>
+                    </div>
+                  </template>
+                </el-skeleton>
+                <div v-else>
+                  <a :href="stack.link" target="_blank">
+                    <img
+                      :src="stack.url"
+                      alt="stack"
+                      class="h-full w-full rounded-xl mt-5"
+                  /></a>
+                  <div class="pt-4 flex justify-between items-center">
+                    <a :href="stack.link" target="_blank">
+                      <p
+                        class="text-[white] font-bold text-[12px] md:text-lg cursor-pointer"
+                      >
+                        Visit {{ stack.company }}
+                      </p>
+                    </a>
+                    <div class="flex items-center">
+                      <p class="about-text mb-2 cursor-pointer">
+                        <ProjectModal
+                          :itemProps="stack.company"
+                          :itemDescription="stack.description"
+                          :itemTechnologies="stack.technologies"
+                          :itemLibraries="stack.libraries"
+                          :itemImages="stack.images"
+                          :itemLinks="stack.link"
+                        />
+                      </p>
+                      <div class="w-5">
+                        <img
+                          src="../assets/img/bells.png"
+                          class="bell w-full"
+                          alt="bell"
+                        />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </template>
-            </el-skeleton>
-            <div v-else>
-              <a :href="stack.link" target="_blank">
-                <img
-                :src="stack.url"
-                alt="image"
-                class="h-full w-full rounded-xl mt-5"
-              /></a>
-              <div class="pt-4 flex justify-between items-center">
-                <a :href="stack.link" target="_blank">
-                  <p
-                    class="text-[white] font-bold text-[12px] md:text-lg cursor-pointer"
-                  >
-                    Visit {{ stack.company }}
-                  </p>
-                </a>
-                <div class="flex items-center">
-                  <p class="about-text mb-2 cursor-pointer">
-
-<ProjectModal
-  :itemProps="stack.company"
-  :itemDescription="stack.description"
-  :itemTechnologies="stack.technologies"
-  :itemLibraries="stack.libraries"
-  :itemImages="stack.images"
-  :itemLinks="stack.link"
-/>
-</p>
-<div class="w-5">
-  <img src="../assets/img/bells.png" class="bell w-full" alt="bell" />
-
-</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
-      </div>
     </div>
-    
   </div>
 </template>
 
@@ -174,7 +164,7 @@ export default {
       isLoading: true,
       filteredStack: [],
       stacks: [
-      {
+        {
           id: 1,
           name: "I am a natural team worker and adaptable to all challenging situations categoryProfessional Projects",
           category: "Professional Projects",
@@ -251,8 +241,7 @@ export default {
           ],
           images: [ownage5, ownage1, ownage2, ownage3, ownage4],
         },
-       
-        
+
         {
           id: 1,
           name: "I am a natural team worker and adaptable to all challenging situations categoryProfessional Projects",
@@ -390,32 +379,36 @@ export default {
   font-weight: 600;
 }
 @keyframes ring {
-    0%, 20%, 50%, 80%, 100% {
-        transform: rotate(0deg);
-    }
-    10% {
-        transform: rotate(15deg);
-    }
-    30% {
-        transform: rotate(-15deg);
-    }
-    40% {
-        transform: rotate(10deg);
-    }
-    60% {
-        transform: rotate(-10deg);
-    }
-    70% {
-        transform: rotate(5deg);
-    }
-    90% {
-        transform: rotate(-5deg);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(5deg);
+  }
+  90% {
+    transform: rotate(-5deg);
+  }
 }
 .stack-tech-li {
   align-items: center;
 }
-.bell{
+.bell {
   animation: ring 2s infinite;
 }
 .experience-bg {

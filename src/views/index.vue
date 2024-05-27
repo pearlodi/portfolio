@@ -19,10 +19,7 @@
           </div>
         </div>
         <div>
-          <div
-            class="md:w-[1100px] w-full max-w-full mt-6 md:mt-7 rounded-xl"
-            :class="{ 'stack-dark': isDarkMode }"
-          >
+          <div class="md:w-[1100px] w-full max-w-full mt-6 md:mt-7 rounded-xl">
             <Vue3Marquee :pause-on-hover="true">
               <div
                 class="index-a-trusted-companies-img gap-10 py-4"
@@ -32,7 +29,7 @@
                 <div class="img-a flex items-center gap-4">
                   <img
                     :src="avatar.url"
-                    alt="stack Image"
+                    alt="stack"
                     class="comp-img w-8 h-8 gap-12"
                   />
                   <h4 class="text-white">{{ avatar.stack }}</h4>
@@ -42,17 +39,23 @@
           </div>
         </div>
 
-        <div class="about-background w-full max-w-full md:w-[1100px] h-[350px] md:h-full overflow-scroll">
+        <div
+          class="about-background w-full max-w-full md:w-[1100px] h-[350px] md:h-full overflow-scroll"
+        >
           <div
             class="text-gradient font-bold text-sm md:text-[16px] leading-8 w-full max-w-full md:w-[1000px]"
-            :class="{ '': !isDarkMode, 'dark-mode': isDarkMode }"
           >
             <strong class="text-[24px] text-gradient">HEY THERE 🌟</strong>
             <br />
-            <p class="mt-3 text-gradient ">
-              Welcome to my space. I'm Odi Pearl. A frontend developer who loves creating things on the web. I have a strong foundation in HTML, CSS, JavaScript, React, Vue, Nuxt and Next and I build responsive, user-friendly applications that scale.
-
-My journey into web development started with a simple curiosity, which quickly grew into a passion for crafting beautiful and functional user interfaces. I love turning ideas and mockups into reality and am always looking to learn and improve.
+            <p class="mt-3 text-gradient">
+              Welcome to my space. I'm Odi Pearl. A frontend developer who loves
+              creating things on the web. I have a strong foundation in HTML,
+              CSS, JavaScript, React, Vue, Nuxt and Next and I build responsive,
+              user-friendly applications that scale. My journey into web
+              development started with a simple curiosity, which quickly grew
+              into a passion for crafting beautiful and functional user
+              interfaces. I love turning ideas and mockups into reality and am
+              always looking to learn and improve.
             </p>
           </div>
         </div>
@@ -61,7 +64,7 @@ My journey into web development started with a simple curiosity, which quickly g
           <a href="https://github.com/pearlodi" target="_blank">
             <div class="flex items-center">
               <div class="stack rounded-lg">
-                <div class="w-11 md:w-12  flex justify-center items-center">
+                <div class="w-11 md:w-12 flex justify-center items-center">
                   <img
                     src="@/assets/img/github.png"
                     class="p-3 w-full h-full"
@@ -76,9 +79,9 @@ My journey into web development started with a simple curiosity, which quickly g
             </div>
           </a>
           <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
-            <div class="flex items-center mt-6  md:mt-0 md:ml-10">
+            <div class="flex items-center mt-6 md:mt-0 md:ml-10">
               <div class="stack rounded-lg">
-                <div class="w-11 md:w-12  flex justify-center items-center">
+                <div class="w-11 md:w-12 flex justify-center items-center">
                   <img
                     src="@/assets/img/linkedin.png"
                     class="p-3 w-full h-full"
@@ -86,7 +89,7 @@ My journey into web development started with a simple curiosity, which quickly g
                   />
                 </div>
               </div>
-              <div class="ml-3 md:ml-6 ">
+              <div class="ml-3 md:ml-6">
                 <p class="text-grad font-bold">Connect</p>
                 <p class="text-white text-sm md:text-base">Linkedin</p>
               </div>
@@ -94,7 +97,7 @@ My journey into web development started with a simple curiosity, which quickly g
           </a>
           <div class="flex items-center mt-6 md:mt-0 md:ml-10">
             <div class="stack rounded-lg">
-              <div class="w-11 md:w-12  flex justify-center items-center">
+              <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
                   src="@/assets/img/location.png"
                   class="p-3 w-full h-full"
@@ -109,7 +112,7 @@ My journey into web development started with a simple curiosity, which quickly g
           </div>
           <div class="flex items-center mt-6 md:mt-0 md:ml-10">
             <div class="stack rounded-lg">
-              <div class="w-11 md:w-12  flex justify-center items-center">
+              <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
                   src="@/assets/img/gmail.png"
                   class="p-3 w-full h-full"
@@ -130,7 +133,6 @@ My journey into web development started with a simple curiosity, which quickly g
 
 
 <script>
-
 import { Vue3Marquee } from "vue3-marquee";
 import companies4 from "@/assets/img/figma.png";
 import companies1 from "@/assets/img/react.png";
@@ -191,7 +193,6 @@ export default {
 </script>
 
 <style>
-
 .card-details {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -296,10 +297,10 @@ export default {
   .card {
     box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.449);
   }
-  .grid{
+  .grid {
     display: grid;
-    grid-template-columns:  auto;
-    gap:14px
+    grid-template-columns: auto;
+    gap: 14px;
   }
 }
 </style>

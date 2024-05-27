@@ -67,13 +67,13 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 w-full max-w-full md:w-[900px]">
           <div
             v-for="category in categories"
             :key="category.title"
             class="mt-4"
           >
-            <div class="w-full max-w-full md:w-[900px] ">
+            <div class=" ">
               <div class="md:flex w-full max-w-full justify-between mt-4">
                 <div data-aos="zoom-in" :data-aos-duration="category.duration">
                   <div class="">
@@ -105,7 +105,6 @@
                         </div>
                       </div>
                       <div>
-                        <!-- <p class="text-grad font-bold">{{ item.name }}</p> -->
                       </div>
                     </div>
                   </div>

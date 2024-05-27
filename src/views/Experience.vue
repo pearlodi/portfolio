@@ -56,7 +56,6 @@
                     {{ stack.jobDescription }}
                   </p>
 
-                  <!-- Render images only if stack.imgs exists -->
                   <div v-if="stack.imgs" class="flex items-center gap-4">
                     <div
                       v-for="(img, imgIndex) in stack.imgs"
@@ -65,35 +64,40 @@
                     >
                       <img
                         :src="img.url"
-                        alt="stack Image"
-                        class="comp-img w-8 gap-12"
+                        alt="stack"
+                        class="comp-img w-6 gap-12"
                       />
                     </div>
                   </div>
-                  <!-- Job description -->
-                 <div class="mt-6">
-                    <div v-for="(job, index) in stack.jobs" :key="index" class="">
-                    <div class="flex items-center">
-                      <div>
-                        <div class="flex flex-col items-center w-[12px]">
-                          <img
-                            src="@/assets/img/black-circle.png"
-                            class="w-full md:h-[10px]"
-                            alt="circle"
-                          />
-                          <div class="h-[30px] bg-[#ffffff1a] w-[0.5px]"></div>
+                  <div class="mt-6">
+                    <div
+                      v-for="(job, index) in stack.jobs"
+                      :key="index"
+                      class=""
+                    >
+                      <div class="flex items-center">
+                        <div>
+                          <div class="flex flex-col items-center w-[12px]">
+                            <img
+                              src="@/assets/img/black-circle.png"
+                              class="w-full md:h-[10px]"
+                              alt="circle"
+                            />
+                            <div
+                              class="h-[30px] bg-[#ffffff1a] w-[0.5px]"
+                            ></div>
+                          </div>
                         </div>
-                      </div>
-                      <div>
-                        <p
-                          class="text-[#dededec9] ml-4 leading-[30px] font-normal text-[12px] md:text-[15px]"
-                        >
-                          {{ job }}
-                        </p>
+                        <div>
+                          <p
+                            class="text-[#dededec9] ml-4 leading-[30px] font-normal text-[12px] md:text-[15px]"
+                          >
+                            {{ job }}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                 </div>
                 </div>
               </div>
             </div>
@@ -142,7 +146,8 @@ export default {
             "Developed and optimized web applications by 20% using React.js and Vue.js to ensure seamless user experiences across devices.",
             "Collaborated with UX designers and back-end developers to integrate front-end components with server-side logic via RESTful APIs.",
             "Enhanced performance through implementation of asynchronous JavaScript loading techniques, lazy-loading images, and browser caching.",
-          ],imgs: [
+          ],
+          imgs: [
             {
               url: figma,
             },
@@ -185,13 +190,13 @@ export default {
             {
               url: java,
             },
-          
+
             {
               url: react,
             },
             {
               url: git,
-            }
+            },
           ],
         },
         {
@@ -206,20 +211,21 @@ export default {
           jobs: [
             "Participated in performance optimization efforts, analyzing and refining code for faster load times and improved user interactivity.",
             " Developed responsive and mobile-first web applications, ensuring adaptability to various screen sizes",
-          ], imgs: [
+          ],
+          imgs: [
             {
               url: figma,
             },
             {
               url: java,
             },
-          
+
             {
               url: react,
             },
             {
               url: git,
-            }
+            },
           ],
         },
         {
@@ -234,18 +240,18 @@ export default {
           jobs: [
             "Designed and developed a responsive web application leveraging React.js, focusing on intuitive user interfaces and seamless navigation.",
             "Solely engineered a project UI utilizing Vue.js, ensuring optimal front-end functionality and performance",
-          ], imgs: [
+          ],
+          imgs: [
             {
               url: figma,
             },
             {
               url: java,
             },
-          
-           
+
             {
               url: git,
-            }
+            },
           ],
         },
 
