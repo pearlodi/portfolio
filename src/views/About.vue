@@ -76,7 +76,10 @@
           >
             <div class=" ">
               <div class="md:flex w-full max-w-full justify-between mt-4">
-                <div data-aos="zoom-in" :data-aos-duration="category.duration
+                <div 
+                  data-aos="zoom-in" 
+                  :data-aos-duration="category.duration
+                   :data-aos-once="true"
 ">
                   <div class="">
                     <p
