@@ -43,7 +43,7 @@
           class="about-background w-full max-w-full md:w-[1100px] h-[350px] md:h-full overflow-scroll"
         >
           <div
-            class="text-gradient font-bold text-center md:text-left text-sm md:text-[16px] leading-8 w-full max-w-full md:w-[1000px]"
+            class="text-gradient font-bold text-sm md:text-[16px] leading-8 w-full max-w-full md:w-[1000px]"
           >
             <strong class="text-[24px] text-gradient">HEY THERE 🌟</strong>
             <br />
