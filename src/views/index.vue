@@ -43,7 +43,7 @@
           class="about-background w-full max-w-full md:w-[1100px] h-[350px] md:h-full overflow-scroll"
         >
           <div
-            class="text-gradient font-bold text-sm md:text-[16px] leading-8 w-full max-w-full md:w-[1000px]"
+            class="text-gradient font-bold text-center md:text-left text-sm md:text-[16px] leading-8 w-full max-w-full md:w-[1000px]"
           >
             <strong class="text-[24px] text-gradient">HEY THERE 🌟</strong>
             <br />
@@ -62,8 +62,8 @@
 
         <div class="mt-14 grid md:flex">
           <a href="https://github.com/pearlodi" target="_blank">
-            <div class="flex items-center">
-              <div class="stack rounded-lg">
+            <div class="flex flex-col items-center md:flex-row">
+              <div class="stack rounded-lg inline-block">
                 <div class="w-11 md:w-12 flex justify-center items-center">
                   <img
                     src="@/assets/img/github.png"
@@ -73,14 +73,14 @@
                 </div>
               </div>
               <div class="ml-3 md:ml-6">
-                <p class="text-grad font-bold">Checkout</p>
-                <p class="text-white text-sm md:text-base">Github</p>
+                <p class="text-grad font-bold text-center md:text-left">Checkout</p>
+                <p class="text-white text-sm md:text-base text-center md:text-left">Github</p>
               </div>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
-            <div class="flex items-center mt-6 md:mt-0 md:ml-10">
-              <div class="stack rounded-lg">
+            <div class="  md:ml-10 flex flex-col items-center md:flex-row">
+              <div class="stack rounded-lg inline-block">
                 <div class="w-11 md:w-12 flex justify-center items-center">
                   <img
                     src="@/assets/img/linkedin.png"
@@ -90,13 +90,13 @@
                 </div>
               </div>
               <div class="ml-3 md:ml-6">
-                <p class="text-grad font-bold">Connect</p>
-                <p class="text-white text-sm md:text-base">Linkedin</p>
+                <p class="text-grad font-bold text-center md:text-left">Connect</p>
+                <p class="text-white text-sm md:text-base text-center md:text-left">Linkedin</p>
               </div>
             </div>
           </a>
-          <div class="flex items-center mt-6 md:mt-0 md:ml-10">
-            <div class="stack rounded-lg">
+          <div class=" items-center mt-6 md:mt-0 md:ml-10 flex flex-col  md:flex-row">
+            <div class="stack rounded-lg inline-block">
               <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
                   src="@/assets/img/location.png"
@@ -106,12 +106,12 @@
               </div>
             </div>
             <div class="ml-3 md:ml-6">
-              <p class="text-grad font-bold">Location</p>
-              <p class="text-white text-sm md:text-base">Nigeria</p>
+              <p class="text-grad font-bold text-center md:text-left">Location</p>
+              <p class="text-white text-sm md:text-base text-center md:text-left">Nigeria</p>
             </div>
           </div>
-          <div class="flex items-center mt-6 md:mt-0 md:ml-10">
-            <div class="stack rounded-lg">
+          <div class="mt-6 md:mt-0 md:ml-10 flex flex-col items-center md:flex-row">
+            <div class="stack rounded-lg inline-block">
               <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
                   src="@/assets/img/gmail.png"
@@ -121,8 +121,8 @@
               </div>
             </div>
             <div class="ml-3 md:ml-6">
-              <p class="text-grad font-bold">E-Mail</p>
-              <p class="text-white text-sm md:text-base">pearlodi7@gmail.com</p>
+              <p class="text-grad font-bold text-center md:text-left">E-Mail</p>
+              <p class="text-white text-sm md:text-base text-center md:text-left">pearlodi7@gmail.com</p>
             </div>
           </div>
         </div>
@@ -299,7 +299,7 @@ export default {
   }
   .grid {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     gap: 14px;
   }
 }

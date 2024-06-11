@@ -75,7 +75,7 @@
           >
             <div class=" ">
               <div class="md:flex w-full max-w-full justify-between mt-4">
-                <div data-aos="zoom-in" :data-aos-duration="category.duration">
+                <div  data-aos="zoom-in" :data-aos-duration="category.duration">
                   <div class="">
                     <p
                       class="text-xl text-white font-[800] mt-10"
@@ -87,19 +87,19 @@
                     ></div>
                   </div>
                  <div >
-                  <div class="mt-6 grid grid-cols-4 gap-8 md:gap-6 overflow-scroll" >
+                  <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 overflow-scroll" >
                     <div
                       v-for="item in category.items"
                       :key="item.name"
                       class=""
                     >
-                      <div class="stack rounded-lg h-full flex justify-center">
+                      <div class="stack  rounded-lg h-full flex justify-center">
                         <div
                           class="w-11 md:w-12 flex justify-center items-center"
                         >
                           <img
                             :src="item.img"
-                            class="p-3 w-full"
+                            class="p-2 md:p-3 w-full"
                             :alt="item.name"
                           />
                         </div>
@@ -227,6 +227,11 @@ export default {
       ],
     };
   },
+  mounted() {
+    AOS.init({
+      once: true
+    });
+  }
 };
 </script>
 
