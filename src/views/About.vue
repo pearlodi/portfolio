@@ -22,6 +22,7 @@
             class="text-gradient font-bold text-sm md:text-[16px] leading-8 mt-5 w-full max-w-full md:w-[1000px]"
             data-aos="fade-zoom-in"
             data-aos-duration="3000"
+            
           >
             <strong class="text-2xl font-bold md:text-5xl gradient-text"
               >I’m a Frontend Developer. <br />I build interactive and
