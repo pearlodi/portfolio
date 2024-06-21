@@ -106,8 +106,8 @@
               </div>
             </div>
             <div class="md:ml-6">
-              <p class="text-grad font-bold text-center md:text-left">Location</p>
-              <p class="text-white text-sm md:text-base text-center md:text-left">Nigeria</p>
+              <p class="text-grad font-bold ">Location</p>
+              <p class="text-white text-sm md:text-base">Nigeria</p>
             </div>
           </div>
           <div class="mt-6 md:mt-0 md:ml-10 flex flex-col md:items-center md:flex-row">
@@ -121,8 +121,8 @@
               </div>
             </div>
             <div class=" md:ml-6">
-              <p class="text-grad font-bold text-center md:text-left">E-Mail</p>
-              <p class="text-white text-sm md:text-base text-center md:text-left">pearlodi7@gmail.com</p>
+              <p class="text-grad font-bold">E-Mail</p>
+              <p class="text-white text-sm md:text-base">pearlodi7@gmail.com</p>
             </div>
           </div>
         </div>
