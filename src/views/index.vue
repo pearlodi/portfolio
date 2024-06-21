@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <div class="mt-14 grid md:flex">
+        <div class="mt-14 lmd:flex">
           <a href="https://github.com/pearlodi" target="_blank">
             <div class="flex flex-col items-center md:flex-row">
               <div class="stack rounded-lg inline-block">
