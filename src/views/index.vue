@@ -72,14 +72,14 @@
                   />
                 </div>
               </div>
-              <div class="ml-3 md:ml-6">
+              <div class="md:ml-6">
                 <p class="text-grad font-bold ">Checkout</p>
                 <p class="text-white text-sm md:text-base ">Github</p>
               </div>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
-            <div class="  md:ml-10 flex flex-col md:items-center md:flex-row">
+            <div class="mt-4 md:mt-0  md:ml-10 flex flex-col md:items-center md:flex-row">
               <div class="stack rounded-lg inline-block w-fit">
                 <div class="w-11 md:w-12 inline-block flex justify-center items-center">
                   <img
@@ -89,7 +89,7 @@
                   />
                 </div>
               </div>
-              <div class="ml-3 md:ml-6">
+              <div class="md:ml-6">
                 <p class="text-grad font-bold">Connect</p>
                 <p class="text-white text-sm  md:text-left">Linkedin</p>
               </div>
