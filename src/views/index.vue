@@ -297,10 +297,5 @@ export default {
   .card {
     box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.449);
   }
-  .grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 14px;
-  }
 }
 </style>
