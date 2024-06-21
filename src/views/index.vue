@@ -95,8 +95,8 @@
               </div>
             </div>
           </a>
-          <div class=" items-center mt-6 md:mt-0 md:ml-10 flex flex-col  md:flex-row">
-            <div class="stack rounded-lg inline-block">
+          <div class=" md:items-center mt-6 md:mt-0 md:ml-10 flex flex-col  md:flex-row">
+            <div class="stack rounded-lg w-fit inline-block">
               <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
                   src="@/assets/img/location.png"
@@ -105,13 +105,13 @@
                 />
               </div>
             </div>
-            <div class="ml-3 md:ml-6">
+            <div class="md:ml-6">
               <p class="text-grad font-bold text-center md:text-left">Location</p>
               <p class="text-white text-sm md:text-base text-center md:text-left">Nigeria</p>
             </div>
           </div>
-          <div class="mt-6 md:mt-0 md:ml-10 flex flex-col items-center md:flex-row">
-            <div class="stack rounded-lg inline-block">
+          <div class="mt-6 md:mt-0 md:ml-10 flex flex-col md:items-center md:flex-row">
+            <div class="stack rounded-lg inline-block w-fit">
               <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
                   src="@/assets/img/gmail.png"
@@ -120,7 +120,7 @@
                 />
               </div>
             </div>
-            <div class="ml-3 md:ml-6">
+            <div class=" md:ml-6">
               <p class="text-grad font-bold text-center md:text-left">E-Mail</p>
               <p class="text-white text-sm md:text-base text-center md:text-left">pearlodi7@gmail.com</p>
             </div>
