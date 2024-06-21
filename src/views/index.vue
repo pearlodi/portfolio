@@ -64,7 +64,7 @@
           <a href="https://github.com/pearlodi" target="_blank">
             <div class="flex flex-col md:items-center md:flex-row">
               <div class="stack rounded-lg inline-block">
-                <div class="w-11 md:w-12 flex justify-center items-center">
+                <div class="w-11 md:w-12 inline-block flex justify-center items-center">
                   <img
                     src="@/assets/img/github.png"
                     class="p-3 w-full h-full"
@@ -81,7 +81,7 @@
           <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
             <div class="  md:ml-10 flex flex-col md:items-center md:flex-row">
               <div class="stack rounded-lg inline-block">
-                <div class="w-11 md:w-12 flex justify-center items-center">
+                <div class="w-11 md:w-12 inline-block flex justify-center items-center">
                   <img
                     src="@/assets/img/linkedin.png"
                     class="p-3 w-full h-full"
