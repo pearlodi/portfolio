@@ -60,10 +60,10 @@
           </div>
         </div>
 
-        <div class="mt-14 md:flex">
+        <div class="mt-14 md:flex hidden">
           <a href="https://github.com/pearlodi" target="_blank">
             <div class="flex flex-col md:items-center md:flex-row">
-              <div class="stack rounded-lg inline-block">
+              <div class="stack rounded-lg inline-block w-fit">
                 <div class="w-11 md:w-12 inline-block flex justify-center items-center">
                   <img
                     src="@/assets/img/github.png"
@@ -80,7 +80,7 @@
           </a>
           <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
             <div class="  md:ml-10 flex flex-col md:items-center md:flex-row">
-              <div class="stack rounded-lg inline-block">
+              <div class="stack rounded-lg inline-block w-fit">
                 <div class="w-11 md:w-12 inline-block flex justify-center items-center">
                   <img
                     src="@/assets/img/linkedin.png"
