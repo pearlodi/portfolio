@@ -73,7 +73,7 @@
                 </div>
               </div>
               <div class="ml-3 md:ml-6">
-                <p class="text-grad font-bold text-center md:text-left">Checkout</p>
+                <p class="text-grad font-bold ">Checkout</p>
                 <p class="text-white text-sm md:text-base ">Github</p>
               </div>
             </div>
@@ -90,7 +90,7 @@
                 </div>
               </div>
               <div class="ml-3 md:ml-6">
-                <p class="text-grad font-bold text-center md:text-left">Connect</p>
+                <p class="text-grad font-bold">Connect</p>
                 <p class="text-white text-sm  md:text-left">Linkedin</p>
               </div>
             </div>
