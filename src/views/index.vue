@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <div class="mt-14 md:flex hidden">
+        <div class="mt-14 md:flex ">
           <a href="https://github.com/pearlodi" target="_blank">
             <div class="flex flex-col md:items-center md:flex-row">
               <div class="stack rounded-lg inline-block w-fit">
