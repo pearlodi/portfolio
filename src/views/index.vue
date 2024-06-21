@@ -62,7 +62,7 @@
 
         <div class="mt-14 md:flex">
           <a href="https://github.com/pearlodi" target="_blank">
-            <div class="flex flex-col items-center md:flex-row">
+            <div class="flex flex-col md:items-center md:flex-row">
               <div class="stack rounded-lg inline-block">
                 <div class="w-11 md:w-12 flex justify-center items-center">
                   <img
@@ -74,12 +74,12 @@
               </div>
               <div class="ml-3 md:ml-6">
                 <p class="text-grad font-bold text-center md:text-left">Checkout</p>
-                <p class="text-white text-sm md:text-base text-center md:text-left">Github</p>
+                <p class="text-white text-sm md:text-base ">Github</p>
               </div>
             </div>
           </a>
           <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
-            <div class="  md:ml-10 flex flex-col items-center md:flex-row">
+            <div class="  md:ml-10 flex flex-col md:items-center md:flex-row">
               <div class="stack rounded-lg inline-block">
                 <div class="w-11 md:w-12 flex justify-center items-center">
                   <img
@@ -91,7 +91,7 @@
               </div>
               <div class="ml-3 md:ml-6">
                 <p class="text-grad font-bold text-center md:text-left">Connect</p>
-                <p class="text-white text-sm md:text-base text-center md:text-left">Linkedin</p>
+                <p class="text-white text-sm  md:text-left">Linkedin</p>
               </div>
             </div>
           </a>
