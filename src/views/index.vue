@@ -95,7 +95,7 @@
               </div>
             </div>
           </a>
-          <div class=" md:items-center md:mt-0 md:ml-10 flex flex-col  md:flex-row">
+          <div class=" md:items-center md:mt-0 md:ml-10 hidden md:flex flex-col  md:flex-row">
             <div class="stack rounded-lg w-fit inline-block">
               <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
@@ -110,6 +110,8 @@
               <p class="text-white text-sm md:text-base">Nigeria</p>
             </div>
           </div>
+
+          <a href="mailto:pearlodi7@gmail.com">
           <div class="md:mt-0 md:ml-10 flex flex-col md:items-center md:flex-row">
             <div class="stack rounded-lg inline-block w-fit">
               <div class="w-11 md:w-12 flex justify-center items-center">
@@ -125,6 +127,7 @@
               <p class="text-white text-sm md:text-base">pearlodi7@gmail.com</p>
             </div>
           </div>
+            </a>
         </div>
       </div>
     </div>
