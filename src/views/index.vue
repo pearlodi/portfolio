@@ -79,7 +79,7 @@
             </div>
           </a>
           <a href="https://www.linkedin.com/in/odipearl/" target="_blank">
-            <div class="mt-4 md:mt-0  md:ml-10 flex flex-col md:items-center md:flex-row">
+            <div class="md:mt-0  md:ml-10 flex flex-col md:items-center md:flex-row">
               <div class="stack rounded-lg inline-block w-fit">
                 <div class="w-11 md:w-12 inline-block flex justify-center items-center">
                   <img
@@ -95,7 +95,7 @@
               </div>
             </div>
           </a>
-          <div class=" md:items-center mt-6 md:mt-0 md:ml-10 flex flex-col  md:flex-row">
+          <div class=" md:items-center md:mt-0 md:ml-10 flex flex-col  md:flex-row">
             <div class="stack rounded-lg w-fit inline-block">
               <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
@@ -110,7 +110,7 @@
               <p class="text-white text-sm md:text-base">Nigeria</p>
             </div>
           </div>
-          <div class="mt-6 md:mt-0 md:ml-10 flex flex-col md:items-center md:flex-row">
+          <div class="md:mt-0 md:ml-10 flex flex-col md:items-center md:flex-row">
             <div class="stack rounded-lg inline-block w-fit">
               <div class="w-11 md:w-12 flex justify-center items-center">
                 <img
