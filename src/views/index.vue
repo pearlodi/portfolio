@@ -60,7 +60,7 @@
           </div>
         </div>
 
-        <div class="mt-14 md:flex ">
+        <div class="mt-14 flex ">
           <a href="https://github.com/pearlodi" target="_blank">
             <div class="flex flex-col md:items-center md:flex-row">
               <div class="stack rounded-lg inline-block w-fit">
@@ -72,7 +72,7 @@
                   />
                 </div>
               </div>
-              <div class="md:ml-6">
+              <div class="md:ml-6 hidden md:block">
                 <p class="text-grad font-bold ">Checkout</p>
                 <p class="text-white text-sm md:text-base ">Github</p>
               </div>
@@ -89,7 +89,7 @@
                   />
                 </div>
               </div>
-              <div class="md:ml-6">
+              <div class="md:ml-6 hidden md:block">
                 <p class="text-grad font-bold">Connect</p>
                 <p class="text-white text-sm  md:text-left">Linkedin</p>
               </div>
@@ -105,7 +105,7 @@
                 />
               </div>
             </div>
-            <div class="md:ml-6">
+            <div class="md:ml-6 hidden md:block">
               <p class="text-grad font-bold ">Location</p>
               <p class="text-white text-sm md:text-base">Nigeria</p>
             </div>
@@ -120,7 +120,7 @@
                 />
               </div>
             </div>
-            <div class=" md:ml-6">
+            <div class=" md:ml-6 hidden md:block" >
               <p class="text-grad font-bold">E-Mail</p>
               <p class="text-white text-sm md:text-base">pearlodi7@gmail.com</p>
             </div>
