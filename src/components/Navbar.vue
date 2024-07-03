@@ -9,7 +9,7 @@
             </div>
         </div>
         <ul class="md:flex justify-end pr-6 md:pr-20 nav"
-            :class="{ 'hidden': !displayHello, 'flex flex-col fixed   w-[60%] text-[white] py-6 pl-8 ': displayHello }">
+            :class="{ 'hidden': !displayHello, 'flex flex-col fixed   w-[80%] text-[white] py-6 pl-8 ': displayHello }">
             <div v-if="!displayHello" class="hidden ">
 
             </div>
