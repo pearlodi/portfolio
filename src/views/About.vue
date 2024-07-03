@@ -24,7 +24,7 @@
             data-aos-duration="3000"
             
           >
-            <strong class="text-2xl font-bold md:text-5xl gradient-text"
+            <strong class="text-3xl font-bold md:text-5xl gradient-text"
               >I’m a Frontend Developer. <br />I build interactive and
               user-friendly applications.</strong
             >
