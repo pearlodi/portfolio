@@ -1,6 +1,6 @@
 <template>
   <div class="typewriter">
-    <div class="text-2xl md:text-5xl font-semibold mb-4">
+    <div class="text-3xl md:text-5xl font-semibold mb-4">
       I'M A {{ currentText }} |
     </div>
   </div>
