@@ -1,10 +1,10 @@
 <template>
-  <div class="md:py-10 pb-10 project-background">
+  <div class="md:pt-4 md:pb-20 pb-10 project-background">
     <div>
       <div>
         <Navbar />
       </div>
-      <div class="mx-5 md:mx-20 mt-4 md:mt-16">
+      <div class="mx-5 md:mx-12 mt-4 md:mt-16">
         <div class="text-[40px] text-white flex items-center pb-4">
           <div>
             <p class="text-3xl text-white font-[800]">ABOUT ME</p>
@@ -96,7 +96,7 @@
                     >
                       <div class="stack  rounded-lg h-full flex justify-center">
                         <div
-                          class="w-11 md:w-12 flex justify-center items-center"
+                          class="w-11 md:w-12 md:h-12 flex justify-center items-center"
                         >
                           <img
                             :src="item.img"

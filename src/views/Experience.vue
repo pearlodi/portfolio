@@ -1,9 +1,9 @@
 <template>
-  <div class="md:py-10 pb-10 project-background">
+  <div class="md:pt-4 md:pb-20 pb-10 project-background">
     <Navbar />
     <div class="w-full flex justify-center">
       <div class="w-full max-w-full md:w-[1500px]">
-        <div class="mx-5 md:mx-20">
+        <div class="mx-5 md:mx-12">
           <div
             class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4"
           >
@@ -131,7 +131,6 @@ export default {
   data() {
     return {
       isLoading: true,
-      filteredStack: [],
       stacks: [
         {
           id: 2,

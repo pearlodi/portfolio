@@ -11,7 +11,7 @@ import 'element-plus/dist/index.css'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 // ..
 AOS.init({
-  once: true // Animation will play only once
+  once: true 
 });
 
 const app = createApp(App)

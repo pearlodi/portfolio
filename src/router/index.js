@@ -4,7 +4,8 @@ const routes = [
     path: '/',
     name: 'home',
     component: () => import('@/views/index.vue'),
-        meta: { title: "pearl - Home" },
+        meta: { title: "pearl - Home", transition: 'slide-left'  },
+        
   },{
     path: '/about',
     name: 'about',

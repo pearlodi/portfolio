@@ -1,5 +1,5 @@
 <template>
-  <div class="project-background md:py-10 pb-10">
+  <div class="project-background md:pt-4 md:pb-20 pb-10">
     <div class="">
       <Navbar />
     </div>
@@ -162,7 +162,6 @@ export default {
   data() {
     return {
       isLoading: true,
-      filteredStack: [],
       stacks: [
         {
           id: 1,
@@ -359,7 +358,6 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      this.filteredStack = [];
       this.isLoading = false;
     }, 800);
   },

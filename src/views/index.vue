@@ -1,6 +1,6 @@
 <template>
-  <div class="project-background h-fit pb-8 md:pb-0">
-    <div class="md:pt-10">
+  <div class="project-background h-fit pb-8 md:pb-24">
+    <div class="">
       <Navbar />
     </div>
     <div class="project-background flex flex-col md:h-full items-center">

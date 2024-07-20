@@ -23,11 +23,31 @@
     font-size: 40px !important;
     
 }
-*::-webkit-scrollbar {
+html::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+   
+
+}
+
+html::-webkit-scrollbar-thumb {
+    z-index: 50;
+    border: 1px solid #FFFFFF60;
+    background: linear-gradient(111deg, rgba(156, 156, 156, 0.14) 1.21%, rgba(196, 196, 196, .02) 100%);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    border-radius: 6px; /* Roundness of the handle */
+}
+
+html::-webkit-scrollbar-track {
+    background:rgb(42, 42, 42); /* Color of the scrollbar track */
+}
+
+
+div::-webkit-scrollbar {
     display: none; /* For Webkit browsers */
 }
 
-* {
+div {
     scrollbar-width: none; /* For Firefox */
     scroll-padding: 0 20px;
 }

@@ -1,7 +1,7 @@
 <template>
     <el-button text @click="centerDialogVisible = true" class="cursor-pointer text-white ">
-        Project Details<el-icon :size="size" :color="color">
-      <Edit />
+        Project Details<el-icon >
+      <!-- <Edit /> -->
     </el-icon>
     </el-button>
 
@@ -83,7 +83,7 @@ export default defineComponent({
             required: true
         },
         itemImages: {
-            type: String,
+            type: Array,
             required: true
         },
         itemLinks: {

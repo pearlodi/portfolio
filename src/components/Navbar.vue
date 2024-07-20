@@ -8,7 +8,7 @@
 
             </div>
         </div>
-        <ul class="md:flex justify-end pr-6 md:pr-20 nav"
+        <ul class="md:flex justify-center pr-6 md:pr-20 nav navbar"
             :class="{ 'hidden': !displayHello, 'flex flex-col fixed   w-[80%] text-[white] py-6 pl-8 ': displayHello }">
             <div v-if="!displayHello" class="hidden ">
 
@@ -78,7 +78,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+.navbar{
+    bottom: 0;
+    position: fixed;
+    z-index: 50;
+    border: 1px solid #FFFFFF60;
+    background: linear-gradient(111deg, rgba(255, 255, 255, .14) 1.21%, rgba(196, 196, 196, .02) 100%);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    animation: openNav-4d808a77 0.5s;
+    width: 100%;
+    padding: 16px;
+}
 
 
 .active-link::after {

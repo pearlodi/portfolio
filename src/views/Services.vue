@@ -1,11 +1,11 @@
 <template>
-  <div class="project-background md:py-10 pb-10">
+  <div class="project-background md:pt-4 md:pb-20 pb-10">
     <div class="">
       <Navbar />
     </div>
     <div class="w-full flex flex-col items-center justify-center">
       <div class="w-full max-w-full md:w-[1500px]">
-        <div class="mx-5 md:mx-20">
+        <div class="mx-5 md:mx-12">
           <div
             class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4"
           >
