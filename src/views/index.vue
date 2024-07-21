@@ -50,7 +50,7 @@
             <p class="mt-3 text-gradient">
               Welcome to my space. I'm Odi Pearl. A frontend developer who loves
               creating things on the web. I have a strong foundation in HTML,
-              CSS, JavaScript, React, Vue, Nuxt and Next and I build responsive,
+              CSS, JavaScript, TypeScript, React, Vue, Nuxt and Next and I build responsive,
               user-friendly applications that scale. My journey into web
               development started with a simple curiosity, which quickly grew
               into a passion for crafting beautiful and functional user
@@ -173,10 +173,10 @@ export default {
           stack: "Figma",
         },
 
-        {
-          url: companies7,
-          stack: "Docker",
-        },
+        // {
+        //   url: companies7,
+        //   stack: "Docker",
+        // },
         {
           url: companies6,
           stack: "JavaScript",

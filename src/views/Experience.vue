@@ -138,7 +138,7 @@ export default {
           category: "Software Engineering",
           year: "July 2023 - Mar 2024",
           company: "Ownage Fiditech",
-          jobDescription: "Web developer",
+          jobDescription: "Frontend developer",
           jobWork:
             "Create files for individuals thhat needs creating of the files needed",
           jobs: [
@@ -174,7 +174,7 @@ export default {
           category: "Software Engineering",
           year: "May 2023 - July 2023",
           company: "WeTech Mentorship",
-          jobDescription: "Web developer (Contract)",
+          jobDescription: "Frontend developer (Contract)",
           jobWork:
             "Create files for individuals thhat needs creating of the files needed",
           jobs: [
@@ -204,7 +204,7 @@ export default {
           category: "Software Engineering",
           year: "2022",
           company: "Sirinu Token",
-          jobDescription: "Web developer (Contract)",
+          jobDescription: "Frontend developer (Contract)",
           jobWork:
             "Create files for individuals thhat needs creating of the files needed",
           jobs: [
@@ -233,7 +233,7 @@ export default {
           category: "Software Engineering",
           year: "2022",
           company: "IJI Technologies",
-          jobDescription: "Web developer",
+          jobDescription: "Frontend developer",
           jobWork:
             "Create files for individuals thhat needs creating of the files needed",
           jobs: [
