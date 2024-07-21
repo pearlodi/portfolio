@@ -59,6 +59,7 @@
                       :src="stack.url"
                       alt="stack"
                       class="h-full w-full max-h-full rounded-xl mt-5"
+                      loading="lazy"
                     />
                   </div>
 

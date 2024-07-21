@@ -62,6 +62,7 @@
                       :src="stack.url"
                       alt="stack"
                       class="h-full w-full rounded-xl mt-5"
+                      loading="lazy"
                   /></a>
                   <div class="pt-4 flex justify-between items-center">
                     <a :href="stack.link" target="_blank">
