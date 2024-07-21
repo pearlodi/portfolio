@@ -8,8 +8,8 @@
 
             </div>
         </div>
-        <ul class="md:flex justify-center pr-6 md:pr-20 nav navbar"
-            :class="{ 'hidden': !displayHello, 'flex flex-col fixed   w-[80%] text-[white] py-6 pl-8 ': displayHello }">
+        <ul class="md:flex justify-center pr-6 md:pr-20 nav navbar w-[80%] md:w-full  "
+            :class="{ 'hidden': !displayHello, 'flex flex-col fixed   text-[white] py-6 pl-8 ': displayHello }">
             <div v-if="!displayHello" class="hidden ">
 
             </div>
@@ -87,7 +87,7 @@
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     animation: openNav-4d808a77 0.5s;
-    width:100%;
+    /* width:100%; */
     padding: 16px;
 }
 
