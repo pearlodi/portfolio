@@ -87,7 +87,7 @@
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
     animation: openNav-4d808a77 0.5s;
-    width: 100%;
+    width:70%;
     padding: 16px;
 }
 
