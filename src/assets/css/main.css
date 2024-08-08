@@ -135,7 +135,9 @@ height: 36px !important;
     -webkit-text-fill-color: transparent;
 }
 
-
+.css-yb0lig{
+    color: white !important;
+}
 
 .title-gradient {
     background: linear-gradient(169deg, #FFF 8.16%, #505356 150.61%);
