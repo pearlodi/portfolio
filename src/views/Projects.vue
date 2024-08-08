@@ -103,7 +103,7 @@
 </template>
 
 <script>
-import ownage from "@/assets/img/ownage/ownage4.png";
+import ownage from "@/assets/img/ownage/ownage4.jpg";
 import hmgls from "@/assets/img/hmgls.png";
 import abitto from "@/assets/img/ssv/ssv3.png";
 import movie from "@/assets/img/movie.png";
@@ -125,7 +125,7 @@ import ssv5 from "@/assets/img/ssv/ssv5.png";
 import ownage1 from "@/assets/img/ownage/ownage1.png";
 import ownage2 from "@/assets/img/ownage/ownage2.png";
 import ownage3 from "@/assets/img/ownage/ownage3.png";
-import ownage4 from "@/assets/img/ownage/ownage4.png";
+import ownage4 from "@/assets/img/ownage/ownage4.jpg";
 import ownage5 from "@/assets/img/ownage/ownage5.png";
 import tfs1 from "@/assets/img/tfs/tfs1.png";
 import tfs2 from "@/assets/img/tfs/tfs2.png";
@@ -166,65 +166,89 @@ export default {
       stacks: [
         {
           id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryProfessional Projects",
-          category: "Professional Projects",
+          name: "I am a natural team worker and adaptable to all challenging situations categoryReact Projects",
+          category: "React Projects",
           year: "2023",
-          company: "Secret Share Vault",
+          company: "Data hub",
           jobDescription: "Web developer",
           url: abitto,
           description:
-            "I  constructed the complete website using Vue.js, Element plus, Tailwind css etc. ensuring responsiveness on all screens and a smooth user experience. Additionally, I collaborated with experienced front-end engineers in the development of the web application segment, ensuring its integration for secure information sharing. ",
-          link: "https://ssv-client-pyuam.ondigitalocean.app/",
+            "I developed the data visualization application using React and TypeScript, enabling users to upload, edit, and delete Excel files, as well as visualize the data. Additionally, users can create new tables, manually enter data for visualization, and use settings to customize their chart results. The application ensures a seamless and responsive user experience across all devices, with features for real-time data manipulation and visualization.",
+          link: "",
           technologies: [
             "HTML",
             "CSS",
             "Tailwind css",
-            "Vue.js",
-            "Vite",
+            "React",
             "TypeScript",
-            "Vue Composition Api",
+            "Redux",
           ],
           libraries: [
-            "Element plus",
-            "Vue3 Google Signin",
-            "Pinia Stores",
-            "Github Signing",
+            "Chart.js",
+            "Material ui",
+            "React DnD",
+            "Echarts for react",
           ],
           images: [ssv2, ssv1, ssv3, ssv4, ssv5],
         },
         {
           id: 1,
           name: ".",
-          category: "Professional Projects",
+          category: "React Projects",
           year: "2023",
-          company: "TRY TFS",
+          company: "Task Buddy",
           jobDescription: "Web developer",
           url: tfs,
           description:
-            "I  contributed in the development of the website using Vue.js ensuring responsiveness on all screens and a smooth user experience. Additionally, I collaborated with experienced front-end engineers in the development of the web application segment, ensuring its integration for smooth sharing of files and documents.",
-          link: "https://trytfs.com/",
+            "I developed the task management application using React, featuring a calendar for task scheduling, real-time task visualization using Chart js, a color picker for design enhancement, and moveable cards for easy task organization. Additionally, I ensured the application's responsiveness across all devices.",
+          link: "https://task-budy.netlify.app/",
 
           technologies: [
             "HTML",
             "CSS",
             "Tailwind css",
-            "Vue.js",
-            "Vite",
+            "React",
+            "Redux",
             "Typescript",
+            
           ],
           libraries: [
-            "Element plus",
-            "libphonenumber-js",
-            "Google Signing",
-            "CryptoJs",
+            "Material UI",
+            "Chart Js",
+            "React Beautiful DnD",
+            "React big calendar",
             "MaxUi",
           ],
           images: [tfs2, tfs1, tfs3, tfs4, tfs5],
         },
+       
+     
+
         {
+          id: 6,
+          name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
+          category: "React Projects",
+          year: "2023",
+          company: "Pearlline",
+          jobDescription: "Ecomm Project",
+          url: ecomm,
+          link: "https://pearlline.netlify.app/",
+          description:
+            'Developed a comprehensive e-commerce clothing application featuring a user-friendly interface and seamless browsing experience. Implemented essential functionalities such as product browsing, selection, and shopping cart management. Employed  technologies to ensure optimal performance and scalability."',
+          technologies: ["HTML", "CSS", "Tailwind css", "React"],
+          libraries: [
+            "Material ui",
+            "Animate on scroll",
+            "Vue3 marquee",
+            "Vue3 carousel",
+          ],
+          images: [ecomm2, ecomm1, ecomm3, ecomm4, ecomm5, ecomm6],
+        },
+
+         {
           id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences",
-          category: "Professional Projects",
+          name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
+          category: "Vue Projects",
           year: "2023",
           company: "Ownage Fiditech",
           jobDescription: "Web developer",
@@ -244,8 +268,8 @@ export default {
 
         {
           id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryProfessional Projects",
-          category: "Professional Projects",
+          name: "I am a natural team worker and adaptable to all challenging situations categoryReact Projects",
+          category: "Vue Projects",
           year: "2023",
           company: "HMGL Global",
           jobDescription: "Web developer",
@@ -262,31 +286,10 @@ export default {
           ],
           images: [hmgl2, hmgl1, hmgl3, hmgl4, hmgl5],
         },
-
-        {
-          id: 6,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences",
-          category: "Personal Projects",
-          year: "2023",
-          company: "Pearlline",
-          jobDescription: "Ecomm Project",
-          url: ecomm,
-          link: "https://pearlline.netlify.app/",
-          description:
-            'Developed a comprehensive e-commerce clothing application featuring a user-friendly interface and seamless browsing experience. Implemented essential functionalities such as product browsing, selection, and shopping cart management. Employed  technologies to ensure optimal performance and scalability."',
-          technologies: ["HTML", "CSS", "Tailwind css", "React"],
-          libraries: [
-            "Material ui",
-            "Animate on scroll",
-            "Vue3 marquee",
-            "Vue3 carousel",
-          ],
-          images: [ecomm2, ecomm1, ecomm3, ecomm4, ecomm5, ecomm6],
-        },
         {
           id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryPersonal Projects",
-          category: "Personal Projects",
+          name: "I am a natural team worker and adaptable to all challenging situations categoryVue Projects",
+          category: "Vue Projects",
           year: "2023",
           company: "Movie App",
           jobDescription: "Movie App",
@@ -308,8 +311,8 @@ export default {
         },
         {
           id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryPersonal Projects",
-          category: "Personal Projects",
+          name: "I am a natural team worker and adaptable to all challenging situations categoryVue Projects",
+          category: "Vue Projects",
           year: "2023",
           company: "Portfolio",
           jobDescription: "Web developer",
@@ -321,24 +324,24 @@ export default {
           libraries: ["Element plus"],
           images: [home, contact, about, experience, resume],
         },
-        {
-          id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryPersonal Projects",
-          category: "Personal Projects",
-          year: "2023",
-          company: "Pod Arts",
-          jobDescription: "Web developer",
-          url: pods,
-          link: "https://podarts.netlify.app/",
-          description:
-            "Crafted a compelling landing page tailored for podcast transcribers, providing a streamlined gateway to transcription services. Designed an impactful and concise interface that immediately communicates the benefits and services offered to potential users. Implemented a user-centric design, focusing on clear call-to-action elements to encourage engagement and conversion.",
-          technologies: ["HTML", "CSS", "Tailwind css", "Vue.js", "Vite"],
-          libraries: ["Element plus", "Animate on scroll"],
-          images: [pods2, pods1, pods3, pods4, pods5],
-        },
+        // {
+        //   id: 1,
+        //   name: "I am a natural team worker and adaptable to all challenging situations categoryVue Projects",
+        //   category: "Vue Projects",
+        //   year: "2023",
+        //   company: "Pod Arts",
+        //   jobDescription: "Web developer",
+        //   url: pods,
+        //   link: "https://podarts.netlify.app/",
+        //   description:
+        //     "Crafted a compelling landing page tailored for podcast transcribers, providing a streamlined gateway to transcription services. Designed an impactful and concise interface that immediately communicates the benefits and services offered to potential users. Implemented a user-centric design, focusing on clear call-to-action elements to encourage engagement and conversion.",
+        //   technologies: ["HTML", "CSS", "Tailwind css", "Vue.js", "Vite"],
+        //   libraries: ["Element plus", "Animate on scroll"],
+        //   images: [pods2, pods1, pods3, pods4, pods5],
+        // },
       ],
-      selectedCategory: "Professional Projects",
-      categories: ["Professional Projects", "Personal Projects"],
+      selectedCategory: "React Projects",
+      categories: ["React Projects", "Vue Projects"],
     };
   },
   computed: {
