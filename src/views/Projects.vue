@@ -174,7 +174,7 @@ export default {
           url: abitto,
           description:
             "I developed the data visualization application using React and TypeScript, enabling users to upload, edit, and delete Excel files, as well as visualize the data. Additionally, users can create new tables, manually enter data for visualization, and use settings to customize their chart results. The application ensures a seamless and responsive user experience across all devices, with features for real-time data manipulation and visualization.",
-          link: "",
+          link: "https://data-hubz.netlify.app/",
           technologies: [
             "HTML",
             "CSS",
