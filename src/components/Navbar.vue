@@ -123,6 +123,7 @@
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         animation: openNav 0.5s;
+        padding-top: 10px;
     }
 
     .text-gradient {
