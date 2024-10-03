@@ -43,7 +43,7 @@ export default {
 
   methods: {
     showNextImages() {
-      const interval = 2000; // Change interval duration as needed
+      const interval = 2000; 
       this.currentImages = this.getNextImages();
       setInterval(() => {
         this.currentImages = this.getNextImages();
@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style scoped>
-/* Add your custom styles here */
+
 .image-container {
   transition: mymove 1s infinite;
 }

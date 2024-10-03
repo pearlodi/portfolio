@@ -1,5 +1,6 @@
 <template>
   <div class="project-background h-fit pb-8 md:pb-24">
+    <homeNavVue />
     <div class="">
       <Navbar />
     </div>

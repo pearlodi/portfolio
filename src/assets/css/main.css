@@ -25,10 +25,10 @@
 }
 html::-webkit-scrollbar {
     width: 12px; /* Width of the scrollbar */
-   
-
-}
-
+   }
+   .el-dialog{
+    overflow: scroll;
+   }
 html::-webkit-scrollbar-thumb {
     z-index: 50;
     border: 1px solid #FFFFFF60;
@@ -39,16 +39,16 @@ html::-webkit-scrollbar-thumb {
 }
 
 html::-webkit-scrollbar-track {
-    background:rgb(42, 42, 42); /* Color of the scrollbar track */
+    background:rgb(42, 42, 42);
 }
 
 
 div::-webkit-scrollbar {
-    display: none; /* For Webkit browsers */
+    display: none;
 }
 
 div {
-    scrollbar-width: none; /* For Firefox */
+    scrollbar-width: none;
     scroll-padding: 0 20px;
 }
 .el-tabs__item.is-active{
@@ -100,7 +100,7 @@ height: 36px !important;
     padding: 20px !important;
     height: 80% !important;
     width: 60% !important;
-    overflow: scroll !important;
+    /* overflow: scroll !important; */
 }
 
 .carousel__icon {
@@ -135,10 +135,6 @@ height: 36px !important;
     -webkit-text-fill-color: transparent;
 }
 
-.css-yb0lig,
-.css-1nmt8ps {
-    color: white !important;
-}
 
 .title-gradient {
     background: linear-gradient(169deg, #FFF 8.16%, #505356 150.61%);

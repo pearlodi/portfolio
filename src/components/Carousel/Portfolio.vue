@@ -3,7 +3,6 @@
         <Slide v-for="slide in images" :key="slide">
             <div class="carousel__item"><img :src='slide' alt="" /></div>
         </Slide>
-
         <template #addons>
             <Navigation />
         </template>

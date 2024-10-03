@@ -1,4 +1,4 @@
-<!-- <template>
+<!--<template>
   <div class="project-background flex flex-col  md:h-full items-center">
       <div class="flex flex-col  md:h-[100%] items-center w-[90%]">
           <div class="text-[40px] text-white w-[100%] max-w-full mx-auto mt-10 md:mt-12 flex items-center">
@@ -180,7 +180,7 @@ export default {
 
 <template>
   <div>
-    <div class="flex w-full justify-end">
+    <div class=" w-full justify-end hidden md:flex">
       <div
         class="w-6 mr-8 mt-6 flex justify-end cursor-pointer"
         @click="toggleGreeting"
@@ -214,7 +214,7 @@ export default {
         <div class="hidden md:flex mt-4 md:mt-16 ">
         <div class="w-full -rotate-6">
           <img
-            src="../assets/img/articles/fingerprint.jpg"
+            src="../assets/img/ssv/ssv3.png"
             alt="menu"
             class="w-full h-full"
           />
@@ -228,14 +228,14 @@ export default {
         </div>
         <div class="w-full -rotate-6">
           <img
-            src="../assets/img/ownage/ownage3.png"
+            src="../assets/img/articles/fingerprint.jpg"
             alt="menu"
             class="w-full h-full"
           />
         </div>
         <div class="w-full ml-8 rotate-3">
           <img
-            src="../assets/img/tfs/tfs4.png"
+            src="../assets/img/tfs/tfs9w.png"
             alt="menu"
             class="w-full h-full"
           />
@@ -369,7 +369,7 @@ export default {
   backdrop-filter: blur(12px);
   animation: openNav 0.7s;
   background: #101011b0;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .text-gradient {

@@ -1,9 +1,9 @@
 <template>
   <div class="md:pt-4 md:pb-20 pb-10 project-background">
     <div>
-      <div>
-        <Navbar />
-      </div>
+    <div class="">
+      <Navbar />
+    </div>
       <div class="mx-5 md:mx-12 mt-4 md:mt-16">
         <div class="text-[40px] text-white flex items-center pb-4">
           <div>
@@ -126,6 +126,7 @@
 <script>
 import { Vue3Marquee } from "vue3-marquee";
 import companies4 from "@/assets/img/figma.svg";
+
 import companies1 from "@/assets/img/react.svg";
 import companies2 from "@/assets/img/vue.svg";
 import companies6 from "@/assets/img/java.svg";
@@ -148,7 +149,6 @@ import redux from "../assets/img/rredux.png";
 import context from "../assets/img/letter-c.png";
 import pinia from "../assets/img/pinia.png";
 import vuex from "../assets/img/vue.svg";
-
 export default {
   components: {
     Vue3Marquee,

@@ -148,11 +148,11 @@ import movie2 from "@/assets/img/movie/movie2.png";
 import movie3 from "@/assets/img/movie/movie3.png";
 import movie4 from "@/assets/img/movie/movie4.png";
 import movie5 from "@/assets/img/movie/movie5.png";
-import pods1 from "@/assets/img/pods/pods1.png";
-import pods2 from "@/assets/img/pods/pods2.png";
-import pods3 from "@/assets/img/pods/pods3.png";
-import pods4 from "@/assets/img/pods/pods4.png";
-import pods5 from "@/assets/img/pods/pods5.png";
+import zeta1 from "@/assets/img/zeta/zeta1.png";
+import zeta2 from "@/assets/img/zeta/zeta2.png";
+import zeta3 from "@/assets/img/zeta/zeta3.png";
+import zeta4 from "@/assets/img/zeta/zeta4.png";
+import zeta5 from "@/assets/img/zeta/zeta5.png";
 
 export default {
   components: {
@@ -164,6 +164,8 @@ export default {
     return {
       isLoading: true,
       stacks: [
+   
+       
         {
           id: 1,
           name: "I am a natural team worker and adaptable to all challenging situations categoryReact Projects",
@@ -222,7 +224,36 @@ export default {
           images: [tfs2, tfs1, tfs3, tfs4, tfs5],
         },
        
-     
+        {
+          id: 1,
+          name: ".",
+          category: "React Projects",
+          year: "2023",
+          company: "Zetabrent",
+          jobDescription: "Web developer",
+          url: zeta2,
+          description:
+            "I created the Zetabrent Education website for a client to showcase their educational products on a global scale. Using React, JavaScript, Material UI, and Tailwind CSS, I built a responsive and easy-to-navigate platform that offers a great user experience across devices. This project allowed me to blend modern design with practical functionality, and I'm proud of how it came together to meet the client's needs",
+          link: "https://zetabrenteducation.com/",
+
+          technologies: [
+            "HTML",
+            "CSS",
+            "Tailwind css",
+            "React",
+            "Redux",
+            
+          ],
+          libraries: [
+            "Material UI",
+            "Formik",
+            "Framer Motion",
+            "React fast marquee",
+            "React slick",
+            "Yup",
+          ],
+          images: [zeta2, zeta1, zeta3, zeta4, zeta5],
+        },
 
         {
           id: 6,
@@ -243,27 +274,6 @@ export default {
             "Vue3 carousel",
           ],
           images: [ecomm2, ecomm1, ecomm3, ecomm4, ecomm5, ecomm6],
-        },
-
-         {
-          id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
-          category: "Vue Projects",
-          year: "2023",
-          company: "Ownage Fiditech",
-          jobDescription: "Web developer",
-          url: ownage,
-          description:
-            "Designed the official website for Ownage Fiditech web development company. Designed and built a modern, responsive online platform showcasing our services and expertise. Utilized current web technologies to create a user-friendly interface that effectively communicated our brand identity and capabilities and also ensuring SEO for the website",
-          link: "https://ownagefiditech.com/",
-          technologies: ["HTML", "CSS", "Vue.js", "Vite", "Sitemap"],
-          libraries: [
-            "Element Plus",
-            "Animate on scroll",
-            "Vue3 marquee",
-            "Vue3 carousel",
-          ],
-          images: [ownage5, ownage1, ownage2, ownage3, ownage4],
         },
 
         {
@@ -324,6 +334,27 @@ export default {
           libraries: ["Element plus"],
           images: [home, contact, about, experience, resume],
         },
+        
+        {
+          id: 1,
+          name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
+          category: "Vue Projects",
+          year: "2023",
+          company: "Abitto Global",
+          jobDescription: "Web developer",
+          url: ownage,
+          description:
+            "Designed the official website for Abitto Global company. Designed and built a modern, responsive online platform showcasing our services and expertise. Utilized current web technologies to create a user-friendly interface that effectively communicated our brand identity and capabilities and also ensuring SEO for the website",
+          link: "https://www.abittoglobal.com/",
+          technologies: ["HTML", "CSS", "javascript"],
+          libraries: [
+            "Bootstrap",
+            "Rev slider",
+            
+          ],
+          images: [ownage5, ownage1, ownage2, ownage3, ownage4],
+        },
+
         // {
         //   id: 1,
         //   name: "I am a natural team worker and adaptable to all challenging situations categoryVue Projects",
