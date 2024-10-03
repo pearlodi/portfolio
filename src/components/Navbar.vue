@@ -50,7 +50,7 @@
             </router-link>
             <router-link to="/resume" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
                 <li class="text text-md  font-bold  cursor-pointer">
-                    Resume
+                    Resumes
                 </li>
             </router-link>
 
@@ -61,7 +61,7 @@
 
 <style scoped>
 .active-link {
-    position: relative; /* Ensure the element is positioned relative */
+    position: relative;
     color: white;
     background: transparent !important;
     background-clip: text;
@@ -123,6 +123,7 @@
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         animation: openNav 0.5s;
+        padding-top: 50px;
     }
 
     .text-gradient {
