@@ -151,7 +151,7 @@ import movie5 from "@/assets/img/movie/movie5.png";
 import zeta1 from "@/assets/img/zeta/zeta1.png";
 import zeta2 from "@/assets/img/zeta/zeta2.png";
 import zeta3 from "@/assets/img/zeta/zeta3.png";
-import zeta4 from "@/assets/img/zeta/zeta4.png";
+import zeta4 from "@/assets/img/zeta/zeat4.png";
 import zeta5 from "@/assets/img/zeta/zeta5.png";
 
 export default {
