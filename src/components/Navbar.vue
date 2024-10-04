@@ -50,7 +50,7 @@
             </router-link>
             <router-link to="/resume" class="md:ml-8 mt-4 md:mt-0 cursor-pointer" active-class="active-link">
                 <li class="text text-md  font-bold  cursor-pointer">
-                    Resumes
+                    Resume
                 </li>
             </router-link>
 
