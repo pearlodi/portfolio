@@ -49,14 +49,8 @@
             <strong class="text-[24px] text-gradient">HEY THERE 🌟</strong>
             <br />
             <p class="mt-3 text-gradient">
-              Welcome to my space. I'm Odi Pearl. A frontend developer who loves
-              creating things on the web. I have a strong foundation in HTML,
-              CSS, JavaScript, TypeScript, React, Vue, Nuxt and Next and I build responsive,
-              user-friendly applications that scale. My journey into web
-              development started with a simple curiosity, which quickly grew
-              into a passion for crafting beautiful and functional user
-              interfaces. I love turning ideas and mockups into reality and am
-              always looking to learn and improve.
+              I am a Frontend Developer with experience in building responsive, user-friendly web applications. With a solid foundation in HTML, CSS, JavaScript, Typescript, React, Vue, Next.js, and Nuxt.js, I enjoy transforming ideas and designs into seamless, interactive user experiences.
+              Beyond coding, I thrive on learning and pushing boundaries—whether it’s refining user interfaces, optimizing performance, or experimenting with the latest web technologies. 
             </p>
           </div>
         </div>

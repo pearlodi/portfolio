@@ -29,15 +29,9 @@
               user-friendly applications.</strong
             >
             <br /><br />
-            Hi, I'm Odi Pearl. I'm a frontend developer based in Nigeria with
-            over two years of experience in creating beautiful and functional
-            web applications. I have a strong foundation in HTML, CSS,
-            JavaScript, TypeScript, React, and Vue, focusing on building scalable and
-            user-friendly experiences. My journey into web development started
-            with genuine curiosity and has evolved into a deep passion for
-            turning ideas and mockups into reality. I love the challenge of
-            bringing designs to life and consistently strive to enhance my
-            skills.
+            I am a Frontend Developer with experience in building responsive, user-friendly web applications. With a solid foundation in HTML, CSS, JavaScript, Typescript, React, Vue, Next.js, and Nuxt.js, I enjoy transforming ideas and designs into seamless, interactive user experiences.
+
+Beyond coding, I thrive on learning and pushing boundaries—whether it’s refining user interfaces, optimizing performance, or experimenting with the latest web technologies. My approach to development is driven by creativity, attention to detail, and a commitment to delivering solutions that scale.
           </p>
         </div>
         <div>

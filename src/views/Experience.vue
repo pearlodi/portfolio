@@ -132,13 +132,45 @@ export default {
     return {
       isLoading: true,
       stacks: [
+      {
+          id: 4,
+          name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",
+          category: "Software Engineering",
+          year: "2024",
+          company: "Toks Net",
+          jobDescription: "Frontend developer ",
+          jobWork:
+            "Create files for individuals thhat needs creating of the files needed",
+          jobs: [
+            "Boosted project delivery speed by 20% by implementing reusable React components across multiple projects, streamlining development in a fast-paced software solutions firm.",
+            " Improved client satisfaction by 15% through responsive design and optimized performance in React applications, ensuring cross-platform compatibility and a smoother user experience.",
+          ],
+          imgs: [
+          {
+              url: figma,
+            },
+            {
+              url: java,
+            },
+            {
+              url: vue,
+            },
+
+            {
+              url: react,
+            },
+            {
+              url: git,
+            },
+          ],
+        },
         {
           id: 2,
           name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",
           category: "Software Engineering",
           year: "July 2023 - Mar 2024",
           company: "Ownage Fiditech",
-          jobDescription: "Frontend developer",
+          jobDescription: "Frontend Developer Intern",
           jobWork:
             "Create files for individuals thhat needs creating of the files needed",
           jobs: [
@@ -169,7 +201,7 @@ export default {
           ],
         },
         {
-          id: 2,
+          id: 3,
           name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",
           category: "Software Engineering",
           year: "May 2023 - July 2023",
@@ -198,64 +230,36 @@ export default {
             },
           ],
         },
-        {
-          id: 3,
-          name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",
-          category: "Software Engineering",
-          year: "2022",
-          company: "Sirinu Token",
-          jobDescription: "Frontend developer (Contract)",
-          jobWork:
-            "Create files for individuals thhat needs creating of the files needed",
-          jobs: [
-            "Participated in performance optimization efforts, analyzing and refining code for faster load times and improved user interactivity.",
-            " Developed responsive and mobile-first web applications, ensuring adaptability to various screen sizes",
-          ],
-          imgs: [
-            {
-              url: figma,
-            },
-            {
-              url: java,
-            },
+       
+        // {
+        //   id: 5,
+        //   name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",
+        //   category: "Software Engineering",
+        //   year: "2022",
+        //   company: "IJI Technologies",
+        //   jobDescription: "Frontend developer",
+        //   jobWork:
+        //     "Create files for individuals thhat needs creating of the files needed",
+        //   jobs: [
+        //     "Designed and developed a responsive web application leveraging React.js, focusing on intuitive user interfaces and seamless navigation.",
+        //     "Solely engineered a project UI utilizing Vue.js, ensuring optimal front-end functionality and performance",
+        //   ],
+        //   imgs: [
+        //     {
+        //       url: figma,
+        //     },
+        //     {
+        //       url: java,
+        //     },
 
-            {
-              url: react,
-            },
-            {
-              url: git,
-            },
-          ],
-        },
-        {
-          id: 4,
-          name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",
-          category: "Software Engineering",
-          year: "2022",
-          company: "IJI Technologies",
-          jobDescription: "Frontend developer",
-          jobWork:
-            "Create files for individuals thhat needs creating of the files needed",
-          jobs: [
-            "Designed and developed a responsive web application leveraging React.js, focusing on intuitive user interfaces and seamless navigation.",
-            "Solely engineered a project UI utilizing Vue.js, ensuring optimal front-end functionality and performance",
-          ],
-          imgs: [
-            {
-              url: figma,
-            },
-            {
-              url: java,
-            },
-
-            {
-              url: git,
-            },
-          ],
-        },
+        //     {
+        //       url: git,
+        //     },
+        //   ],
+        // },
 
         {
-          id: 5,
+          id: 6,
           name: "I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences",
           category: "Other Experiences",
           year: "2022",
@@ -269,7 +273,7 @@ export default {
           ],
         },
         {
-          id: 6,
+          id: 7,
           category: "Other Experiences",
           year: "2022",
           company: "Abitto Global Services",
@@ -282,7 +286,7 @@ export default {
           ],
         },
         {
-          id: 7,
+          id: 8,
           name: "I am a natural team worker and adaptable to all challenging situations categoryOther Professional Experiences",
           category: "Other Experiences",
           year: "2020",

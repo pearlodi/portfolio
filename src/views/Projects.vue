@@ -122,6 +122,7 @@ import ssv2 from "@/assets/img/ssv/ssv2.png";
 import ssv3 from "@/assets/img/ssv/ssv3.png";
 import ssv4 from "@/assets/img/ssv/ssv4.png";
 import ssv5 from "@/assets/img/ssv/ssv5.png";
+import ssv6 from "@/assets/img/ssv/ssv6.png";
 import ownage1 from "@/assets/img/ownage/ownage1.png";
 import ownage2 from "@/assets/img/ownage/ownage2.png";
 import ownage3 from "@/assets/img/ownage/ownage3.png";
@@ -175,7 +176,7 @@ export default {
           jobDescription: "Web developer",
           url: abitto,
           description:
-            "I developed the data visualization application using React and TypeScript, enabling users to upload, edit, and delete Excel files, as well as visualize the data. Additionally, users can create new tables, manually enter data for visualization, and use settings to customize their chart results. The application ensures a seamless and responsive user experience across all devices, with features for real-time data manipulation and visualization.",
+            "I developed the data visualization and Analysis application using React and TypeScript, enabling users to upload, edit, and delete Excel files. The Application also allows users to Visualize data using charts and also analyse data using An AI data analysis tool. Additionally, users can create new tables, manually enter data for visualization, and use settings to customize their chart results. The application ensures a seamless and responsive user experience across all devices, with features for real-time data manipulation, Analysis and visualization.",
           link: "https://data-hubz.netlify.app/",
           technologies: [
             "HTML",
@@ -188,10 +189,13 @@ export default {
           libraries: [
             "Chart.js",
             "Material ui",
+            "groq SDK",
+            "XLSX",
+            "UUID",
             "React DnD",
             "Echarts for react",
           ],
-          images: [ssv2, ssv1, ssv3, ssv4, ssv5],
+          images: [ssv2,ssv6, ssv1, ssv3, ssv4, ssv5],
         },
         {
           id: 1,
