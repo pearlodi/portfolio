@@ -58,12 +58,12 @@
                   </template>
                 </el-skeleton>
                 <div v-else >
-                  <a :href="stack.link" target="_blank" className="w-fit h-[20px]">
-                  <div className="h-[300px]">
+                  <a :href="stack.link" target="_blank" className="w-fit">
+                  <div className="lg:h-[300px]">
                     <img
                       :src="stack.url"
                       alt="stack"
-                      class="h-full w-full object-cover rounded-xl mt-5"
+                      class="h-full w-full object-contain lg:object-cover rounded-xl mt-5"
                       loading="lazy"
                   />
                   </div>
