@@ -45,7 +45,7 @@ export default {
       }"
     >
       <div v-if="!displayHello" class="hidden"></div>
-      <div class="w-3 h-3 self-end " @click="toggleGreeting" v-else>
+      <div class="w-3 h-3 self-end mt-5" @click="toggleGreeting" v-else>
         <img
           src="../assets/img/closed.png"
           alt="menu"
@@ -54,7 +54,7 @@ export default {
       </div>
 
       <div class="max-w-[1400px] w-[90%]">
-        <div class="flex flex-col md:flex-row items-start lg:items-center justify-between cursor-pointer px-4">
+        <div class="flex flex-col gap-3 md:gap-0 md:flex-row items-start lg:items-center justify-between cursor-pointer px-4">
           <router-link to="/" class="cursor-pointer" active-class="active-link">
             <li class="text text-md font-bold cursor-pointer mt-6 md:mt-0 flex items-center gap-1">
               <House :size="16" class="text-[white]"/>   Home

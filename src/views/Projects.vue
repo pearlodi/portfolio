@@ -31,7 +31,7 @@
           </el-tabs> -->
 
           <div class="tech-list mt-8 stack-tech-li">
-            <div class="grid grid-cols-2 gap-[30px] stack-tech-li">
+            <div class="grid md:grid-cols-2 gap-[30px] stack-tech-li">
               <div
                 v-for="stack in filteredStack"
                 :key="stack.id"
