@@ -136,11 +136,11 @@ import versity1 from "@/assets/img/ayaversity/versity1.png";
 import versity2 from "@/assets/img/ayaversity/versity2.png";
 import versity3 from "@/assets/img/ayaversity/versity3.png";
 import versity4 from "@/assets/img/ayaversity/versity4.png";
-import versity5 from "@/assets/img/ayaversity/versity5.png";
-import ferry2 from "@/assets/img/ayaversity/ferry2.png";
-import ferry3 from "@/assets/img/ayaversity/ferry3.png";
-import ferry4 from "@/assets/img/ayaversity/ferry4.png";
-import ferry5 from "@/assets/img/ayaversity/ferry5.png";
+import versity5 from "@/assets/img/ayaversity/veristy5.png";
+import ferry2 from "@/assets/img/abitto-ferry/ferry2.png";
+import ferry3 from "@/assets/img/abitto-ferry/ferry3.png";
+import ferry4 from "@/assets/img/abitto-ferry/ferry4.png";
+import ferry5 from "@/assets/img/abitto-ferry/ferry5.png";
 
 
 import abittoferry1 from "@/assets/img/abitto-ferry/abittoferry-main.png";
