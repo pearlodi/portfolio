@@ -1,11 +1,12 @@
 <template>
-  <div class="project-background md:pt-4 md:pb-20 pb-10">
+   <div class="project-background h-fit pb-8 md:pb-24">
+    <homeNavVue />
     <div class="">
       <Navbar />
     </div>
     <div class="w-full max-w-full flex flex-col items-center justify-center">
-      <div class="w-full max-w-full md:w-[1600px]">
-        <div class="mx-5 md:mx-20">
+      <div class="w-full lg:w-[90%] max-w-[1400px] px-4 lg:px-0">
+        <div class="">
           <div
             class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4"
           >
@@ -14,7 +15,7 @@
               <div class="line h-1 w-[200px] mt-3 md:mt-5"></div>
             </div>
           </div>
-          <el-tabs
+          <!-- <el-tabs
             v-model="selectedCategory"
             id="tabs"
             class="experience-bg flex justify-between w-full max-w-full md:w-[700px] cursor-pointer mt-4"
@@ -27,10 +28,10 @@
               class="experience cursor-pointer flex py-3 text-[12px] md:text-[18px] w-[50%] text-center justify-center"
             >
             </el-tab-pane>
-          </el-tabs>
+          </el-tabs> -->
 
           <div class="tech-list mt-8 stack-tech-li">
-            <div class="stack-tech-ul stack-tech-li">
+            <div class="grid grid-cols-2 gap-[30px] stack-tech-li">
               <div
                 v-for="stack in filteredStack"
                 :key="stack.id"
@@ -56,14 +57,17 @@
                     </div>
                   </template>
                 </el-skeleton>
-                <div v-else>
-                  <a :href="stack.link" target="_blank">
+                <div v-else >
+                  <a :href="stack.link" target="_blank" className="w-fit h-[20px]">
+                  <div className="h-[300px]">
                     <img
                       :src="stack.url"
                       alt="stack"
-                      class="h-full w-full rounded-xl mt-5"
+                      class="h-full w-full object-cover rounded-xl mt-5"
                       loading="lazy"
-                  /></a>
+                  />
+                  </div>
+                </a>
                   <div class="pt-4 flex justify-between items-center">
                     <a :href="stack.link" target="_blank">
                       <p
@@ -123,6 +127,26 @@ import ssv3 from "@/assets/img/ssv/ssv3.png";
 import ssv4 from "@/assets/img/ssv/ssv4.png";
 import ssv5 from "@/assets/img/ssv/ssv5.png";
 import ssv6 from "@/assets/img/ssv/ssv6.png";
+import aya from "@/assets/img/ayalabs/ayamain.png";
+import aya1 from "@/assets/img/ayalabs/aya4.png";
+import aya2 from "@/assets/img/ayalabs/aya2.png";
+import aya3 from "@/assets/img/ayalabs/aya3.png";
+import aya4 from "@/assets/img/ayalabs/aya4.png";
+import versity1 from "@/assets/img/ayaversity/versity1.png";
+import versity2 from "@/assets/img/ayaversity/versity2.png";
+import versity3 from "@/assets/img/ayaversity/versity3.png";
+import versity4 from "@/assets/img/ayaversity/versity4.png";
+import versity5 from "@/assets/img/ayaversity/versity5.png";
+import ferry2 from "@/assets/img/ayaversity/ferry2.png";
+import ferry3 from "@/assets/img/ayaversity/ferry3.png";
+import ferry4 from "@/assets/img/ayaversity/ferry4.png";
+import ferry5 from "@/assets/img/ayaversity/ferry5.png";
+
+
+import abittoferry1 from "@/assets/img/abitto-ferry/abittoferry-main.png";
+
+
+import aya5 from "@/assets/img/ayalabs/aya5.png";
 import ownage1 from "@/assets/img/ownage/ownage1.png";
 import ownage2 from "@/assets/img/ownage/ownage2.png";
 import ownage3 from "@/assets/img/ownage/ownage3.png";
@@ -154,9 +178,11 @@ import zeta2 from "@/assets/img/zeta/zeta2.png";
 import zeta3 from "@/assets/img/zeta/zeta3.png";
 import zeta4 from "@/assets/img/zeta/zeat4.png";
 import zeta5 from "@/assets/img/zeta/zeta5.png";
+import homeNavVue from "./homeNav.vue";
 
 export default {
   components: {
+    homeNavVue,
     ProjectModal,
     Navbar,
   },
@@ -166,36 +192,128 @@ export default {
       isLoading: true,
       stacks: [
    
-       
-        {
+      {
           id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryReact Projects",
+          name: ".",
           category: "React Projects",
           year: "2023",
-          company: "Data hub",
-          jobDescription: "Web developer",
-          url: abitto,
+          company: "Aya Hq",
+          jobDescription: "Frontend Developer",
+          url: aya,
           description:
-            "I developed the data visualization and Analysis application using React and TypeScript, enabling users to upload, edit, and delete Excel files. The Application also allows users to Visualize data using charts and also analyse data using An AI data analysis tool. Additionally, users can create new tables, manually enter data for visualization, and use settings to customize their chart results. The application ensures a seamless and responsive user experience across all devices, with features for real-time data manipulation, Analysis and visualization.",
-          link: "https://data-hubz.netlify.app/",
+            "I built the Ayalabs for a client for the creation of hackathons. Using Next, Typescript, Shadcn UI, Zustand  and Tailwind CSS, I built a responsive and easy-to-navigate platform that offers a great user experience across devices. This project allowed me to blend modern design with practical functionality, and I'm proud of how it came together to meet the client's needs",
+          link: "https://dev.labs.ayahq.com/",
+
+          technologies: [
+            "HTML",
+            "CSS",
+            "Tailwind css",
+            "Next",
+            "Zustand",
+            
+          ],
+          libraries: [
+            "Shad cn",
+            "React use websocket",
+            "React Md",
+            "React fast marquee",
+            "React slick",
+            "Yup",
+          ],
+          images: [aya1, aya2, aya3, aya4, aya5],
+        },
+
+      {
+          id: 1,
+          name: ".",
+          category: "React Projects",
+          year: "2023",
+          company: "Zetabrent",
+          jobDescription: "Web developer",
+          url: zeta2,
+          description:
+            "I created the Zetabrent Education website for a client to showcase their educational products on a global scale. Using React, JavaScript, Material UI, and Tailwind CSS, I built a responsive and easy-to-navigate platform that offers a great user experience across devices. This project allowed me to blend modern design with practical functionality, and I'm proud of how it came together to meet the client's needs",
+          link: "https://zetabrenteducation.com/",
+
           technologies: [
             "HTML",
             "CSS",
             "Tailwind css",
             "React",
-            "TypeScript",
             "Redux",
+            
           ],
           libraries: [
-            "Chart.js",
-            "Material ui",
-            "groq SDK",
-            "XLSX",
-            "UUID",
-            "React DnD",
-            "Echarts for react",
+            "Material UI",
+            "Formik",
+            "Framer Motion",
+            "React fast marquee",
+            "React slick",
+            "Yup",
           ],
-          images: [ssv2,ssv6, ssv1, ssv3, ssv4, ssv5],
+          images: [zeta2, zeta1, zeta3, zeta4, zeta5],
+        },
+        {
+          id: 1,
+          name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
+          category: "React Projects",
+          year: "2023",
+          company: "Abitto Global",
+          jobDescription: "Web developer",
+          url: ownage,
+          description:
+            "Designed the official website for Abitto Global company. Designed and built a modern, responsive online platform showcasing our services and expertise. Utilized current web technologies to create a user-friendly interface that effectively communicated our brand identity and capabilities and also ensuring SEO for the website",
+          link: "https://www.abittoglobal.com/",
+          technologies: ["HTML", "CSS", "javascript"],
+          libraries: [
+            "Bootstrap",
+            "Rev slider",
+            
+          ],
+          images: [ownage5, ownage1, ownage2, ownage3, ownage4],
+        },
+    
+      
+        {
+          id: 1,
+          name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
+          category: "React Projects",
+          year: "2023",
+          company: "Aya Versity",
+          jobDescription: "Web developer",
+          url: versity1,
+          description:
+            "Designed the Ayaversity website. Utilized current web technologies to create a user-friendly interface that effectively showcased the details on Ayahq, Application Process and answered questions",
+          link: "https://versity.ayahq.com/",
+          technologies: ["Typescript", "CSS", "Nextjs","Zustand"],
+          libraries: [
+            "Bootstrap",
+            "Rev slider",
+            "Shad cn"
+
+            
+          ],
+          images: [versity5, versity1, versity2, versity3, versity4],
+        },
+        {
+          id: 1,
+          name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
+          category: "React Projects",
+          year: "2023",
+          company: "Abitto ferry",
+          jobDescription: "Web developer",
+          url: abittoferry1,
+          description:
+            "Designed the Abitto ferry, a subset  for Abitto Global company. Designed and built a , responsive online platform showcasing our services and expertise. Utilized current web technologies to create a user-friendly interface that effectively communicated our brand identity and capabilities and also ensuring SEO for the website",
+          link: "https://www.abittoferry.com/",
+          technologies: ["HTML", "CSS", "javascript"],
+          libraries: [
+            "Tailwind",
+            "Rev slider",
+
+            
+          ],
+          images: [ferry5,abittoferry1, ferry2, ferry3, ferry4],
         },
         {
           id: 1,
@@ -227,38 +345,39 @@ export default {
           ],
           images: [tfs2, tfs1, tfs3, tfs4, tfs5],
         },
-       
         {
           id: 1,
-          name: ".",
+          name: "I am a natural team worker and adaptable to all challenging situations categoryReact Projects",
           category: "React Projects",
           year: "2023",
-          company: "Zetabrent",
+          company: "Data hub",
           jobDescription: "Web developer",
-          url: zeta2,
+          url: abitto,
           description:
-            "I created the Zetabrent Education website for a client to showcase their educational products on a global scale. Using React, JavaScript, Material UI, and Tailwind CSS, I built a responsive and easy-to-navigate platform that offers a great user experience across devices. This project allowed me to blend modern design with practical functionality, and I'm proud of how it came together to meet the client's needs",
-          link: "https://zetabrenteducation.com/",
-
+            "I developed the data visualization and Analysis application using React and TypeScript, enabling users to upload, edit, and delete Excel files. The Application also allows users to Visualize data using charts and also analyse data using An AI data analysis tool. Additionally, users can create new tables, manually enter data for visualization, and use settings to customize their chart results. The application ensures a seamless and responsive user experience across all devices, with features for real-time data manipulation, Analysis and visualization.",
+          link: "https://data-hubz.netlify.app/",
           technologies: [
             "HTML",
             "CSS",
             "Tailwind css",
             "React",
+            "TypeScript",
             "Redux",
-            
           ],
           libraries: [
-            "Material UI",
-            "Formik",
-            "Framer Motion",
-            "React fast marquee",
-            "React slick",
-            "Yup",
+            "Chart.js",
+            "Material ui",
+            "groq SDK",
+            "XLSX",
+            "UUID",
+            "React DnD",
+            "Echarts for react",
           ],
-          images: [zeta2, zeta1, zeta3, zeta4, zeta5],
+          images: [ssv2,ssv6, ssv1, ssv3, ssv4, ssv5],
         },
-
+        
+       
+       
         {
           id: 6,
           name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
@@ -339,25 +458,7 @@ export default {
           images: [home, contact, about, experience, resume],
         },
         
-        {
-          id: 1,
-          name: "I am a natural team worker and adaptable to all challenging situations categoryOther React Experiences",
-          category: "Vue Projects",
-          year: "2023",
-          company: "Abitto Global",
-          jobDescription: "Web developer",
-          url: ownage,
-          description:
-            "Designed the official website for Abitto Global company. Designed and built a modern, responsive online platform showcasing our services and expertise. Utilized current web technologies to create a user-friendly interface that effectively communicated our brand identity and capabilities and also ensuring SEO for the website",
-          link: "https://www.abittoglobal.com/",
-          technologies: ["HTML", "CSS", "javascript"],
-          libraries: [
-            "Bootstrap",
-            "Rev slider",
-            
-          ],
-          images: [ownage5, ownage1, ownage2, ownage3, ownage4],
-        },
+       
 
         // {
         //   id: 1,

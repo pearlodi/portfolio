@@ -1,41 +1,51 @@
 <template>
-  <div class="md:pt-4 md:pb-20 pb-10 project-background">
+  <div class="project-background h-fit pb-8 md:pb-24">
     <div>
-    <div class="">
-      <Navbar />
-    </div>
-      <div class="mx-5 md:mx-12 mt-4 md:mt-16">
-        <div class="text-[40px] text-white flex items-center pb-4">
-          <div>
-            <p class="text-3xl text-white font-[800]">ABOUT ME</p>
-            <div>
-              <div>
-                <div
+    <homeNavVue />
+
+      <div class="">
+        <Navbar />
+      </div>
+      <div class=" mt-4 md:mt-16 flex flex-col justify-start items-center ">
+   <div class="w-[90%] max-w-[1400px]">
+    <div class="text-[40px] text-white  pb-4">
+          <div  class="w-fit">
+            <p class="text-3xl text-white font-[800] ">ABOUT ME</p>
+            <div
                   class="line h-1 max-w-full md w-full max-w-full:md:w-[200px] mt-5"
                 ></div>
+            <div>
+              <div>
+               
               </div>
             </div>
           </div>
         </div>
         <div>
           <p
-            class="text-gradient font-bold text-sm md:text-[16px] leading-8 mt-5 w-full max-w-full md:w-[1000px]"
+            class="text-gradient font-bold text-sm md:text-[16px] leading-8 mt-5 w-full max-w-full "
             data-aos="fade-zoom-in"
             data-aos-duration="3000"
-            
           >
             <strong class="text-3xl font-bold md:text-5xl gradient-text"
               >I’m a Frontend Developer. <br />I build interactive and
               user-friendly applications.</strong
             >
             <br /><br />
-            I am a Frontend Developer with experience in building responsive, user-friendly web applications. With a solid foundation in HTML, CSS, JavaScript, Typescript, React, Vue, Next.js, and Nuxt.js, I enjoy transforming ideas and designs into seamless, interactive user experiences.
-
-Beyond coding, I thrive on learning and pushing boundaries—whether it’s refining user interfaces, optimizing performance, or experimenting with the latest web technologies. My approach to development is driven by creativity, attention to detail, and a commitment to delivering solutions that scale.
+            I am a Frontend Developer with experience in building responsive,
+            user-friendly web applications. With a solid foundation in HTML,
+            CSS, JavaScript, Typescript, React, Vue, Next.js, Nuxt.js, Redux,
+            Zustand etc. I I enjoy transforming ideas and designs into seamless,
+            interactive user experiences. Beyond coding, I thrive on learning
+            and pushing boundaries—whether it’s refining user interfaces,
+            optimizing performance, or experimenting with the latest web
+            technologies. My approach to development is driven by creativity,
+            attention to detail, and a commitment to delivering solutions that
+            scale.
           </p>
         </div>
         <div>
-          <div class="line h-1 w-full max-w-full md:w-[1000px] mt-10"></div>
+          <div class="line h-1 w-full max-w-full md:w-[90%] mt-10"></div>
 
           <div class="md:flex">
             <div>
@@ -62,64 +72,70 @@ Beyond coding, I thrive on learning and pushing boundaries—whether it’s refi
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 w-full max-w-full md:w-[900px]">
+        <div
+          class="md:grid md:grid-cols-2 w-full w-full"
+        >
           <div
             v-for="category in categories"
             :key="category.title"
-            class="mt-4"
+            class="mt-4 w-full"
           >
-            <div class=" ">
-              <div class="md:flex w-full max-w-full justify-between mt-4">
+            <div class="">
+              <div class="w-full max-w-full justify-between mt-4">
                 <div>
-                  <div class="">
-                    <p
-                      class="text-xl text-white font-[800] mt-10"
-                    >
-                      {{ category.title }}
-                    </p>
-                    <div
-                      class="line h-1 w-[40%] md:w-[200px] max-w-full mt-2"
+                  <div>
+                    <div>
+                     <div class="w-fit">
+                      <p class="text-xl text-white font-[800] mt-10 text-grad">{{ category.title }}</p>
+                      <div
+                      class="line h-1 w-full mt-2"
                     ></div>
-                  </div>
-                 <div >
-                  <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 overflow-scroll" >
-                    <div
-                      v-for="item in category.items"
-                      :key="item.name"
-                      class=""
+                     </div>
+                      <div
+                      class="mt-6 grid grid-cols-5 "
                     >
-                      <div class="stack  rounded-lg h-full flex justify-center">
+                      <div
+                        v-for="item in category.items"
+                        :key="item.name"
+                        class=""
+                      >
+
                         <div
-                          class="w-11 md:w-12 md:h-12 flex justify-center items-center"
+                          class="stack rounded-lg h-14 w-14 item-center  flex justify-center"
                         >
-                          <img
-                            :src="item.img"
-                            class="p-2 md:p-3 w-full"
-                            :alt="item.name"
-                          />
+                          <div
+                            class="w-11 md:w-12 md:h-12 flex justify-center items-center"
+                          >
+                            <img
+                              :src="item.img"
+                              class="p-2 w-full "
+                              :alt="item.name"
+                            />
+                          </div>
                         </div>
-                      </div>
-                      <div>
+                      <p class="text-[#ffffffa8] text-xs mt-1 italic  ">{{ item.name }}</p>
+
+                        <div></div>
                       </div>
                     </div>
+                    </div>
                   </div>
-                 </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+   </div>
       </div>
     </div>
   </div>
 </template>
-<style>
-</style>
-
+<style></style>
 
 <script>
 import { Vue3Marquee } from "vue3-marquee";
 import companies4 from "@/assets/img/figma.svg";
+import homeNavVue from "./homeNav.vue";
 
 import companies1 from "@/assets/img/react.svg";
 import companies2 from "@/assets/img/vue.svg";
@@ -134,19 +150,20 @@ import typescript from "../assets/img/ts.png";
 import react from "../assets/img/react.png";
 import vue from "../assets/img/vue.png";
 import nuxt from "../assets/img/nuxtw.png";
-import wordpress from "../assets/img/wordpress.png";
+import next from "../assets/img/nexts.jpeg";
 import tailwind from "../assets/img/tail.png";
 import bootstrap from "../assets/img/boot.png";
 import material from "../assets/img/material-ui.png";
 import elementplus from "../assets/img/element.png";
 import redux from "../assets/img/rredux.png";
-import context from "../assets/img/letter-c.png";
+import context from "../assets/img/zustand.jpeg";
 import pinia from "../assets/img/pinia.png";
 import vuex from "../assets/img/vue.svg";
 export default {
   components: {
     Vue3Marquee,
     Navbar,
+    homeNavVue
   },
 
   data() {
@@ -180,7 +197,7 @@ export default {
       ],
       categories: [
         {
-          title: "Programming Languages",
+          title: "Web Technologies",
           duration: "3000",
           items: [
             { name: "HTML", img: html },
@@ -196,7 +213,7 @@ export default {
             { name: "React", img: react },
             { name: "Vue", img: vue },
             { name: "Nuxt", img: nuxt },
-            { name: "Wordpress", img: wordpress },
+            { name: "Next js", img: next },
           ],
         },
         {
@@ -214,7 +231,7 @@ export default {
           duration: "2000",
           items: [
             { name: "Redux", img: redux },
-            { name: "Context", img: context },
+            { name: "Zustand", img: context },
             { name: "Pinia", img: pinia },
             { name: "VueX", img: vuex },
           ],
@@ -222,7 +239,6 @@ export default {
       ],
     };
   },
-  
 };
 </script>
 

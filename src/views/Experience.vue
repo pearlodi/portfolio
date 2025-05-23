@@ -1,9 +1,10 @@
 <template>
-  <div class="md:pt-4 md:pb-20 pb-10 project-background">
+  <div class="project-background h-fit pb-8 md:pb-24">
+    <homeNavVue />
     <Navbar />
     <div class="w-full flex justify-center">
-      <div class="w-full max-w-full md:w-[1500px]">
-        <div class="mx-5 md:mx-12">
+      <div class="w-full max-w-[1400px] md:w-[90%] px-4 lg:px-0">
+        <div class="">
           <div
             class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4"
           >
@@ -75,8 +76,8 @@
                       :key="index"
                       class=""
                     >
-                      <div class="flex items-center">
-                        <div>
+                      <div class="flex items-start">
+                        <div class="mt-2">
                           <div class="flex flex-col items-center w-[12px]">
                             <img
                               src="@/assets/img/black-circle.png"
@@ -108,7 +109,6 @@
   </div>
 </template>
 
-
 <script>
 import Navbar from "@/components/Navbar.vue";
 import figma from "@/assets/img/figma.png";
@@ -116,10 +116,12 @@ import react from "@/assets/img/react.png";
 import vue from "@/assets/img/vue.png";
 import java from "@/assets/img/java.png";
 import git from "@/assets/img/git.svg";
+import homeNavVue from "./homeNav.vue";
 import docker from "@/assets/img/dock.png";
 export default {
   components: {
     Navbar,
+    homeNavVue
   },
   mounted() {
     setTimeout(() => {
@@ -132,21 +134,52 @@ export default {
     return {
       isLoading: true,
       stacks: [
-      {
+        {
           id: 4,
           name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",
           category: "Software Engineering",
-          year: "2024",
+          year: "2024 - 2025",
           company: "Toks Net",
           jobDescription: "Frontend developer ",
           jobWork:
             "Create files for individuals thhat needs creating of the files needed",
           jobs: [
-            "Boosted project delivery speed by 20% by implementing reusable React components across multiple projects, streamlining development in a fast-paced software solutions firm.",
-            " Improved client satisfaction by 15% through responsive design and optimized performance in React applications, ensuring cross-platform compatibility and a smoother user experience.",
+            "I worked as a frontend developer where I built and maintained several web applications for the company. I was responsible for developing user interfaces from scratch, integrating with backend APIs, and ensuring smooth user experiences. I collaborated closely with the UI/UX team and backend developers to bring ideas to life. One of the public projects I worked on is zetabrenteducation.com, where I handled all the frontend development.",
           ],
           imgs: [
-          {
+            {
+              url: figma,
+            },
+            {
+              url: java,
+            },
+            {
+              url: vue,
+            },
+
+            {
+              url: react,
+            },
+            {
+              url: git,
+            },
+          ],
+        },
+        {
+          id: 5,
+          name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",
+          category: "Software Engineering",
+          year: "2024 - 2025",
+          company: "Aya Hq",
+          jobDescription: "Frontend developer (Contract) ",
+          jobWork:
+            "Create files for individuals thhat needs creating of the files needed",
+          jobs: [
+            "I worked on a 3-month contract as a frontend developer, assisting the frontend lead in building the platform dev.labs.ayahq.com. My role involved developing and refining user interfaces using Next.js, TypeScript, Zustand for state management, and shadcn/ui for consistent and accessible components.",
+            "I contributed to building reusable components, improving overall responsiveness, and ensuring smooth integration with backend services. I also collaborated closely with the lead to maintain clean architecture and improve code efficiency throughout the project.",
+          ],
+          imgs: [
+            {
               url: figma,
             },
             {
@@ -230,7 +263,7 @@ export default {
             },
           ],
         },
-       
+
         // {
         //   id: 5,
         //   name: "I am a natural team worker and adaptable to all challenging situations categorySoftware Engineering",

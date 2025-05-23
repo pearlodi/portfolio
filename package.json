@@ -17,6 +17,7 @@
     "aos": "^2.3.4",
     "axios": "^1.7.2",
     "element-plus": "^2.4.3",
+    "lucide-vue-next": "^0.511.0",
     "vue": "^3.3.12",
     "vue-router": "^4.2.4",
     "vue3-carousel": "^0.3.1",

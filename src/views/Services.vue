@@ -1,13 +1,15 @@
+
 <template>
-  <div class="project-background md:pt-4 md:pb-20 pb-10">
+    <div class="project-background h-fit pb-8 md:pb-24">
+      <homeNavVue />
     <div class="">
       <Navbar />
     </div>
     <div class="w-full flex flex-col items-center justify-center">
-      <div class="w-full max-w-full md:w-[1500px]">
-        <div class="mx-5 md:mx-12">
+      <div class="w-full max-w-[1400px] lg:w-[90%] px-4 lg:px-0">
+        <div class="">
           <div
-            class="text-[40px] text-white w-full max-w-full md:w-[1200px] flex items-center pb-4"
+            class="text-[40px] text-white w-full max-w-full md:w-full flex items-center pb-4"
           >
             <div class="mt-12">
               <p class="text-2xl md:text-3xl text-white font-[800]">ARTICLES</p>
@@ -92,10 +94,12 @@ import aos from "@/assets/img/articles/aos.png";
 import jsx from "@/assets/img/articles/jsx.jpg";
 import dom from "@/assets/img/articles/dom.png";
 import table from "@/assets/img/articles/table.png";
+import homeNavVue from "./homeNav.vue"; 
 
 export default {
   components: {
     Navbar,
+    homeNavVue,
   },
   mounted() {
     setTimeout(() => {

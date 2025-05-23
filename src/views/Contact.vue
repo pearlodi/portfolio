@@ -1,5 +1,6 @@
 <template>
-  <div class="pb-10 md:pt-4 md:pb-20 project-background">
+    <div class="project-background h-fit pb-8 md:pb-24">
+      <homeNavVue />
     <Navbar />
     <div class="lg:flex flex-col justify-center items-center px-4 md:px-12 lg:px-12">
       <div class="md:mx-5 lg:mx-20 lg:w-[1200px] w-full max-w-full">
@@ -134,10 +135,12 @@
 import Navbar from '@/components/Navbar.vue';
 import axios from 'axios';
 import ContactModal from '@/components/Modal/ContactModal.vue';
+import homeNavVue from "./homeNav.vue";
 
 export default {
   components: {
     Navbar,
+    homeNavVue,
     ContactModal,
   },
   data() {
