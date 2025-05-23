@@ -45,7 +45,7 @@ export default {
       }"
     >
       <div v-if="!displayHello" class="hidden"></div>
-      <div class="w-3 h-3 self-end mt-5" @click="toggleGreeting" v-else>
+      <div class="w-3 h-3 self-end mt-8" @click="toggleGreeting" v-else>
         <img
           src="../assets/img/closed.png"
           alt="menu"
